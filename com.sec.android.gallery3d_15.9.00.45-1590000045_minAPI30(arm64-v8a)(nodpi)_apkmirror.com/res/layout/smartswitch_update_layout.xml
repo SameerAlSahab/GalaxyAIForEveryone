@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/smart_switch_restore_view_padding_top" android:paddingBottom="@dimen/smart_switch_restore_view_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/smart_switch_restore_view_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.SeslProgressBar android:layout_gravity="center_vertical" android:layout_width="@dimen/smart_switch_restore_progress_size" android:layout_height="@dimen/smart_switch_restore_progress_size" style="@style/ProgressCircle" />
+    <TextView android:textSize="@dimen/smart_switch_restore_description_text_size" android:textColor="@color/syncview_text_color" android:ellipsize="end" android:id="@id/smartswitch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_switch_restore_description" android:maxLines="2" android:textDirection="locale" android:layout_marginStart="@dimen/smart_switch_restore_description_margin_start" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="album_grid_item_side_offset_horizontal">6.0dip</dimen>
+    <dimen name="album_grid_item_side_offset_vertical">6.0dip</dimen>
+    <dimen name="story_collage_page_bottom_space">70.0dip</dimen>
+    <dimen name="story_last_page_bottom_space">74.0dip</dimen>
+    <dimen name="story_last_page_top_space">183.0dip</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.gallery.widget.listview.TouchInterceptLinearLayout android:orientation="vertical" android:id="@id/bottom_decor_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/story_highlight_deco_vertical_gap" android:paddingHorizontal="@dimen/story_highlight_bottom_control_side_padding">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/video_controller" android:background="@drawable/story_highlight_deco_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minHeight="@dimen/story_highlight_deco_duration_min_height" android:contentDescription="@string/pause_video" android:paddingStart="@dimen/story_highlight_deco_duration_start_margin" android:paddingEnd="@dimen/story_highlight_deco_duration_end_margin">
+            <ImageView android:id="@id/play_switch_icon" android:layout_width="@dimen/story_highlight_deco_play_icon_size" android:layout_height="@dimen/story_highlight_deco_play_icon_size" android:foreground="@drawable/recoil_ripple_oval" android:src="@drawable/gallery_ic_detail_pause" android:tint="@color/white_color" android:layout_marginEnd="@dimen/story_highlight_deco_play_icon_end_margin" android:stateListAnimator="?seslSmallTouchAnimator" />
+            <TextView android:textSize="@dimen/story_highlight_deco_play_duration_text_size" android:textColor="@color/white" android:id="@id/play_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/OneUiRobotoRegular" />
+        </LinearLayout>
+        <include android:layout_gravity="end|center" android:visibility="gone" android:inflatedId="@id/play_audio_icon" android:layout_width="@dimen/story_highlight_deco_duration_min_height" android:layout_height="fill_parent" layout="@layout/story_play_audio_icon_layout" />
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/recap_filmstrip_layout" />
+</com.samsung.android.gallery.widget.listview.TouchInterceptLinearLayout>

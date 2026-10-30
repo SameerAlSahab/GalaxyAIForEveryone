@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:background="@color/search_card_divider_color" android:focusable="false" android:clickable="false" android:layout_width="0.5dip" android:layout_height="@dimen/stories_pin_recycler_view_size" android:layout_marginStart="@dimen/stories_pin_recycler_divider_margin_start" android:layout_marginEnd="@dimen/stories_pin_recycler_divider_margin_end" />
+    <FrameLayout android:id="@id/dummy_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/thumbnail" android:background="@color/thumbnail_icon_background" android:visibility="gone" android:contentDescription="@null" style="@style/ThumbnailStyle" />
+        <com.samsung.android.gallery.widget.GalleryTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="start|bottom" android:id="@id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textIsSelectable="false" style="@style/OneUiRobotoSemiBold" />
+    </FrameLayout>
+</FrameLayout>

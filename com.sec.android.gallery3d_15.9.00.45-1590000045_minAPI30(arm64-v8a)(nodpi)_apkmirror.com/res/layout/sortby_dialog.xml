@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@id/radio_created_time" android:paddingHorizontal="@dimen/sortby_dialog_padding_horizontal">
+            <RadioGroup android:orientation="vertical" android:id="@id/radiogroup_sortby_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:listDividerAlertDialog" android:checkedButton="@id/radio_created_time">
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_created_time_ascending" android:text="@string/sort_by_created_time_ascending" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_created_time_descending" android:text="@string/sort_by_created_time_descending" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_modified_time_ascending" android:text="@string/sort_by_modified_time_ascending" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_modified_time_descending" android:text="@string/sort_by_modified_time_descending" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_name_ascending" android:text="@string/sort_name_ascending" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_name_descending" android:text="@string/sort_name_descending" style="@style/DialogRadioButtonListStyle" />
+            </RadioGroup>
+            <LinearLayout android:orientation="horizontal" android:id="@id/group_by_date_divider" android:background="@drawable/divider_dot_shape" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_divider_height" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/group_by_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sortby_title_order_margin_top" android:layout_marginBottom="@dimen/sortby_title_order_margin_top">
+                <androidx.appcompat.widget.SwitchCompat android:textSize="@dimen/sortby_dialog_group_by_date_title_text_size" android:textColor="@color/dialog_content_text_color" android:id="@id/group_by_date_button" android:paddingTop="@dimen/sortby_title_order_margin_top" android:paddingBottom="@dimen/sortby_title_order_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_group_by_date" android:textDirection="locale" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd" style="@style/OneUiRobotoRegular" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

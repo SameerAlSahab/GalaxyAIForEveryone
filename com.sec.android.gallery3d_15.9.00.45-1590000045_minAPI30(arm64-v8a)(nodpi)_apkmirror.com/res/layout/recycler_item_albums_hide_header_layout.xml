@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_hide_album_header_font_size" android:textColor="@color/one_ui_album_title_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/album_header_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/list_hide_album_header_bottom_margin" android:textIsSelectable="false" android:textDirection="locale" android:layout_marginHorizontal="@dimen/list_hide_album_header_horizontal_margin" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

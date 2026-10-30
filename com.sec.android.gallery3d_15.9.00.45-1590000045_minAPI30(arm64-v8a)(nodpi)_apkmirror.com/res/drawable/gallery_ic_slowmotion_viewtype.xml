@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="26.0dip" android:width="26.0dip" android:viewportWidth="26.0" android:viewportHeight="26.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/motion_photo_view_mode_icon_color" android:pathData="M13,3.65C7.837,3.65 3.65,7.837 3.65,13C3.65,18.163 7.837,22.35 13,22.35C18.163,22.35 22.35,18.163 22.35,13C22.35,7.837 18.163,3.65 13,3.65ZM13,2.375C18.868,2.375 23.625,7.132 23.625,13C23.625,18.868 18.868,23.625 13,23.625C7.132,23.625 2.375,18.868 2.375,13C2.375,7.132 7.132,2.375 13,2.375Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="@color/motion_photo_view_mode_icon_color" android:pathData="M18.997,13C18.997,15.151 17.243,16.894 15.083,16.894C12.923,16.894 11.169,15.151 11.169,13C11.169,10.848 12.922,9.106 15.083,9.106C17.243,9.106 18.997,10.848 18.997,13Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="@color/motion_photo_view_mode_icon_color" android:pathData="M14.831,13C14.831,15.151 13.078,16.894 10.917,16.894C8.757,16.894 7.003,15.151 7.003,13C7.003,10.848 8.757,9.106 10.917,9.106C13.078,9.106 14.831,10.848 14.831,13Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:strokeAlpha="0.45" android:fillAlpha="0.45" android:fillType="nonZero" />
+</vector>

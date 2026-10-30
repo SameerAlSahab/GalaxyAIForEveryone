@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/bottom_menu_list_item_recoil_ripple_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:paddingTop="@dimen/custom_chooser_dialog_item_margin_top" android:paddingBottom="@dimen/custom_chooser_dialog_item_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:tint="@color/create_new_dialog_content_icon_tint_color" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/dialog_content_text_color" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:singleLine="false" android:textAlignment="center" style="@style/OneUiRobotoSemiBold" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/dialog_content_sub_text_color" android:layout_gravity="center_horizontal" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:textAlignment="center" style="@style/OneUiRobotoRegular" />
+    </LinearLayout>
+</LinearLayout>

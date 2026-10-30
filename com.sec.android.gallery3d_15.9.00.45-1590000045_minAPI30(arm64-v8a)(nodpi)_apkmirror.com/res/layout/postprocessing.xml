@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/post_processing" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/fast_menu_imageview_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.SeslProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/processing" android:tooltipText="@string/processing" style="@style/ProgressCircleSmall" />
+</RelativeLayout>

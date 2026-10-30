@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/quick_search_view_round_radius" />
+    <solid android:color="@color/update_app_card_view_bg_color" />
+</shape>

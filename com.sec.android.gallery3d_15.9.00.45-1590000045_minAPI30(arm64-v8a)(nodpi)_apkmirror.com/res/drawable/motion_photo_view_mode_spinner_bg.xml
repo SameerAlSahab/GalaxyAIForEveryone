@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16.0dip" />
+            <padding android:left="3.0dip" android:right="5.0dip" />
+            <solid android:color="@color/daynight_motion_photo_view_mode_layout_bg" />
+        </shape>
+    </item>
+    <item android:gravity="end|center" android:tint="@color/default_background" android:height="20.0dip" android:width="20.0dip" android:drawable="@drawable/motion_photo_view_mode_spinner_narrow_background" />
+</layer-list>

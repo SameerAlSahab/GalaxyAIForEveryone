@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/last_page_save_story_layout" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/save_story_parent_layout_in_page" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:id="@id/save_story_layout_in_page" android:paddingHorizontal="@dimen/story_highlight_related_sub_button_horizontal_padding" android:paddingVertical="@dimen/story_highlight_related_sub_button_vertical_padding" style="@style/StoryLastPageReplyLayoutStyle">
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_as_story" android:layout_marginEnd="4.0dip" style="@style/OneUiRobotoBold" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

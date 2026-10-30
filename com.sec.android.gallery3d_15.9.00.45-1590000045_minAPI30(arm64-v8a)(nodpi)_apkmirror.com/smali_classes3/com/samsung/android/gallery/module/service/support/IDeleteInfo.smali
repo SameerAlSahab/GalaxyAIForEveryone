@@ -1,0 +1,17 @@
+.class interface abstract Lcom/samsung/android/gallery/module/service/support/IDeleteInfo;
+.super Ljava/lang/Object;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# virtual methods
+.method public abstract getBaseInfo()Ljava/lang/String;
+.end method
+
+.method public abstract isVirtual()Z
+.end method
+
+.method public abstract showDeleteAllWarning()Z
+.end method
+
+.method public abstract useTrash()Z
+.end method

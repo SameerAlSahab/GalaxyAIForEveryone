@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_card_margin_top_61" android:layout_marginBottom="@dimen/search_card_margin_bottom_61" card_view:cardBackgroundColor="@android:color/transparent" card_view:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/search_category_card_header_61" />
+        <com.samsung.android.gallery.widget.listview.GalleryListView android:layout_gravity="center" android:id="@id/my_recycler_view" android:paddingTop="@dimen/search_card_padding_top_61" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingHorizontal="@dimen/search_card_padding_horizontal_61" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

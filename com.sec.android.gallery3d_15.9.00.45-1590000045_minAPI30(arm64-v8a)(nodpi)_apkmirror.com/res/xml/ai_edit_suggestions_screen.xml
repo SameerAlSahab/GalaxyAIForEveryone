@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.settings.widget.HelpImagePreferenceV2 android:key="ai_edit_suggestions_help" />
+    <PreferenceCategory />
+    <com.samsung.android.gallery.settings.widget.FooterPreferenceCategory android:title="" android:key="footer_category" android:order="0x7FFFFFFF" />
+</PreferenceScreen>

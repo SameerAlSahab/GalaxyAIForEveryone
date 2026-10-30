@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="albums_column_count">
+        <item>1</item>
+        <item>6</item>
+        <item>5</item>
+    </integer-array>
+    <integer-array name="albums_column_count_split">
+        <item>1</item>
+        <item>5</item>
+        <item>4</item>
+    </integer-array>
+    <integer-array name="creature_cover_choice_column_count">
+        <item>7</item>
+    </integer-array>
+    <integer-array name="hide_rule_scene_column_count">
+        <item>8</item>
+    </integer-array>
+    <integer-array name="highlight_pictures_column_count">
+        <item>5</item>
+    </integer-array>
+    <integer-array name="oneui30_suggestion_column_count">
+        <item>6</item>
+    </integer-array>
+    <integer-array name="pinch_remaster_pictures_column_count">
+        <item>4</item>
+        <item>3</item>
+    </integer-array>
+    <integer-array name="portrait_pictures_column_count">
+        <item>5</item>
+    </integer-array>
+    <integer-array name="search_column_count">
+        <item>7</item>
+    </integer-array>
+    <integer-array name="search_pictures_column_count">
+        <item>11</item>
+        <item>8</item>
+        <item>7</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="sharing_pictures_column_count">
+        <item>11</item>
+        <item>8</item>
+        <item>7</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="stories_legacy_column_count">
+        <item>2</item>
+    </integer-array>
+    <integer-array name="stories_pinch_column_count_oneui_60">
+        <item>4</item>
+    </integer-array>
+    <integer-array name="stories_split_column_count">
+        <item>2</item>
+    </integer-array>
+    <integer-array name="stories_split_column_count_oneui_60">
+        <item>3</item>
+    </integer-array>
+    <integer-array name="story_pictures_legacy_column_count">
+        <item>5</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="visual_search_documents_item_column_count">
+        <item>6</item>
+    </integer-array>
+    <integer-array name="visual_search_location_item_column_count">
+        <item>5</item>
+    </integer-array>
+    <integer-array name="visual_search_location_max_item_count">
+        <item>5</item>
+    </integer-array>
+    <integer-array name="visual_search_scenes_item_column_count">
+        <item>6</item>
+    </integer-array>
+    <integer-array name="visual_search_scenes_item_column_count_expansion">
+        <item>5</item>
+    </integer-array>
+    <integer-array name="visual_search_shot_mode_item_column_count">
+        <item>6</item>
+    </integer-array>
+</resources>

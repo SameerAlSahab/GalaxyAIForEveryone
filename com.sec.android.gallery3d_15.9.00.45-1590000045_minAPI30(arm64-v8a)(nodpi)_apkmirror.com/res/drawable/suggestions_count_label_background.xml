@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/suggestions_card_recycler_item_count_solid_color" />
+    <padding android:left="@dimen/suggestions_card_recycler_item_count_horizontal_gap" android:top="@dimen/suggestions_card_recycler_item_count_vertical_gap" android:right="@dimen/suggestions_card_recycler_item_count_horizontal_gap" android:bottom="@dimen/suggestions_card_recycler_item_count_vertical_gap" />
+    <corners android:radius="@dimen/suggestions_card_recycler_item_count_radius" />
+    <stroke android:width="@dimen/suggestions_card_recycler_item_count_stroke_width" android:color="@color/suggestions_card_recycler_item_count_stroke_color" />
+</shape>

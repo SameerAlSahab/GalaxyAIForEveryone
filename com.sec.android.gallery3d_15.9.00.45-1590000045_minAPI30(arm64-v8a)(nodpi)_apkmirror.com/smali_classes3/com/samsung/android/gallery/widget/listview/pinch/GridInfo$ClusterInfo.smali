@@ -1,0 +1,34 @@
+.class public interface abstract Lcom/samsung/android/gallery/widget/listview/pinch/GridInfo$ClusterInfo;
+.super Ljava/lang/Object;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/gallery/widget/listview/pinch/GridInfo;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "ClusterInfo"
+.end annotation
+
+
+# virtual methods
+.method public abstract getMinMonthGridSize()I
+.end method
+
+.method public abstract getMonthForViewingFromGridSize()I
+.end method
+
+.method public abstract getMonthForViewingToGridSize()I
+.end method
+
+.method public abstract getMonthGridSize()I
+.end method
+
+.method public abstract getYearGridSize()I
+.end method
+
+.method public abstract isMonth(I)Z
+.end method

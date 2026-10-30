@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:paddingTop="15.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/people" android:paddingHorizontal="@dimen/moreinfo_oneui5x_edit_btn_horizontal_padding" android:paddingVertical="@dimen/moreinfo_oneui5x_edit_btn_vertical_padding" app:layout_constraintStart_toStartOf="parent" style="@style/DialogTitleTextAppearance" />
+    <TextView android:id="@id/save_btn" android:background="@drawable/recoil_ripple_oval" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:stateListAnimator="?seslSmallTouchAnimator" android:paddingHorizontal="@dimen/moreinfo_oneui5x_edit_btn_horizontal_padding" android:paddingVertical="@dimen/moreinfo_oneui5x_edit_btn_vertical_padding" app:layout_constraintEnd_toEndOf="parent" style="@style/DialogTitleTextAppearance" />
+</androidx.constraintlayout.widget.ConstraintLayout>

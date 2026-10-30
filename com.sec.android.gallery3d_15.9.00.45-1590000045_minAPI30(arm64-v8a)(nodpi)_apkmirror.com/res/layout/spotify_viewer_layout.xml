@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/viewer_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:layout_gravity="center" android:id="@id/video_view_stub" android:layout="@layout/viewer_media_view_stub_layout" android:inflatedId="@id/video_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <com.samsung.android.gallery.widget.photoview.PhotoViewCompat android:id="@id/photo_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:defaultFocusHighlightEnabled="false" />
+            <View android:layout_gravity="center" android:id="@id/foreground_image_view" android:background="@color/black_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:alpha="0.0" />
+        </RelativeLayout>
+        <ViewStub android:id="@id/viewer_debug" android:layout="@layout/viewer_debug_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

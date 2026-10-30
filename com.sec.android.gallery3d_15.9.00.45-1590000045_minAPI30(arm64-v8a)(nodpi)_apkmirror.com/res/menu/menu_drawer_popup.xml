@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_album_view_new_album" android:visible="false" android:title="@string/new_album" android:showAsAction="never" />
+    <item android:id="@id/action_folder_add_folder" android:visible="false" android:title="@string/create_group" android:showAsAction="never" />
+</menu>

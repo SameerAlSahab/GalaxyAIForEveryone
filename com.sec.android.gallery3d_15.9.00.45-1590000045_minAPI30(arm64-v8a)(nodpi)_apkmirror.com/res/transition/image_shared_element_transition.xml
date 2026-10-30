@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:interpolator="@android:interpolator/accelerate_cubic" android:duration="180" android:transitionOrdering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <changeBounds />
+    <changeImageTransform />
+</transitionSet>

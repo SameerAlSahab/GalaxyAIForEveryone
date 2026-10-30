@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tip_card_layout_background" android:background="@color/daynight_tip_card_background_color_for_settings" android:paddingTop="@dimen/tip_card_layout_padding_top" android:paddingBottom="@dimen/tip_card_layout_padding_bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/tip_card_text_layout_padding_start" android:paddingEnd="@dimen/tip_card_text_layout_padding_end">
+                <TextView android:id="@android:id/title" style="@style/TipCardTitleStyle" />
+                <TextView android:id="@android:id/summary" style="@style/TipCardSummaryStyle" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/tip_card_button_layout_padding_start" android:paddingEnd="@dimen/tip_card_button_layout_padding_end">
+                <com.samsung.android.gallery.widget.TightTextView android:id="@id/cancel_button" android:text="@string/cancel" style="@style/TipCardStartButtonStyle" />
+                <com.samsung.android.gallery.widget.TightTextView android:id="@id/done_button" android:text="@string/done" style="@style/TipCardEndButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

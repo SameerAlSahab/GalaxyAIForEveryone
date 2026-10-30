@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gradient_bg" android:padding="@dimen/ondemand_story_vi_thumbnail_stroke_size" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:outlineSpotShadowColor="@color/transparent" android:outlineAmbientShadowColor="@color/transparent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.widget.AiProcessingEffectLayout android:id="@id/vi_effect" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/vi_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:transitionName="storyViTran" />
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/red" android:id="@id/debug_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.samsung.android.gallery.widget.AiProcessingEffectLayout>
+</RelativeLayout>

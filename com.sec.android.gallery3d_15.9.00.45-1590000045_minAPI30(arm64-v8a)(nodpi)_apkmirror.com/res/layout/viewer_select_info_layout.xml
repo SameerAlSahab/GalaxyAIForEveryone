@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/actionbar_transparent_background" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="yes" android:paddingStart="12.0dip" android:paddingEnd="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatCheckBox android:theme="@style/GalleryCheckBoxStyleNoTheme" android:layout_gravity="center_vertical" android:id="@id/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/select_count_text_size" android:textColor="@color/viewer_bottom_bar_menu_text_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/select_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="6.0dip" style="@style/ActionBarTitleTextAppearance" />
+</LinearLayout>

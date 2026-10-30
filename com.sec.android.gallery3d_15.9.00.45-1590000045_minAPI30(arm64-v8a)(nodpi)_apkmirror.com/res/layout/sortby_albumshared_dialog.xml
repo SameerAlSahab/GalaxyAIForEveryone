@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/sortby_first_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/sortby_shared_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sortby_title_order_margin_top">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?android:textColorSecondary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shared_albums" android:paddingStart="4.0dip" android:paddingEnd="16.0dip" />
+                    <ImageView android:layout_gravity="center" android:background="@drawable/divider_dot_shape" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" android:layerType="software" />
+                </LinearLayout>
+                <RadioGroup android:orientation="vertical" android:id="@id/radiogroup_sortby_shared" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerHorizontal" android:checkedButton="@id/radio_recently_updated">
+                    <RadioButton android:enabled="false" android:id="@id/radio_recently_updated" android:text="@string/sort_recently_updated" style="@style/DialogRadioButtonListStyle" />
+                </RadioGroup>
+                <LinearLayout android:orientation="horizontal" android:id="@id/sortby_album_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sortby_title_order_margin_top">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?android:textColorSecondary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_albums" android:paddingStart="4.0dip" android:paddingEnd="16.0dip" />
+                    <LinearLayout android:layout_gravity="center" android:background="@drawable/divider_dot_shape" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <RadioGroup android:orientation="vertical" android:id="@id/radiogroup_sortby_album" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:listDividerAlertDialog" android:checkedButton="@id/radio_custom_order">
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_custom_order" android:text="@string/sort_by_custom_order" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_name_ascending" android:text="@string/sort_name_ascending" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_name_descending" android:text="@string/sort_name_descending" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_numbers_descending" android:text="@string/sort_number_of_items_descending" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_numbers_ascending" android:text="@string/sort_number_of_items_ascending" style="@style/DialogRadioButtonListStyle" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

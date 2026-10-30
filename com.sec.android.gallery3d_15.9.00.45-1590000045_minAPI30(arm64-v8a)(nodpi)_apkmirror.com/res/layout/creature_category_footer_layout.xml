@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingBottom="@dimen/search_category_creature_footer_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="end" android:id="@id/view_all_button" android:background="@drawable/search_creature_show_all_button_bg" android:layout_width="wrap_content" android:layout_height="@dimen/search_category_creature_footer_height" android:foreground="@drawable/recoil_button_ripple" android:paddingStart="8.0dip" android:paddingEnd="12.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:layout_width="@dimen/search_category_creature_footer_arrow_size" android:layout_height="@dimen/search_category_creature_footer_arrow_size" android:src="@drawable/gallery_ic_search_more" android:tint="@color/search_category_shot_mode_icon_color" android:rotation="90.0" android:layout_marginEnd="3.0dip" />
+        <TextView android:textSize="@dimen/search_category_creature_footer_text_size" android:textColor="@color/search_category_shot_mode_item_title_color" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_fewer" style="@style/OneUiRobotoRegular" />
+    </LinearLayout>
+</FrameLayout>

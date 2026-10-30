@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_count_header_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/search_screen_shot_filter_sub_list" android:focusable="false" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/search_screen_shot_filter_sub_sub_list" android:focusable="false" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/item_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/search_filter_results_title_vertical_padding">
+            <View android:id="@id/item_count_line" android:background="@color/search_count_header_background_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/search_count_header_background_line" android:layout_centerInParent="true" />
+            <TextView android:textColor="@color/search_card_header_count" android:id="@id/item_count" android:text="1045 images, 26 videos" style="@style/SearchCountHeaderTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

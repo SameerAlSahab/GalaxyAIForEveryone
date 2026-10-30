@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/transparent" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/search_category_card_header_61" />
+        <FrameLayout android:id="@id/map_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.samsung.android.gallery.widget.RoundedFrameLayout android:layout_gravity="center" android:id="@id/search_map_view_container" android:background="@color/map_ready_bg_color" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/search_card_header_height" android:foreground="@drawable/search_map_border" android:contentDescription="@string/map" android:layout_marginHorizontal="@dimen/search_category_location_map_container_horizontal_margin" android:layout_marginVertical="@dimen/search_card_padding_85">
+                <ImageView android:id="@id/map_image" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="end|bottom" android:id="@id/current_location_button" android:background="@drawable/search_current_location_button_recoil_ripple_oval_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_location_icon_gap" android:src="@drawable/gallery_ic_search_map_current" android:scaleType="center" android:contentDescription="@string/current_location" android:layout_marginEnd="@dimen/search_location_icon_gap" android:stateListAnimator="?seslSmallTouchAnimator" android:tooltipText="@string/current_location" />
+            </com.samsung.android.gallery.widget.RoundedFrameLayout>
+        </FrameLayout>
+        <com.samsung.android.gallery.widget.listview.GalleryListView android:layout_gravity="center" android:id="@id/my_recycler_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_card_header_list_min_height" app:contentStartPadding="@dimen/search_card_padding_horizontal_61" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

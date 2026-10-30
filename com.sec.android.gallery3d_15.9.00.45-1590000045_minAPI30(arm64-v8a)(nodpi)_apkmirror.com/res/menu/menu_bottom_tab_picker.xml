@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/bottom_tab_ic_pictures" android:enabled="true" android:id="@id/action_timeline" android:title="@string/pictures" />
+    <item android:icon="@drawable/bottom_tab_ic_albums" android:enabled="true" android:id="@id/action_albums" android:title="@string/tab_tag_albums" />
+    <item android:icon="@drawable/bottom_tab_ic_search" android:enabled="true" android:id="@id/action_search" android:title="@string/search" />
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="visual_search_shot_mode_item_column_count_90">
+        <item>3</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/sharing_storage_use_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="@color/daynight_settings_preference_list_item_background" card_view:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/divider" android:background="?android:listDivider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/shared_storage_use_view_item_divider_height" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/recycler_view_item" android:background="@drawable/recoil_list_ripple" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="?seslLargeTouchAnimator" android:paddingHorizontal="@dimen/shared_storage_use_view_item_horizontal_gap">
+            <com.samsung.android.gallery.widget.SquareImageView android:layout_gravity="center_vertical" android:id="@id/thumbnail" android:background="@color/text_color_white" android:focusable="false" android:clickable="false" android:layout_width="@dimen/shared_storage_use_thumbnail_size" android:layout_height="@dimen/shared_storage_use_thumbnail_size" android:cropToPadding="true" android:layout_marginVertical="@dimen/shared_storage_use_view_item_vertical_top_bottom_space" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                    <TextView android:textSize="@dimen/shared_view_title_font_size" android:textColor="@color/one_ui_header_title_text_color" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="shared album" android:maxLines="1" android:layout_weight="1.0" android:textIsSelectable="false" android:textAlignment="viewStart" android:letterSpacing="0.0" android:layout_marginHorizontal="@dimen/shared_storage_use_view_text_horizontal_margin" style="@style/OneUiRobotoRegular" />
+                    <TextView android:textSize="@dimen/shared_view_group_font_size" android:textColor="@color/add_to_shared_album_group_name_text_color" android:ellipsize="end" android:gravity="end" android:layout_gravity="end" android:id="@id/my_usage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/shared_group_layout_min_height" android:text="800MB" android:textIsSelectable="false" android:letterSpacing="0.0" style="@style/OneUiRobotoRegular" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

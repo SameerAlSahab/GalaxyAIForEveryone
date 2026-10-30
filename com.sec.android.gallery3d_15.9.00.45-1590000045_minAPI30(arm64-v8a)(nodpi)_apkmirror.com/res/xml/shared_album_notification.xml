@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.gallery.settings.widget.MainSwitchPreference android:key="show_notification_main_switch" />
+    <PreferenceCategory>
+        <SwitchPreferenceCompat android:title="@string/shared_albums" android:key="new_albums" android:summary="@string/new_albums_notification_description" android:defaultValue="true" />
+        <com.samsung.android.gallery.settings.widget.CaptionPreference apps:pairedKey="new_albums" />
+        <SwitchPreferenceCompat android:title="@string/new_posts" android:key="new_posts" android:summary="@string/new_posts_notification_description" android:defaultValue="true" />
+        <com.samsung.android.gallery.settings.widget.CaptionPreference apps:pairedKey="new_posts" />
+        <SwitchPreferenceCompat android:title="@string/member_updates" android:key="member_updates" android:summary="@string/member_updates_notification_description" android:defaultValue="true" />
+        <com.samsung.android.gallery.settings.widget.CaptionPreference apps:pairedKey="member_updates" />
+    </PreferenceCategory>
+    <com.samsung.android.gallery.settings.widget.FooterPreferenceCategory android:title="" android:key="footer_category" android:order="0x7FFFFFFF" />
+</PreferenceScreen>

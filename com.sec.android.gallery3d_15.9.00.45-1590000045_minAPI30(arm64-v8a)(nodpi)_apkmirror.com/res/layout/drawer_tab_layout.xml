@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.oneui.responsivepane.ResponsiveDrawerLayout android:id="@id/responsive_pane_drawer" android:background="@drawable/drawer_background" android:layout_width="0.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/drawer_tab_container" android:tag="drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:paddingBottom="@dimen/drawer_navigation_button_toolbar_padding_bottom" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true">
+                    <ImageView android:id="@id/drawer_navigation_button" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/drawer_navigation_button_margin_top" android:layout_marginBottom="@dimen/drawer_navigation_button_margin_bottom" android:src="@drawable/common_drawer" android:scaleType="center" android:tint="@color/drawer_navigation_button_color" android:contentDescription="@string/collapse_navigation_drawer" android:tooltipText="@string/collapse_navigation_drawer" android:layout_marginHorizontal="@dimen/drawer_navigation_button_margin_horizontal" />
+                    <ImageView android:layout_gravity="end|top" android:id="@id/drawer_navigation_new_badge" android:visibility="gone" android:layout_marginTop="@dimen/drawer_navigation_new_badge_margin_top" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/drawer_navigation_new_badge_margin_end" style="@style/NewDotStyle" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/drawer_settings_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <ImageView android:id="@id/drawer_settings_button" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/drawer_navigation_button_margin_top" android:layout_marginBottom="@dimen/drawer_navigation_button_margin_bottom" android:src="@drawable/gallery_ic_drawer_settings" android:scaleType="center" android:tint="@color/drawer_settings_button_color" android:contentDescription="@string/go_to_settings" android:tooltipText="@string/go_to_settings" android:layout_marginHorizontal="@dimen/drawer_settings_button_margin_horizontal" />
+                    <ImageView android:layout_gravity="end|top" android:id="@id/drawer_settings_new_badge" android:visibility="gone" android:layout_marginTop="@dimen/drawer_settings_new_badge_margin_top" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/drawer_settings_new_badge_margin_end" style="@style/NewDotStyle" />
+                </FrameLayout>
+            </RelativeLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.samsung.android.gallery.widget.drawer.DrawerRecyclerView android:id="@id/drawer_recyclerView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.oneui.responsivepane.ResponsiveDrawerLayout>

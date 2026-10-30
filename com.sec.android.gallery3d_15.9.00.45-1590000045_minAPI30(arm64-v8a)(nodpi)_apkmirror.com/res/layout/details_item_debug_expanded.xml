@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/moreinfo_debug" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="#ff737373" android:layout_width="fill_parent" android:layout_height="@dimen/moreinfo_divider_height" android:layout_marginBottom="4.0dip" android:contentDescription="@null" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/thumbnail_list" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginBottom="10.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/information_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/daynight_gallery_color_primary" android:id="@id/exif_debug" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/daynight_gallery_color_primary" android:id="@id/sef_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="SefData#0 {null}" />
+</LinearLayout>

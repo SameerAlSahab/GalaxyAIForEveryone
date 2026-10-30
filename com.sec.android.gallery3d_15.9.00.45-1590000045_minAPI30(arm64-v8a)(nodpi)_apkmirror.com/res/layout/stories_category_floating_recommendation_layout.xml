@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/floating_recommend_root_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/recommend_view_container" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.samsung.android.gallery.widget.RoundedFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:radius="@dimen/search_item_corner_radius">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/floating_recommend_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bottom_search_toolbar_floating_history_start_margin" android:elevation="5.0dip" android:paddingVertical="5.0dip" />
+        </com.samsung.android.gallery.widget.RoundedFrameLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.view.insets.ProtectionLayout android:id="@id/viewer_root_protection_layout" android:background="@color/daynight_default_background" android:focusable="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:accessibilityTraversalBefore="@id/bottom_control" android:accessibilityTraversalAfter="@id/main_layout" android:defaultFocusHighlightEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.widget.Vu2ContainerLayout android:id="@id/viewer_container_layout" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/touch_pad_viewstub" android:visibility="gone" android:layout="@layout/flex_mode_touch_pad" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/viewer_touch_pad_bottom_margin" android:layout_marginHorizontal="@dimen/viewer_touch_pad_horizontal_margin" />
+        <ViewStub android:id="@id/viewer_container_preview" android:inflatedId="@id/viewer_container_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:accessibilityTraversalBefore="@id/bottom_control" android:accessibilityTraversalAfter="@id/main_layout" />
+        <ViewStub android:id="@id/dex_navigation_button_stub" android:layout="@layout/viewer_dex_navigation_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/viewer_toolbar" layout="@layout/floating_toolbar_viewer" />
+            <ViewStub android:id="@id/group_item_panel" android:visibility="gone" android:layout="@layout/group_item_panel_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_control" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bottom_control" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:importantForAccessibility="yes">
+                <ViewStub android:id="@id/film_strip_view_stub" android:layout="@layout/viewer_filmstrip2_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/fast_option_view_stub" android:layout="@layout/fastoption_view2_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ViewStub android:id="@id/container_log_view" android:layout="@layout/viewer2_debug_view" android:inflatedId="@id/container_log_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/bottom_control" android:layout_below="@id/viewer_toolbar" android:layout_marginStart="16.0dip" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <ViewStub android:id="@id/flip_cover_toolbar_viewstub" android:layout="@layout/flip_cover_toolbar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/flip_cover_menu" android:layout="@layout/flip_cover_menu_layout" android:inflatedId="@id/flip_cover_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </com.samsung.android.gallery.widget.Vu2ContainerLayout>
+</androidx.core.view.insets.ProtectionLayout>

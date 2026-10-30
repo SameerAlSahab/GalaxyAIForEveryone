@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/flex_mode_touch_pad_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/viewer_touch_pad_bracket_margin" android:layout_marginTop="@dimen/viewer_touch_pad_bracket_margin" android:src="@drawable/touchpad_01" />
+    <ImageView android:layout_gravity="right|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/viewer_touch_pad_bracket_margin" android:layout_marginRight="@dimen/viewer_touch_pad_bracket_margin" android:src="@drawable/touchpad_02" />
+    <ImageView android:layout_gravity="left|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/viewer_touch_pad_bracket_margin" android:layout_marginBottom="@dimen/viewer_touch_pad_bracket_margin" android:src="@drawable/touchpad_03" />
+    <ImageView android:layout_gravity="right|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/viewer_touch_pad_bracket_margin" android:layout_marginBottom="@dimen/viewer_touch_pad_bracket_margin" android:src="@drawable/touchpad_04" />
+    <TextView android:textSize="@dimen/viewer_touch_pad_text_size" android:textColor="@color/viewer_touch_pad_text_color" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/touch_pad" style="@style/OneUiRobotoRegular" />
+</FrameLayout>

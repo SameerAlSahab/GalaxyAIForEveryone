@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_gravity="center|bottom" android:id="@id/bottom_bar_layout_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/bottom_view_container_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.oneui.floatingactioncontainer.FloatingBottomLayout android:id="@id/bottom_bar_floating_container" android:paddingBottom="@dimen/bottom_view_floating_container_padding_bottom" android:visibility="invisible" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:showFloatingItemBackground="false">
+        <com.samsung.android.gallery.widget.bottom.BottomBar android:layout_gravity="center_horizontal" android:id="@id/bottom_bar" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_view_floating_height" style="@style/FloatingBottomBarStyle" />
+    </com.google.android.material.oneui.floatingactioncontainer.FloatingBottomLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

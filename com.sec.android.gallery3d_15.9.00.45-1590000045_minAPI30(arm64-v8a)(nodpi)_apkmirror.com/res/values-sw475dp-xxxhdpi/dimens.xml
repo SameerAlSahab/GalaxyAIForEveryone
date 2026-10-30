@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_category_stories_item_height">240.0dip</dimen>
+    <dimen name="search_category_stories_item_width">200.0dip</dimen>
+    <dimen name="stories_category_creation_item_width_v85">200.0dip</dimen>
+    <dimen name="stories_category_transitory_content_height_v85">275.0dip</dimen>
+    <dimen name="stories_category_transitory_content_width_v85">413.0dip</dimen>
+</resources>

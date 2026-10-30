@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/default_background" android:paddingBottom="@dimen/tip_card_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/tip_card_padding_start" android:paddingEnd="@dimen/tip_card_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.widget.RoundedRelativeLayout android:id="@id/tip_card_layout" android:background="@color/update_app_card_view_bg_color" android:paddingTop="@dimen/tip_card_layout_padding_top" android:paddingBottom="@dimen/tip_card_layout_padding_bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/tip_card_text_layout_padding_start" android:paddingEnd="@dimen/tip_card_text_layout_padding_end">
+                <TextView android:id="@id/headerTitle" style="@style/TipCardTitleStyle" />
+                <TextView android:id="@id/headerContent" style="@style/TipCardSummaryStyle" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/buttonView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/tip_card_button_layout_padding_start" android:paddingEnd="@dimen/tip_card_button_layout_padding_end">
+                <com.samsung.android.gallery.widget.TightTextView android:id="@id/cancelView" android:text="@string/cancel" style="@style/TipCardStartButtonStyle" />
+                <com.samsung.android.gallery.widget.TightTextView android:id="@id/doneView" android:text="@string/done" style="@style/TipCardEndButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.samsung.android.gallery.widget.RoundedRelativeLayout>
+</LinearLayout>

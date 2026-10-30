@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gallery_sub_edge_icon_size">84.0px</dimen>
+    <dimen name="search_category_stories_item_height">210.0dip</dimen>
+    <dimen name="search_category_stories_item_width">184.0dip</dimen>
+    <dimen name="stories_category_transitory_content_height_v80">408.0dip</dimen>
+    <dimen name="stories_category_transitory_content_height_v85">270.0dip</dimen>
+    <dimen name="stories_category_transitory_content_width_v80">386.0dip</dimen>
+    <dimen name="stories_category_transitory_content_width_v85">380.0dip</dimen>
+</resources>

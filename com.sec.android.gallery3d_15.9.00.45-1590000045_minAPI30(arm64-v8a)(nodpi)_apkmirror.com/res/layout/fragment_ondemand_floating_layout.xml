@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.gallery.widget.listview.TouchParentLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fake_blur_background_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/blur_background_layout" android:tag="render_effect_blur_target_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/floating_recommendation_background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ViewStub android:layout_gravity="center" android:id="@id/background_glow_image" android:layout="@layout/glow_image_view" android:inflatedId="@id/background_glow_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/blur_effect_target_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/search_toolbar_container" android:tag="new_search_toolbar_containable" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/result_text_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="20.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/story_on_demand_fail_text_color" android:id="@id/result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" android:textAlignment="center" android:textFontWeight="@integer/font_weight_400" style="@style/OneUiRobotoRegular" />
+    </LinearLayout>
+</com.samsung.android.gallery.widget.listview.TouchParentLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/sharing_storage_use_description_text_size" android:textColor="@color/trash_header_description_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sharing_storage_use_description_margin_bottom" android:textAlignment="viewStart" android:layout_marginHorizontal="@dimen/sharing_storage_use_description_margin_horizontal" style="@style/OneUiRobotoRegular"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

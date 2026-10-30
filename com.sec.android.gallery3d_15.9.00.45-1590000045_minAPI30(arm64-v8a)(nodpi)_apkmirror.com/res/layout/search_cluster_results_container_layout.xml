@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_clusters_result_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_cluster_results_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/top_results_cluster_view_stub" android:layout="@layout/search_cluster_results_layout" android:inflatedId="@id/top_results_cluster_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/search_cluster_result_pictures_layout" />
+    <ViewStub android:id="@id/locations_cluster_view_stub" android:layout="@layout/search_cluster_results_layout" android:inflatedId="@id/locations_cluster_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_cluster_results_category_margin_top" />
+    <ViewStub android:id="@id/albums_cluster_view_stub" android:layout="@layout/search_cluster_results_layout" android:inflatedId="@id/albums_cluster_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_cluster_results_category_margin_top" />
+    <ViewStub android:id="@id/people_cluster_view_stub" android:layout="@layout/search_cluster_results_layout" android:inflatedId="@id/people_cluster_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_cluster_results_category_margin_top" />
+    <ViewStub android:id="@id/ocr_cluster_view_stub" android:layout="@layout/search_cluster_results_layout" android:inflatedId="@id/ocr_cluster_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_cluster_results_category_margin_top" />
+    <ViewStub android:id="@id/stories_cluster_view_stub" android:layout="@layout/search_cluster_results_stories_layout" android:inflatedId="@id/stories_cluster_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_cluster_results_category_margin_top" />
+</LinearLayout>

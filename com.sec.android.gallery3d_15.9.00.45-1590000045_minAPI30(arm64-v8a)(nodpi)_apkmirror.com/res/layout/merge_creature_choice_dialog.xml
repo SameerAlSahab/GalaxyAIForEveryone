@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/merge_people_dialog_body_margin" android:layout_marginBottom="@dimen/merge_people_dialog_body_margin">
+        <ImageView android:id="@id/current_creature" android:contentDescription="@null" android:layout_marginEnd="@dimen/merge_people_dialog_list_horizontal_margin_2_item" style="@style/SquareFaceImageStyle" />
+        <ImageView android:id="@id/target_creature" android:contentDescription="@null" android:layout_marginStart="@dimen/merge_people_dialog_list_horizontal_margin_2_item" style="@style/SquareFaceImageStyle" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/merge_people_dialog_radio_btn_margin">
+            <TextView android:id="@id/dialog_body" android:paddingLeft="?android:dialogPreferredPadding" android:paddingRight="?android:dialogPreferredPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/merge_people_dialog_linespace" android:textIsSelectable="true" android:textDirection="locale" style="@style/BaseDialogBodyTextAppearance" />
+            <RadioGroup android:id="@id/radio_grp_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/merge_people_dialog_radio_btn_margin" android:layout_marginStart="?android:dialogPreferredPadding" android:layout_marginEnd="?android:dialogPreferredPadding">
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_btn_candidate_creature" style="@style/DialogRadioButtonListStyle" />
+                <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_btn_current_creature" style="@style/DialogRadioButtonListStyle" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/container" android:background="@drawable/search_toolbar_filter_item_background_no_theme" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/search_toolbar_chip_height">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/circle_thumb" android:background="@drawable/circular_thumb_background" android:visibility="gone" android:layout_width="@dimen/search_filter_result_item_icon_size_for_person" android:layout_height="@dimen/search_filter_result_item_icon_size_for_person" android:layout_margin="1.0dip" />
+            <ImageView android:id="@id/round_thumb" android:background="@drawable/round_thumb_background" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="@dimen/search_filter_result_item_icon_size_for_person" android:layout_margin="1.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/subContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/type_icon" android:visibility="visible" android:layout_width="@dimen/search_toolbar_chip_icon_size" android:layout_height="@dimen/search_toolbar_chip_icon_size" android:tint="@color/daynight_search_filter_text_color" />
+            <TextView android:textSize="@dimen/search_toolbar_chip_text_size" android:textColor="@color/daynight_search_filter_text_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:maxLines="1" style="@style/OneUiRobotoRegular" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/delete_icon" android:background="@drawable/search_chip_remove_icon_no_theme" android:focusable="false" android:visibility="visible" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginStart="@dimen/search_toolbar_chip_close_button_margin_start_with_title" android:layout_marginEnd="@dimen/search_toolbar_chip_close_button_margin_end" android:tooltipText="@string/delete_button_label" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/live_focus_radius" />
+    <solid android:color="@color/play_button_view_background_color" />
+    <stroke android:width="@dimen/play_btn_outline_stroke" android:color="@color/viewer_play_btn_stroke_color" />
+</shape>

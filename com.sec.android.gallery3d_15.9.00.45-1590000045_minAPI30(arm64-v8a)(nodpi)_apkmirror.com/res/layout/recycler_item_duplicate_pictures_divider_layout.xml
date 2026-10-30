@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/suggestion_duplicate_pictures_90_divider_height" android:paddingHorizontal="@dimen/suggestion_duplicate_pictures_90_divider_margin_start"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ViewStub android:id="@id/checkboxViewStub" android:layout="@layout/divider_checkbox" android:layout_width="@dimen/check_box_width" android:layout_height="@dimen/check_box_height" android:layout_marginStart="@dimen/suggestion_duplicate_pictures_90_divider_gap_start" android:layout_marginEnd="@dimen/suggestion_duplicate_pictures_90_list_item_horizontal_gap" />
+        <TextView android:textSize="@dimen/suggestion_duplicate_pictures_90_divider_title_size" android:textColor="@color/duplicate_divider_file_size_text_color" android:ellipsize="end" android:id="@id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textIsSelectable="false" style="@style/OneUiRobotoSemiBold" />
+    </LinearLayout>
+</LinearLayout>

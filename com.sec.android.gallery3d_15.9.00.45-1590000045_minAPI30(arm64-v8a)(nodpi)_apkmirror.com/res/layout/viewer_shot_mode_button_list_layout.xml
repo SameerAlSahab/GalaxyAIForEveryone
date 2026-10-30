@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/shot_mode_scroll_view" android:scrollbars="none" android:fadingEdgeLength="28.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/play_button_view_height" android:requiresFadingEdge="horizontal">
+        <LinearLayout android:orientation="horizontal" android:id="@id/shot_mode_button_list" android:layout_width="wrap_content" android:layout_height="@dimen/play_button_view_height" />
+    </HorizontalScrollView>
+</RelativeLayout>

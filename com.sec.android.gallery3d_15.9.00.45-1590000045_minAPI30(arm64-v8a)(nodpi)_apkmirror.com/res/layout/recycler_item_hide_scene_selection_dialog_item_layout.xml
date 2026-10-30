@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/story_hide_scene_selection_dialog_thumbnail_size" android:layout_height="@dimen/story_hide_scene_selection_dialog_thumbnail_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.widget.SquareImageView android:id="@id/thumbnail" android:background="@color/thumbnail_icon_background" android:foreground="@drawable/thumbnail_border" style="@style/ThumbnailStyle" />
+    <FrameLayout android:id="@id/dim_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.samsung.android.gallery.widget.SquareImageView android:background="@drawable/hide_scene_selection_dialog_item_dim_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/story_hide_scene_selection_dialog_dim_count_color" android:layout_gravity="center" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textFontWeight="700" style="@style/OneUiRobotoBold" />
+    </FrameLayout>
+</FrameLayout>

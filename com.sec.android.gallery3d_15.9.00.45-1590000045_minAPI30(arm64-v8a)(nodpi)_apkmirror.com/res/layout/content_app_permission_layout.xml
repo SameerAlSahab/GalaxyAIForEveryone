@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/content_app_permission_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/permission_layout_padding_horizontal">
+        <TextView android:textSize="@dimen/permission_notice_text_size" android:textColor="@color/permission_notice_title_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/permission_notice_title_margin_bottom" android:text="@string/required_permissions" android:textDirection="locale" style="@style/OneUiRobotoRegular" />
+        <include android:id="@id/photos_and_videos_permission" layout="@layout/app_permission_item_layout" />
+        <TextView android:textSize="@dimen/permission_notice_text_size" android:textColor="@color/permission_notice_title_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/permission_notice_gap" android:layout_marginBottom="@dimen/permission_notice_title_margin_bottom" android:text="@string/optional_permissions" android:textDirection="locale" style="@style/OneUiRobotoRegular" />
+        <include android:id="@id/contacts_permission" layout="@layout/app_permission_item_layout" />
+        <include android:id="@id/locations_permission" layout="@layout/app_permission_item_layout" />
+        <include android:id="@id/music_and_audio_permission" layout="@layout/app_permission_item_layout" />
+        <include android:id="@id/notifications_permission" layout="@layout/app_permission_item_layout" />
+        <TextView android:textSize="@dimen/permission_notice_description_text_size" android:textColor="@color/permission_notice_description_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/permission_notice_gap" android:text="@string/you_can_still_use_the_apps_basic_functions" android:textDirection="locale" style="@style/OneUiRobotoRegular" />
+        <TextView android:textSize="@dimen/permission_notice_text_size" android:textColor="@color/permission_notice_title_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/permission_special_notice_gap" android:layout_marginBottom="@dimen/permission_notice_title_margin_bottom" android:text="@string/permissions_special" android:textDirection="locale" style="@style/OneUiRobotoRegular" />
+        <TextView android:textSize="@dimen/permission_notice_description_text_size" android:textColor="@color/permission_notice_description_text_color" android:id="@id/special_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" style="@style/OneUiRobotoRegular" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

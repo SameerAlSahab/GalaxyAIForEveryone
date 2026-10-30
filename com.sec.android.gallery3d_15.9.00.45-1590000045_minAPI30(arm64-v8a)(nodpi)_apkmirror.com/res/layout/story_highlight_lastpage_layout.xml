@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.gallery.widget.listview.TouchInterceptLinearLayout android:orientation="vertical" android:id="@id/last_page_layout" android:background="@android:color/transparent" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/tool" android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:layout_alignParentTop="true" android:paddingEnd="@dimen/story_highlight_related_close_button_margin_end" android:layout_alignParentEnd="true">
+        <LinearLayout android:gravity="center" android:id="@id/replay_tool_button" android:background="@drawable/recoil_ripple_oval_story_highlight" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/watch_again" android:stateListAnimator="?seslSmallTouchAnimator">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_ic_related_stories_replay" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/close_tool_button" android:background="@drawable/recoil_ripple_oval_story_highlight" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/close" android:stateListAnimator="?seslSmallTouchAnimator" android:tooltipText="@string/close">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_suggested_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/page_list_parent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center|top" android:id="@id/page_recycler" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center|bottom" android:id="@id/save_as_video_layout" android:visibility="gone" android:layout_marginBottom="14.0dip" android:paddingHorizontal="@dimen/story_highlight_related_sub_button_horizontal_padding" android:paddingVertical="@dimen/story_highlight_related_sub_button_vertical_padding" style="@style/StoryLastPageReplyLayoutStyle">
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_as_video" android:layout_marginEnd="4.0dip" style="@style/OneUiRobotoBold" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center|bottom" android:id="@id/replay_button_layout" android:contentDescription="@string/watch_again" android:importantForAccessibility="yes" android:paddingHorizontal="@dimen/story_highlight_related_sub_button_horizontal_padding" android:paddingVertical="@dimen/story_highlight_related_sub_button_vertical_padding" style="@style/StoryLastPageReplyLayoutStyle">
+        <TextView android:textSize="@dimen/story_highlight_related_sub_button_text_size" android:textColor="#fffcfcff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_again" style="@style/OneUiRobotoSemiBold" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center|bottom" android:id="@id/save_story_layout" android:paddingHorizontal="@dimen/story_highlight_related_sub_button_horizontal_padding" style="@style/StoryLastPageReplyLayoutStyle">
+        <TextView android:textSize="@dimen/story_highlight_related_sub_button_text_size" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_as_story" style="@style/OneUiRobotoSemiBold" />
+    </LinearLayout>
+</com.samsung.android.gallery.widget.listview.TouchInterceptLinearLayout>

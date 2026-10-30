@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/default_fw_background" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.gallery.widget.toolbar.GalleryAppBarLayout android:id="@id/appbar" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="0.0dip" app:expanded="false" app:seslHeightProportion="0.0" app:seslUseCustomHeight="true" app:seslUseCustomPadding="true" style="@style/AppBarLayoutStyle">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/toolbar_layout" app:subtitle="@null" app:title="@string/relationship_choice_dialog_title" style="@style/CollapsingToolBarFrameworkStyle" />
+        <include layout="@layout/floating_toolbar_dummy_view" />
+    </com.samsung.android.gallery.widget.toolbar.GalleryAppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/relationship_list_scroll_view" android:background="@color/default_fw_background" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/relationship_list" android:background="@drawable/relationship_list_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/relationship_choice_list_margin_horizontal" />
+    </androidx.core.widget.NestedScrollView>
+    <include layout="@layout/floating_toolbar_layout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

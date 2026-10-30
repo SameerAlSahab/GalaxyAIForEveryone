@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/normal_mode">
+        <item android:id="@id/action_search_setting" android:title="@string/search_settings_menu" android:showAsAction="never" />
+        <item android:id="@id/action_trash" android:visible="false" android:title="@string/trash" android:showAsAction="never" />
+        <item android:id="@id/action_settings" android:visible="false" android:title="@string/go_to_settings" android:showAsAction="never" />
+        <item android:id="@id/action_edit_quick_search" android:visible="false" android:title="@string/edit_quick_searches" android:showAsAction="never" />
+    </group>
+</menu>

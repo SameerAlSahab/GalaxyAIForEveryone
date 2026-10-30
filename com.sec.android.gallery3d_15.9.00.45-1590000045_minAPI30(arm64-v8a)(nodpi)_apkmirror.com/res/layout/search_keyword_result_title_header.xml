@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/search_filter_results_title_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/search_filter_results_title_font_size" android:textColor="@color/story_search_result_title_color" android:id="@id/search_keyword_divider_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pictures" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/OneUiRobotoSemiBold" />
+    <TextView android:textSize="@dimen/search_filter_results_count_font_size" android:textColor="@color/story_search_result_count_color" android:id="@id/search_keyword_divider_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:layout_centerVertical="true" android:layout_marginStart="@dimen/search_filter_results_title_header_text_gap" android:layout_toEndOf="@id/search_keyword_divider_title" style="@style/OneUiRobotoLight" />
+    <ImageView android:id="@id/search_keyword_divider_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/SearchCategoryArrowStyle" />
+</RelativeLayout>

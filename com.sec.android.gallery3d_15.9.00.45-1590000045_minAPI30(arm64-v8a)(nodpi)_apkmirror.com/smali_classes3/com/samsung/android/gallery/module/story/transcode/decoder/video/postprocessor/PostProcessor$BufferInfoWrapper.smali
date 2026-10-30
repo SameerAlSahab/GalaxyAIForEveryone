@@ -1,0 +1,28 @@
+.class public interface abstract Lcom/samsung/android/gallery/module/story/transcode/decoder/video/postprocessor/PostProcessor$BufferInfoWrapper;
+.super Ljava/lang/Object;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/gallery/module/story/transcode/decoder/video/postprocessor/PostProcessor;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "BufferInfoWrapper"
+.end annotation
+
+
+# virtual methods
+.method public abstract getBufferInfo()Ljava/lang/Object;
+.end method
+
+.method public abstract getIndex()I
+.end method
+
+.method public abstract getPresentationTimeUs()J
+.end method
+
+.method public abstract isEndOfStream()Z
+.end method

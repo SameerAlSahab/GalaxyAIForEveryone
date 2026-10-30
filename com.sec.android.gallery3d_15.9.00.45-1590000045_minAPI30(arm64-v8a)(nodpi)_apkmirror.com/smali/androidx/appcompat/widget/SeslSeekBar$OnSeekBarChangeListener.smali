@@ -1,0 +1,25 @@
+.class public interface abstract Landroidx/appcompat/widget/SeslSeekBar$OnSeekBarChangeListener;
+.super Ljava/lang/Object;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/appcompat/widget/SeslSeekBar;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnSeekBarChangeListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onProgressChanged(Landroidx/appcompat/widget/SeslSeekBar;IZ)V
+.end method
+
+.method public abstract onStartTrackingTouch(Landroidx/appcompat/widget/SeslSeekBar;)V
+.end method
+
+.method public abstract onStopTrackingTouch(Landroidx/appcompat/widget/SeslSeekBar;)V
+.end method

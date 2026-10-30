@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/map_view_marker_background" android:background="@drawable/gallery_map_view_popup_normal_2" android:layout_width="@dimen/map_small_marker_popup_width" android:layout_height="@dimen/map_small_marker_popup_height" android:contentDescription="@null" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/map_view_small_marker_dummy_background" android:layout_width="@dimen/map_small_marker_thumbnail_size" android:layout_height="@dimen/map_small_marker_thumbnail_size" android:layout_marginTop="@dimen/map_small_marker_top_padding" android:contentDescription="@null" android:clipToOutline="true">
+        <ImageView android:id="@id/map_view_marker" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" android:clipToOutline="true" />
+        <TextView android:textSize="@dimen/map_small_marker_text_size" android:textColor="@color/map_view_marker_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/map_view_marker_count" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:textFontWeight="@integer/font_weight_700" />
+    </FrameLayout>
+</FrameLayout>

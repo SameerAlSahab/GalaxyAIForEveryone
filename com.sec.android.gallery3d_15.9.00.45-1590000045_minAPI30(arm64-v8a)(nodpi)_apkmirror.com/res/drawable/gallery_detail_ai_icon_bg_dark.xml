@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/play_btn_size" android:width="@dimen/play_btn_size" />
+    <solid android:color="@color/ai_icon_bg_dark_color" />
+</shape>

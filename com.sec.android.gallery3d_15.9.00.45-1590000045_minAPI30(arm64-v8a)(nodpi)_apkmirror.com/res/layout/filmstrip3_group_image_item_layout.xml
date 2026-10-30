@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/film_strip_view_container" android:focusable="true" android:clickable="true" android:layout_width="@dimen/film_strip_image_width" android:layout_height="@dimen/film_strip_item_height" android:layout_marginTop="@dimen/film_strip_item_margin_top" android:paddingStart="@dimen/film_strip_item_padding" android:paddingEnd="@dimen/film_strip_item_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.gallery.widget.SquareImageView android:id="@id/film_strip_view_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="matrix" android:contentDescription="@null" app:aspect_base_height="true" app:aspect_ratio="0.75" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/film_strip_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <TextView android:id="@id/test" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+    <ImageView android:id="@id/video_play_icon" android:focusable="false" android:visibility="visible" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/gallery_ic_detail_similar_shot" android:layout_alignParentBottom="true" android:layout_marginEnd="3.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

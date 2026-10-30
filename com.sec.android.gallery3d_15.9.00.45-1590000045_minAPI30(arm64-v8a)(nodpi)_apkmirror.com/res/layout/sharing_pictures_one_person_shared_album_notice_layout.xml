@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/one_person_shared_album_notice_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/album_expiry_notice_icon" android:background="@drawable/gallery_ic_error_notice_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/one_person_shared_album_notice_header_text_size" android:textColor="@color/one_ui_header_title_text_color" android:id="@id/shared_album_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/shared_album_notice_view_margin_start" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

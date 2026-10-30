@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/default_fw_background" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.gallery.widget.toolbar.GalleryAppBarLayout android:id="@id/appbar" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="0.0dip" app:expanded="false" app:seslHeightProportion="0.0" app:seslUseCustomHeight="true" app:seslUseCustomPadding="true" style="@style/AppBarLayoutStyle">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/toolbar_layout" app:subtitle="@null" app:title="@string/search" style="@style/CollapsingToolBarFrameworkStyle" />
+        <include layout="@layout/floating_toolbar_dummy_view" />
+    </com.samsung.android.gallery.widget.toolbar.GalleryAppBarLayout>
+    <ImageView android:id="@id/background_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_background_image" android:scaleType="centerCrop" />
+    <androidx.core.widget.NestedScrollView android:id="@id/edit_creature_scroll_view" android:background="@color/default_fw_background" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/edit_creature_name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/face_image_layout" android:layout_width="@dimen/search_edit_creature_header_item_size_v85" android:layout_height="@dimen/search_edit_creature_header_item_size_v85">
+                <ImageView android:id="@id/face_image" android:background="@drawable/rectangle_thumb_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/people_header_stroke_v85" android:scaleType="centerCrop" android:contentDescription="@null" />
+                <ImageView android:id="@id/change_creature_cover_icon" android:background="@drawable/change_creature_cover_icon_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:src="@drawable/change_creature_cover_icon" android:tint="@color/change_creature_cover_icon_color" android:layout_alignParentBottom="true" android:contentDescription="@string/select_face_to_show" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/creature_name_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:paddingHorizontal="@dimen/search_edit_creature_name_fragment_padding_horizontal" app:layout_constraintTop_toBottomOf="@id/face_image_layout">
+                <LinearLayout android:id="@id/creature_name_input" style="@style/SearchCreatureInputLayoutStyle">
+                    <ImageView android:layout_gravity="center" android:id="@id/creature_name_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_ic_search_edit_contacts_name" android:layout_marginStart="@dimen/edit_creature_name_fragment_creature_icon_margin" />
+                    <AutoCompleteTextView android:id="@id/add_creature_name" android:hint="@string/input_name" android:completionThreshold="1" android:inputType="textCapSentences" android:privateImeOptions="disableSticker=true;disableGifKeyboard=true;disableLiveMessage=true;" android:imeOptions="actionDone|flagNoFullscreen" android:textCursorDrawable="@drawable/edittext_cursor" android:labelFor="@id/add_creature_name" style="@style/SearchCreatureInputStyle" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/edit_creature_name_fragment_dropdown_anchor" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginHorizontal="@dimen/edit_creature_name_fragment_dropdown_margin_horizontal" />
+                <FrameLayout android:id="@id/creature_relationship_input" android:background="@drawable/edit_relationship_layout_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:clipToPadding="false" android:layout_marginTop="@dimen/between_name_and_relationship" style="@style/SearchCreatureInputLayoutStyle">
+                    <LinearLayout android:id="@id/relationship_icon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center" android:id="@id/relationship_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_ic_search_edit_relationship" android:layout_marginStart="@dimen/edit_creature_name_fragment_creature_icon_margin" />
+                        <TextView android:ellipsize="end" android:id="@id/add_creature_relationship" android:focusable="false" android:focusableInTouchMode="true" android:clickable="false" android:hint="@string/relationship" android:maxLines="1" android:layout_marginEnd="@dimen/edit_creature_name_fragment_relationship_end_margin" android:layout_alignStart="@id/relationship_icon" style="@style/SearchCreatureInputStyle" />
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="end|center" android:id="@id/relationship_delete_icon" android:background="@drawable/button_ripple" android:layout_width="@dimen/edit_creature_name_fragment_relationship_delete_icon_size" android:layout_height="@dimen/edit_creature_name_fragment_relationship_delete_icon_size" android:src="@drawable/relationship_delete_icon" android:tint="@color/relationship_delete_icon_color" android:contentDescription="@string/delete" android:layout_marginEnd="@dimen/edit_creature_name_fragment_relationship_delete_icon_end_margin" />
+                </FrameLayout>
+                <include android:id="@id/suggested_name_list" android:visibility="gone" layout="@layout/recommendation_list" />
+                <include android:id="@id/frequently_contacted_list" android:visibility="gone" layout="@layout/recommendation_list" />
+                <include android:id="@id/contact_link_view" android:visibility="gone" layout="@layout/contact_link_view" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include layout="@layout/floating_toolbar_layout" />
+    <include layout="@layout/floating_divider_button_layout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

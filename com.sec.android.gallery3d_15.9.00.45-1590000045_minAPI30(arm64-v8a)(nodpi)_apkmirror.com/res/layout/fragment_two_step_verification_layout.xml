@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/about_page_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/two_step_verification_web_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.appcompat.widget.SeslProgressBar android:layout_gravity="center" android:id="@id/two_step_verification_web_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ProgressCircle" />
+    </FrameLayout>
+</LinearLayout>

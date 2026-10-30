@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/story_highlight_background_color" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/entry_blur_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/entry_blur_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <View android:id="@id/entry_blur_dim_layer" android:background="#4d000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/transition_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <View android:layout_gravity="center" android:id="@id/dummy_gradient_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/cover_viewpager_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/live_motion_view_pager_layout" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/toolbar_gradient_view" android:background="@drawable/gallery_gradient_story_toolbar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/story_highlight_toolbar_height" />
+        <FrameLayout android:id="@id/toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.samsung.android.gallery.widget.toolbar.GalleryToolbar android:id="@id/toolbar" android:visibility="invisible" style="@style/ToolbarStoryHighlightStyle" />
+        </FrameLayout>
+        <include android:id="@id/guide_deco_root_layout" layout="@layout/story_highlight_deco_layout" />
+        <ViewStub android:id="@id/stories_filter_stub" android:layout="@layout/stories_filter_layout" android:inflatedId="@id/stories_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <ViewStub android:id="@id/story_live_effect_download_stub" android:layout="@layout/story_3d_download_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/toolbar_container" android:layout_alignParentEnd="true" />
+        <include layout="@layout/story_highlight_bottom_deco_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/story_highlight_bottom_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.samsung.android.gallery.app.ui.list.stories.highlight.bottomsheet.behavior.StoryHighlightBehavior" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/story_highlight_bgm_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.samsung.android.gallery.app.ui.list.stories.highlight.bgmpicker.BgmPickerBehavior">
+        <LinearLayout android:orientation="horizontal" android:id="@id/story_highlight_bgm_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>> </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/recoil_ripple_rect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:stateListAnimator="?seslSmallTouchAnimator"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/smart_album_image_layout" android:layout_width="@dimen/smart_album_item_circle_size" android:layout_height="@dimen/smart_album_item_circle_size">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/smart_album_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@null" />
+        <TextView android:layout_gravity="end|top" android:id="@id/smart_album_image_new" android:visibility="gone" android:text="@string/new_badge_text" android:importantForAccessibility="no" style="@style/NotificationNewBadgeStyle" />
+    </FrameLayout>
+    <TextView android:textAppearance="@style/CollapsingToolbarSubTitleTextAppearance" android:textSize="@dimen/smart_album_item_title_text_size" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/smart_album_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smart_album_item_title_marginTop" android:lines="1" android:contentDescription="@null" android:importantForAccessibility="no" android:textAlignment="center" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" android:clickable="false" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/divider_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_category_location_title_margin_top" android:layout_marginStart="@dimen/search_category_location_title_margin_start">
+        <TextView android:textSize="16.0sp" android:textColor="@color/one_ui_header_title_text_color" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:textIsSelectable="false" android:layout_alignParentStart="true" style="@style/OneUiRobotoSemiBold" />
+    </RelativeLayout>
+</RelativeLayout>

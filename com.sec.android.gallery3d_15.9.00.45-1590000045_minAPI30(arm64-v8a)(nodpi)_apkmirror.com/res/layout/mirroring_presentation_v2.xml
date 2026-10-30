@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/mirroring_holder" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="center" android:id="@id/media_view_stub" android:layout="@layout/viewer_media_view_stub_layout" android:inflatedId="@id/media_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.samsung.android.gallery.widget.photoview.RemotePhotoView android:id="@id/remote_photo" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/mirror_play_icon" android:background="@drawable/gallery_ic_detail_video" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true" android:contentDescription="@string/speak_play_video" />
+    </RelativeLayout>
+    <ImageView android:id="@id/prev_photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

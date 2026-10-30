@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/video_studio_button_recoil_ripple" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/video_studio_button_padding_start" android:paddingEnd="@dimen/video_studio_button_padding_end" android:stateListAnimator="?seslLargeTouchAnimator" android:paddingVertical="@dimen/video_studio_button_padding_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/video_studio_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/gallery_ic_studio" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/video_studio_button_title_text_size" android:textColor="@color/create_new_dialog_video_studio_text_color" android:id="@id/video_studio_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/video_studio_button_title_margin_start" android:layout_toEndOf="@id/video_studio_icon" style="@style/OneUiRobotoRegular" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_ic_change_cover_next_arrow" android:tint="@color/create_new_dialog_video_studio_arrow_color" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

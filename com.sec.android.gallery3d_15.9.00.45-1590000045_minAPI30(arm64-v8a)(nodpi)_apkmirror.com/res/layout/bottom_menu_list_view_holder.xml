@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bottom_menu_list_item_recoil_ripple_bg" android:focusable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/bottom_menu_list_image_view" android:paddingTop="@dimen/bottom_menu_list_view_holder_image_view_padding_top" android:paddingBottom="@dimen/bottom_menu_list_view_holder_image_view_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/dialog_content_text_color" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/bottom_menu_list_new_badge" android:visibility="gone" android:layout_marginTop="@dimen/bottom_menu_list_view_holder_new_badge_margin_top" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/bottom_menu_list_view_holder_new_badge_margin_end" style="@style/NewDotStyle" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bottom_menu_list_view_holder_bottom_min_height">
+        <TextView android:textSize="@dimen/bottom_menu_list_view_holder_text_size" android:textColor="@color/dialog_content_text_color" android:gravity="center" android:id="@id/bottom_menu_list_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/OneUiRobotoRegular" />
+    </LinearLayout>
+</LinearLayout>

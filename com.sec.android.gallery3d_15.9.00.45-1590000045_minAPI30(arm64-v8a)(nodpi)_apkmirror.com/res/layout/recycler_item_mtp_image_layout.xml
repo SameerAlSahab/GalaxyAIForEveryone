@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_grid_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/checkboxViewStub" android:layout="@layout/thumbnail_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.samsung.android.gallery.widget.SquareImageView android:layout_gravity="center_vertical" android:id="@id/thumbnail" android:background="@color/thumbnail_icon_background" android:focusable="false" android:clickable="false" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/one_ui_album_title_text_color" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:lines="1" android:textIsSelectable="false" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

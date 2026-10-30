@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="end" android:id="@id/scroll_popup" android:background="@drawable/fastscroll_year_label" android:focusable="false" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/fast_scroll_year_popup_text_min_width" android:minHeight="@dimen/fast_scroll_year_popup_text_min_height" android:layout_marginEnd="@dimen/fast_scroll_popup_text_side_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/fast_scroll_year_popup_text_size" android:textColor="@color/quick_scroll_year_view_popup_color" android:id="@id/date" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fast_scroll_year_popup_text_side_margin" android:layout_marginRight="@dimen/fast_scroll_year_popup_text_side_margin" android:maxLines="1" android:layout_centerInParent="true" android:textAlignment="center" android:layout_alignParentStart="true" style="@style/OneUiRobotoSemiBold" />
+</RelativeLayout>

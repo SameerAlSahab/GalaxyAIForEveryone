@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.gallery.widget.UtlTextView android:textSize="@dimen/moreinfo_oneui5x_camera_capture_mode_text_size" android:textColor="@color/moreinfo_oneui5x_camera_capture_mode_text_color" android:id="@id/normal_value" android:background="@drawable/camera_capture_mode" android:layout_width="wrap_content" android:layout_height="@dimen/moreinfo_oneui5x_camera_capture_mode_height" android:layout_marginEnd="@dimen/moreinfo_oneui5x_camera_capture_mode_margin_start" android:paddingHorizontal="@dimen/moreinfo_oneui5x_camera_capture_mode_padding_horizontal" style="@style/OneUiRobotoSemiBold"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

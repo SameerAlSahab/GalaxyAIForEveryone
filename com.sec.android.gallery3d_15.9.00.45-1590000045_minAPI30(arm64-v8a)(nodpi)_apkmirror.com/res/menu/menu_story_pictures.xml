@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/normal_mode">
+        <item android:id="@id/action_create_highlight_reel_story" android:title="@string/create_highlight_reel" android:showAsAction="never" />
+        <item android:id="@id/action_add_content_to_story" android:title="@string/add" android:showAsAction="never" />
+        <item android:id="@id/action_select" android:title="@string/select" android:showAsAction="never" />
+        <item android:id="@id/action_change_cover" android:title="@string/change_cover" android:showAsAction="never" />
+        <item android:id="@id/action_rename" android:title="@string/opt_rename" android:showAsAction="never" />
+        <item android:id="@id/action_pintotop" android:visible="false" android:title="@string/pin_to_top" android:showAsAction="never" />
+        <item android:id="@id/action_unpin" android:visible="false" android:title="@string/unpin" android:showAsAction="never" />
+        <item android:id="@id/action_delete_story" android:title="@string/delete" android:showAsAction="never" />
+    </group>
+    <group android:id="@id/select_mode_bottom">
+        <item android:icon="@drawable/gallery_ic_share" android:id="@id/action_share" android:title="@string/share_short" app:showAsAction="ifRoom" />
+        <item android:icon="@drawable/gallery_ic_bottombar_remove" android:id="@id/action_remove_from_story" android:visible="false" android:title="@string/remove_from_event" app:showAsAction="ifRoom" />
+        <item android:id="@id/action_add_to_shared_album" android:title="@string/add_to_shared_album" android:showAsAction="never" />
+    </group>
+    <group android:id="@id/select_mode_with_done">
+        <item android:id="@id/action_done" android:title="@string/done" app:showAsAction="always" />
+    </group>
+</menu>

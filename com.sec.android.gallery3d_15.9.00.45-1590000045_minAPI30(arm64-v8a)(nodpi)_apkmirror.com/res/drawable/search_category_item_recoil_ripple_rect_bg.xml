@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/search_category_shot_mode_bg_61" />
+    <item android:drawable="@drawable/recoil_ripple_oval" />
+</layer-list>

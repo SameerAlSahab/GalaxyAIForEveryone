@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/help_image_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/help_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="@dimen/settings_simple_help_image_padding_vertical" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/gallery_status_bar_fw_background_color" android:paddingTop="@dimen/settings_description_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd">
+        <TextView android:textSize="@dimen/settings_description_text_size" android:textColor="@color/settings_description_text_color" android:id="@id/help_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/settings_description_text_size" android:textColor="@color/settings_description_text_color" android:id="@id/link_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_description_padding_top" />
+    </LinearLayout>
+</LinearLayout>

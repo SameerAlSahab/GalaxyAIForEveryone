@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="remaster_viewer_content_height_ratio">0.764</item>
+    <dimen name="remaster_viewer_min_bottom_margin">13.0dip</dimen>
+    <dimen name="remaster_viewer_table_mode_bg_bottom_margin">0.0dip</dimen>
+    <dimen name="remaster_viewer_table_mode_bg_height">156.0dip</dimen>
+    <dimen name="search_category_stories_item_height">182.0dip</dimen>
+    <dimen name="search_category_stories_item_width">159.0dip</dimen>
+    <dimen name="stories_bgm_sheet_horizontal_margin">56.0dip</dimen>
+    <dimen name="stories_pin_recycler_view_size_for_transitory">120.0dip</dimen>
+    <dimen name="stories_theme_title_horizontal_padding_land">83.0dip</dimen>
+    <dimen name="stories_theme_title_horizontal_padding_port">60.0dip</dimen>
+    <dimen name="stories_view_favorite_padding_1_depth">20.0dip</dimen>
+    <dimen name="stories_view_side_offset_1_depth">10.0dip</dimen>
+    <dimen name="story_highlight_deco_duration_min_height">37.0dip</dimen>
+</resources>

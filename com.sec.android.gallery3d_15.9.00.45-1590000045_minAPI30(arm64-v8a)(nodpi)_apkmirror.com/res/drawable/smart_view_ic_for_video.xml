@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:height="90.0dip" android:width="90.0dip" android:drawable="@drawable/gallery_ic_detail_smart_view" />
+</layer-list>

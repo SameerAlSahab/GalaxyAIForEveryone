@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1350" android:valueFrom="0.37" android:valueTo="0.37" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$avd_gallery_remaster_loader__78" android:duration="149" android:valueFrom="0.37" android:valueTo="0.54" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1350" android:valueFrom="0.37" android:valueTo="0.37" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$avd_gallery_remaster_loader__79" android:duration="149" android:valueFrom="0.37" android:valueTo="0.54" android:propertyName="scaleY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1350" android:valueFrom="88.192" android:valueTo="88.192" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$avd_gallery_remaster_loader__80" android:duration="149" android:valueFrom="88.192" android:valueTo="90.35" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1350" android:valueFrom="53.631" android:valueTo="53.631" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$avd_gallery_remaster_loader__81" android:duration="149" android:valueFrom="53.631" android:valueTo="56.137" android:propertyName="translateY" />
+    </set>
+</set>

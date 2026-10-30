@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:id="@id/edit_collection_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:minWidth="@dimen/search_category_footer_button_min_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dip" android:textColor="@color/collection_footer_button_text_color" android:id="@id/edit_collection_button" android:background="@drawable/collections_footer_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_collections" android:includeFontPadding="false" android:textAlignment="center" android:paddingHorizontal="49.0dip" android:paddingVertical="14.5dip" style="@style/OneUiRobotoSemiBold" />
+</LinearLayout>

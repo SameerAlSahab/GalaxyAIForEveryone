@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/deco_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/checkboxViewStub" android:layout="@layout/thumbnail_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_alignParentTop="true" android:layout_marginStart="8.0dip" android:layout_alignParentStart="true" />
+    <LinearLayout android:id="@id/top_right_deco_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="end|top" android:id="@id/top_right_deco" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="8.0dip" android:id="@id/newLabel" android:text="@string/new_label" android:textAllCaps="true" style="@style/StoryNewBadgeStyle" />
+            <ImageView android:id="@id/icon_favorite" android:layout_marginStart="@dimen/stories_view_favorite_start_margin_1_depth" style="@style/StoriesFavoriteViewStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_right_deco_anchor">
+        <include android:id="@id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="5.0dip" layout="@layout/stories_category_title_layout" />
+    </RelativeLayout>
+</RelativeLayout>

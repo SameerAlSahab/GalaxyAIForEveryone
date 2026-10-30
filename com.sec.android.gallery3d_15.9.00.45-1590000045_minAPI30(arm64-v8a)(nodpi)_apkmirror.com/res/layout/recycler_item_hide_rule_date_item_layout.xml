@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/story_hide_rule_date_item_layout_margin_vertical" android:layout_marginBottom="@dimen/story_hide_rule_date_item_layout_margin_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/story_hide_rule_date_item_text_size" android:textColor="@color/story_hide_rule_date_item_text_color" android:layout_gravity="center_vertical" android:id="@id/date_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textDirection="locale" style="@style/OneUiRobotoRegular" />
+    <LinearLayout android:gravity="center" android:id="@id/remove" android:background="@drawable/recoil_ripple_oval" android:layout_width="35.0dip" android:layout_height="35.0dip" android:contentDescription="@string/remove" android:layout_marginStart="@dimen/story_hide_rule_date_item_remove_btn_margin_start" android:stateListAnimator="?seslSmallTouchAnimator">
+        <ImageView android:layout_width="@dimen/story_hide_rule_date_item_remove_btn_size" android:layout_height="@dimen/story_hide_rule_date_item_remove_btn_size" android:src="@drawable/gallery_ic_search_edit_no" android:tint="@color/story_hide_rule_date_item_clear_btn_color" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/group_item_panel" android:layoutAnimation="@anim/layout_anim_group_panel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/group_panel_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/group_item_panel_header_layout" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/list_container" android:background="@color/single_taken_list_bg_color" android:paddingLeft="@dimen/group_panel_list_horizontal_padding" android:paddingRight="@dimen/group_panel_list_horizontal_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.samsung.android.gallery.widget.listview.SingleTakenListView android:id="@id/single_taken_list_view" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:enableGoToTop="false" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/fast_option_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.samsung.android.gallery.widget.fastoption2.FastOptionView android:id="@id/fast_option_view" android:background="@drawable/fast_option_background_single_take" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/fast_menu_imageview_height" />
+    </RelativeLayout>
+</RelativeLayout>

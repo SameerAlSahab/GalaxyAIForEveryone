@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_category_shot_mode_divider_gap">18.0dip</dimen>
+    <dimen name="search_category_shot_mode_text_size">14.0sp</dimen>
+    <item type="dimen" name="search_result_width_ratio">0.86</item>
+</resources>

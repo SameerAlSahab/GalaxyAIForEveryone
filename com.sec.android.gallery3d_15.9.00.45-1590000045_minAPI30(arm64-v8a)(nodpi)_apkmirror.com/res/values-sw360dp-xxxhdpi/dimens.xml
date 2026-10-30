@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionbar_bottom_line_width">4.0px</dimen>
+    <dimen name="merge_people_dialog_linespace">4.0dip</dimen>
+</resources>

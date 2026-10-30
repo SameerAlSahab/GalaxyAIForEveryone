@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/search_pictures_no_item_suggestion_button_bg" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:minHeight="32.0dip" android:layout_marginHorizontal="5.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/search_pictures_hierarchical_keyword_button_text_size" android:textColor="@color/search_pictures_no_item_suggestion_button_text" android:ellipsize="end" android:id="@id/hierarchical_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingHorizontal="@dimen/search_suggest_item_text_padding_horizontal" android:paddingVertical="7.5dip" />
+    </LinearLayout>
+</LinearLayout>

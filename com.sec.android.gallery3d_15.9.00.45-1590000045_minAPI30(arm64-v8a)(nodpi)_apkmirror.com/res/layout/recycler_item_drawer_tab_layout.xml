@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/drawer_tab_item_container" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/drawer_tab_item_height" android:importantForAccessibility="no" android:paddingHorizontal="@dimen/drawer_tab_item_container_padding_horizontal" android:paddingVertical="@dimen/drawer_tab_item_container_padding_vertical">
+        <com.samsung.android.gallery.widget.RoundedFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:radius="@dimen/drawer_tab_focused_item_foreground_radius">
+            <View android:id="@id/dynamic_focus_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.samsung.android.gallery.widget.RoundedFrameLayout>
+        <FrameLayout android:id="@id/drawer_tab_item" android:tag="drawer_tab_item" android:background="@drawable/recoil_ripple_rect" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/drawer_tab_icon" android:layout_width="@dimen/drawer_icon_size" android:layout_height="@dimen/drawer_icon_size" android:tint="@color/drawer_tab_icon_color" android:layout_marginEnd="@dimen/drawer_tab_icon_margin_end" />
+                    <ImageView android:layout_gravity="end|top" android:id="@id/collapsed_drawer_tab_new_badge" android:visibility="gone" android:layout_marginTop="@dimen/drawer_collapsed_tab_new_badge_margin_top" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/drawer_collapsed_tab_new_badge_margin_end" style="@style/NewDotStyle" />
+                </FrameLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/drawer_tab_title_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/drawer_tab_item_title_margin_start">
+                    <TextView android:textSize="@dimen/drawer_tab_title_text_size" android:textColor="@color/drawer_tab_title_text_color" android:ellipsize="end" android:id="@id/drawer_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textIsSelectable="false" style="@style/OneUiRobotoRegular" />
+                    <ViewStub android:id="@id/drawer_tab_new_badge" android:layout="@layout/stub_new_label" android:inflatedId="@id/drawer_tab_new_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/drawer_tab_end_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layoutDirection="locale" android:paddingStart="@dimen/drawer_tab_end_layout_padding_start">
+                    <ImageView android:id="@id/drawer_tab_expand_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_expander_open_chevron_down" android:scaleType="center" android:tint="@color/drawer_tab_expand_button_color" android:layout_marginEnd="@dimen/drawer_tab_end_layout_padding_end" />
+                    <ImageView android:id="@id/drawer_tab_arrow_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_ic_change_cover_next_arrow" android:tint="@color/drawer_tab_expand_button_color" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/drawer_tab_video_studio_end_layout_padding_end" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:id="@id/drawer_tab_divider" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/drawer_tab_item_divider_collapsed_padding_horizontal">
+        <ImageView android:layout_gravity="center" android:background="@drawable/drawer_tab_divider_dot_shape" android:layout_width="0.0dip" android:layout_height="@dimen/drawer_tab_divider_view_height" android:layout_weight="1.0" android:layerType="software" />
+    </LinearLayout>
+</LinearLayout>

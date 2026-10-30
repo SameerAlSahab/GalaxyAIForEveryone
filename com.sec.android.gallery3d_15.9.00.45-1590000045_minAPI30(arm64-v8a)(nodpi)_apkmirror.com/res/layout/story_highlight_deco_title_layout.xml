@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/stories_view_staggered_title_area_minHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/story_highlight_guide_deco_title_size" android:textStyle="bold" android:textColor="@color/stories_pinch_item_title_color" android:id="@id/title" android:layout_marginBottom="@dimen/stories_view_title_bottom_margin_2_depth" android:maxLines="3" android:fontFamily="roboto" android:textFontWeight="600" style="@style/StoriesItemTitleStyle" />
+    <TextView android:textSize="@dimen/story_highlight_guide_deco_sub_title_size" android:textColor="@color/stories_pinch_item_sub_title_color" android:id="@id/duration" android:textFontWeight="600" style="@style/StoriesItemSubTitleStyle" />
+</LinearLayout>

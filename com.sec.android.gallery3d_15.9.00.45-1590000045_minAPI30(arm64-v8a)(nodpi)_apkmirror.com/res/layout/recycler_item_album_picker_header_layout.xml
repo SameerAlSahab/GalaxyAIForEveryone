@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/album_folder_picker_select_limitation_view_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/album_folder_picker_select_limitation_view_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/album_folder_picker_select_limitation_view_text_size" android:textColor="@color/album_folder_picker_header_text_color_for_widget" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/album_folder_picker_select_limitation_description" android:textFontWeight="@integer/font_weight_400" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

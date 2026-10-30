@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/header_layout" android:paddingBottom="@dimen/search_analysis_header_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="?seslLargeTouchAnimator" android:paddingHorizontal="@dimen/search_analysis_header_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.widget.RoundedRelativeLayout android:id="@id/tip_card_layout" android:background="@color/update_app_card_view_bg_color" android:paddingTop="@dimen/tip_card_layout_padding_top" android:paddingBottom="@dimen/tip_card_layout_padding_bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/tip_card_text_layout_padding_start" android:paddingEnd="@dimen/tip_card_text_layout_padding_end">
+                <TextView android:textSize="15.0dip" android:id="@id/headerContent" style="@style/TipCardSummaryStyle" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/tip_card_text_layout_padding_end">
+                <com.samsung.android.gallery.widget.TightTextView android:id="@id/ok_button" android:text="@string/ok" style="@style/TipCardButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.samsung.android.gallery.widget.RoundedRelativeLayout>
+</LinearLayout>

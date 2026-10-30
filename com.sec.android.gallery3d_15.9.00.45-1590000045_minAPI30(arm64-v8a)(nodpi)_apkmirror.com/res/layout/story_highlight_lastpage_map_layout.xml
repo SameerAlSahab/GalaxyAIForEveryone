@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/last_page_map_layout" android:background="@color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/content_parent" android:background="@color/story_highlight_collage_content_bg_color" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/story_highlight_lastpage_summery_title_layout" />
+            <com.samsung.android.gallery.widget.RoundedFrameLayout android:layout_gravity="center|bottom" android:id="@id/map_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title_area" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

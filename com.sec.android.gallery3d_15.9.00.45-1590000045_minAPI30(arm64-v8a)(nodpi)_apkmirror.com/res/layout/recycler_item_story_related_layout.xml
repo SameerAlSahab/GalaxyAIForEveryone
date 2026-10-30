@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/recycler_view_item" android:background="@color/memory_pictures_related_view_background_color" android:focusable="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/story_pictures_related_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:clipToPadding="false" android:layout_width="@dimen/story_pictures_related_item_thumbnail_size" android:layout_height="@dimen/story_pictures_related_item_thumbnail_size">
+        <com.samsung.android.gallery.widget.SquareImageView android:id="@id/thumbnail" android:background="@color/thumbnail_icon_background" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/story_pictures_related_item_title_margin_start">
+        <TextView android:textSize="@dimen/story_pictures_related_item_title_text_size" android:textColor="@color/memory_pictures_related_title_color" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textIsSelectable="false" style="@style/OneUiRobotoRegular" />
+        <TextView android:textSize="@dimen/story_pictures_related_item_duration_text_size" android:textColor="@color/story_pictures_related_item_description_color" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textIsSelectable="false" style="@style/OneUiRobotoRegular" />
+    </LinearLayout>
+</LinearLayout>

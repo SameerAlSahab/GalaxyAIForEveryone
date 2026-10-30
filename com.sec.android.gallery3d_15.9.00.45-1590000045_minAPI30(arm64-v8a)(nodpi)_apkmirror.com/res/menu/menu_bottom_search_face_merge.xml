@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/search_people_header_bottom">
+        <item android:icon="@drawable/gallery_ic_search_edit_no" android:id="@id/menu_search_creature_different" android:title="@string/face_cluster_merge_button_different" android:contentDescription="@string/face_cluster_merge_button_different" android:showAsAction="always" app:showAsAction="always" />
+        <item android:icon="@drawable/gallery_ic_search_edit_yes" android:id="@id/menu_search_creature_same" android:title="@string/face_cluster_merge_button_same" android:contentDescription="@string/face_cluster_merge_button_same" android:showAsAction="always" app:showAsAction="always" />
+        <item android:id="@id/menu_search_creature_not_sure" android:title="@string/face_cluster_merge_button_not_sure" android:contentDescription="@string/face_cluster_merge_button_not_sure" android:showAsAction="always" app:showAsAction="always" />
+    </group>
+</menu>

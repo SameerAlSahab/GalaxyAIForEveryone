@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="group_panel_item_height_for_fold">133.0dip</dimen>
+    <dimen name="group_panel_item_width_for_fold">100.0dip</dimen>
+    <dimen name="large_grid_revitalized_card_button_layout_height">43.0dip</dimen>
+    <dimen name="large_grid_revitalized_card_button_layout_margin_top">12.0dip</dimen>
+    <dimen name="large_grid_revitalized_card_side_gap">85.0dip</dimen>
+    <item type="dimen" name="remaster_list_item_width_ratio_nby">0.175</item>
+    <item type="dimen" name="remaster_viewer_content_height_ratio">0.55</item>
+    <dimen name="search_card_padding_horizontal_for_people">15.0dip</dimen>
+    <dimen name="search_item_card_people_thumbnail_spacing">9.0dip</dimen>
+    <dimen name="search_item_card_people_thumbnail_spacing_expansion">9.0dip</dimen>
+    <dimen name="small_grid_revitalized_card_side_gap">60.0dip</dimen>
+    <dimen name="smart_album_layout_start_end_margin">215.0dip</dimen>
+    <dimen name="stories_bgm_sheet_horizontal_margin">83.0dip</dimen>
+    <dimen name="stories_category_creation_item_round_radius">16.0dip</dimen>
+    <dimen name="stories_category_creation_item_width">164.0dip</dimen>
+    <dimen name="stories_category_transitory_content_width">293.0dip</dimen>
+    <dimen name="stories_category_transitory_item_subtitle_size">13.0dip</dimen>
+    <dimen name="stories_category_transitory_item_title_size">18.0dip</dimen>
+    <item type="dimen" name="stories_item_width_ratio">0.39</item>
+    <item type="dimen" name="stories_item_width_ratio_drawer">0.33</item>
+    <dimen name="stories_pin_recycler_view_size_for_transitory">100.0dip</dimen>
+    <dimen name="stories_top_color_effect_view_height">430.0dip</dimen>
+    <dimen name="stories_view_favorite_padding_1_depth">20.0dip</dimen>
+    <dimen name="stories_view_recycler_item_bottom_padding">58.0dip</dimen>
+    <dimen name="stories_view_recycler_item_bottom_padding_drawer">34.0dip</dimen>
+    <dimen name="stories_view_recycler_item_side_padding">14.0dip</dimen>
+    <dimen name="stories_view_side_offset_1_depth">11.0dip</dimen>
+    <dimen name="story_collage_page_bottom_space">0.0dip</dimen>
+    <dimen name="story_highlight_toolbar_height">90.0dip</dimen>
+    <dimen name="story_last_page_bottom_space">44.0dip</dimen>
+    <dimen name="story_last_page_top_space">28.0dip</dimen>
+    <dimen name="story_ondemand_page_bottom_space">63.0dip</dimen>
+    <item type="dimen" name="suggestion_clean_out_pictures_item_width_large_rate">0.208</item>
+    <item type="dimen" name="suggestion_clean_out_pictures_item_width_small_rate">0.1505</item>
+</resources>

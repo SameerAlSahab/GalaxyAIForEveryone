@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/story_hide_rule_contents_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="@android:color/transparent" card_view:cardElevation="0.0dip" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/story_hide_rule_contents_padding_horizontal" android:paddingEnd="@dimen/story_hide_rule_contents_padding_horizontal">
+            <include layout="@layout/hide_rule_card_header" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/add_button_layout" android:background="@drawable/hide_rule_add_button_bg" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/story_hide_rule_add_button_margin_vertical" android:layout_marginBottom="@dimen/story_hide_rule_add_button_margin_vertical" android:foreground="@drawable/hide_rule_add_button_recoil_ripple" android:minHeight="@dimen/story_hide_rule_add_button_min_height" android:stateListAnimator="?seslSmallTouchAnimator" android:paddingHorizontal="@dimen/story_hide_rule_add_button_padding_horizontal" android:paddingVertical="@dimen/story_hide_rule_add_button_padding_vertical">
+                <ImageView android:background="@drawable/gallery_ic_add_create_new_plus" android:layout_width="@dimen/story_hide_rule_add_button_icon_size" android:layout_height="@dimen/story_hide_rule_add_button_icon_size" android:scaleType="center" android:layout_marginEnd="@dimen/story_hide_rule_add_button_icon_side_gap" />
+                <TextView android:textSize="@dimen/story_hide_rule_add_button_text_size" android:textColor="@color/story_hide_rule_add_button_text_color" android:id="@id/hide_rule_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/OneUiRobotoSemiBold" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/my_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/story_hide_rule_item_list_margin_vertical" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+            <include android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/story_hide_rule_divider_margin_top" layout="@layout/hide_rule_card_divider" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

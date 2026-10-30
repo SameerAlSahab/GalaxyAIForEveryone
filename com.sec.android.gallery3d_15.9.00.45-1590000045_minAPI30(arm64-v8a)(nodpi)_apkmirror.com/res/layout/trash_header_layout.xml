@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/trash_description_text_size" android:textColor="@color/trash_description_color" android:id="@id/trash_description" android:background="@color/default_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/trash_description_margin_top" android:layout_marginBottom="@dimen/trash_description_margin_bottom" android:textAlignment="viewStart" android:layout_marginStart="@dimen/trash_description_margin_start" android:layout_marginEnd="@dimen/trash_description_margin_end" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <padding android:left="0.0dip" android:top="@dimen/single_taken_bottom_sheet_layout_bg_padding_top" android:right="0.0dip" android:bottom="0.0dip" />
+            <gradient android:startColor="@color/single_taken_bottom_sheet_handle_shadow_color" android:endColor="@android:color/transparent" android:angle="90.0" />
+            <corners android:topLeftRadius="@dimen/single_taken_bottom_sheet_layout_bg_radius" android:topRightRadius="@dimen/single_taken_bottom_sheet_layout_bg_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="0.0dip" android:top="@dimen/single_taken_bottom_sheet_layout_bg_padding_top" android:right="0.0dip" android:bottom="0.0dip" />
+            <solid android:color="@color/single_taken_bottom_sheet_handle_bg_color" />
+            <corners android:topLeftRadius="@dimen/single_taken_bottom_sheet_layout_bg_radius" android:topRightRadius="@dimen/single_taken_bottom_sheet_layout_bg_radius" />
+        </shape>
+    </item>
+</layer-list>

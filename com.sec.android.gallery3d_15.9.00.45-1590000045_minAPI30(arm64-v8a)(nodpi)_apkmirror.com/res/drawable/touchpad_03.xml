@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="17.0dip" android:width="17.0dip" android:viewportWidth="17.0" android:viewportHeight="17.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/viewer_touch_pad_edge_color" android:pathData="M5.5,12.5L12.5,12.5L12.5,11.5L5.5,11.5L5.5,4.5L4.5,4.5L4.5,12.5L5.5,12.5Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

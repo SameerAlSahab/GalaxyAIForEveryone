@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/private_album_unlock_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:fillViewport="true" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/unlock_screen_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" apps:layout_constraintBottom_toBottomOf="parent" apps:layout_constraintStart_toStartOf="parent" apps:layout_constraintTop_toTopOf="parent" apps:layout_constraintWidth_percent="0.505">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/private_album_unlock_guide_image_size" android:layout_height="@dimen/private_album_unlock_guide_image_size" android:src="@drawable/ic_private_album_rectangle_lock" android:layout_marginStart="@dimen/private_album_unlock_guide_image_margin" android:layout_marginEnd="@dimen/private_album_unlock_guide_image_margin" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" apps:layout_constraintEnd_toEndOf="parent" apps:layout_constraintWidth_percent="0.495">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/unlock_screen_bottom_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/private_album_unlock_container_top_margin" android:layout_marginEnd="@dimen/unlock_text_horizontal_margin">
+                <TextView android:textSize="30.0sp" android:textColor="@color/private_album_unlock_title_text_color" android:layout_gravity="center_horizontal" android:id="@id/unlock_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/private_album_header" android:layout_marginStart="@dimen/unlock_text_horizontal_margin" android:layout_marginEnd="@dimen/unlock_text_horizontal_margin" style="@style/OneUiRobotoBold" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/private_album_unlock_title_text_color" android:gravity="center" android:id="@id/unlock_description_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:maxWidth="308.0dip" android:text="@string/private_album_empty_set_description_no_item" android:layout_below="@id/unlock_title_text_view" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/unlock_text_horizontal_margin" android:layout_marginEnd="@dimen/unlock_text_horizontal_margin" style="@style/OneUiRobotoRegular" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:id="@id/unlock_icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="64.0dip">
+                    <RelativeLayout android:layout_gravity="center" android:id="@id/lock_icon_layout" android:background="@drawable/unlock_icon_bg" android:clickable="true" android:layout_width="68.0dip" android:layout_height="68.0dip" android:contentDescription="@string/speak_lock_icon">
+                        <ImageView android:id="@id/lock_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/gallery_ic_detail_lock_touch" android:shadowColor="#33000000" android:shadowDx="0.0" android:shadowDy="0.5" android:shadowRadius="0.5" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/viewer_decor_button_icon_size" android:width="@dimen/viewer_decor_button_icon_size" android:viewportWidth="22.0" android:viewportHeight="22.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#fffcfcff" android:pathData="M16.385,2.865C16.385,2.485 16.078,2.177 15.698,2.177C15.318,2.177 15.01,2.485 15.01,2.865V5.615H8.135C6.743,5.615 5.615,6.743 5.615,8.136V15.011H2.865C2.485,15.011 2.177,15.318 2.177,15.698C2.177,16.078 2.485,16.386 2.865,16.386H5.615V19.136C5.615,19.515 5.922,19.823 6.302,19.823C6.682,19.823 6.99,19.515 6.99,19.136V16.386H13.865C15.257,16.386 16.385,15.257 16.385,13.865V6.99H19.135C19.515,6.99 19.823,6.682 19.823,6.302C19.823,5.923 19.515,5.615 19.135,5.615H16.385V2.865ZM15.01,6.99H8.135C7.503,6.99 6.99,7.503 6.99,8.136V15.011H13.865C14.498,15.011 15.01,14.498 15.01,13.865V6.99Z" android:fillType="evenOdd" />
+</vector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:paddingTop="22.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/stories_category_item_header_layout" />
+        <ViewStub android:id="@id/on_demand_view_stub" android:layout="@layout/recycler_item_stories_category_on_demand_image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/stories_category_on_demand_top_margin" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.samsung.android.gallery.widget.listview.GalleryListView android:layout_gravity="center" android:id="@id/my_recycler_view" android:paddingTop="10.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:importantForAccessibility="no" android:nestedScrollingEnabled="false" app:enableGoToTop="false" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

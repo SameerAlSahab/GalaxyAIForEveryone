@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.samsung.android.gallery.widget.toolbar.GalleryAppBarLayout android:id="@id/appbar" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="0.0dip" app:expanded="false" app:seslUseCustomPadding="true" style="@style/AppBarLayoutStyle">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/toolbar_layout" app:subtitle="@null" app:title="@string/search" style="@style/CollapsingToolBarStyle" />
+            <include layout="@layout/floating_toolbar_dummy_view" />
+        </com.samsung.android.gallery.widget.toolbar.GalleryAppBarLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <ViewStub android:id="@id/empty_view" android:layout="@layout/fragment_search_pictures_emptyview_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/search_pictures_layout_out_horizontal_margin" layout="@layout/gallery_list_view" />
+        </RelativeLayout>
+        <include layout="@layout/floating_toolbar_layout" />
+        <include layout="@layout/floating_divider_button_layout" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout android:id="@id/progress_parent" android:background="@color/default_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.samsung.android.gallery.widget.progressbar.SearchProgressCircle android:id="@id/progressCircle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/ProgressCircle" />
+    </RelativeLayout>
+</FrameLayout>

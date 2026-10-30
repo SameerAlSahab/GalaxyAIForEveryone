@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/guide_deco_gradient" android:background="@drawable/gallery_gradient_story_highlight" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <RelativeLayout android:id="@id/guide_deco_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_pictures_guide">
+            <include android:id="@id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/story_highlight_deco_guide_title_margin_bottom" layout="@layout/story_highlight_deco_title_layout" />
+        </RelativeLayout>
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/button_pictures_guide" android:background="@drawable/recoil_ripple_oval_story_highlight" android:visibility="invisible" android:layout_width="@dimen/story_highlight_deco_guide_pictures_button_size" android:layout_height="@dimen/story_highlight_deco_guide_pictures_button_size" android:layout_marginBottom="@dimen/story_highlight_deco_guide_pictures_button_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/show_all_content" android:stateListAnimator="?seslSmallTouchAnimator" app:lottie_autoPlay="false" app:lottie_fileName="lottie_gallery_story_swipe_up_arrow.json" app:lottie_loop="true" />
+    </RelativeLayout>
+</RelativeLayout>

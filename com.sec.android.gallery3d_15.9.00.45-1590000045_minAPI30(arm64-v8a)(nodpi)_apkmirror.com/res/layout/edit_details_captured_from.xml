@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/edit_details_captured_from" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:src="@drawable/gallery_ic_details_from" style="@style/EditDetailsIconStyle" />
+    <com.samsung.android.gallery.widget.UtlTextView android:ellipsize="end" android:text="@string/more_info_capture_from" android:maxLines="2" android:layout_marginStart="@dimen/moreinfo_text_icon_margin_end" android:layout_marginEnd="14.0dip" style="@style/DetailsTextViewBoldStyle" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.samsung.android.gallery.widget.UtlTextView android:ellipsize="end" android:id="@id/edit_details_captured_url_text" android:layout_width="0.0dip" android:maxLines="2" app:layout_constrainedWidth="true" app:layout_constraintEnd_toStartOf="@id/edit_details_captured_url_delete_button" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintWidth_default="wrap" style="@style/DetailsTextViewBoldStyle" />
+        <ImageButton android:id="@id/edit_details_captured_url_delete_button" android:background="@drawable/details_ripple_background_blur" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/details_edit_delete_icon" android:scaleType="center" android:contentDescription="@string/delete" android:layout_marginStart="@dimen/edit_details_add_button_margin_start" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@id/edit_details_captured_url_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

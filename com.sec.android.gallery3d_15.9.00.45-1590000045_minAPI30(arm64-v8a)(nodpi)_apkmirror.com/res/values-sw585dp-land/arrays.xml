@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="albums_column_count">
+        <item>1</item>
+        <item>6</item>
+        <item>5</item>
+    </integer-array>
+    <integer-array name="albums_column_count_split">
+        <item>1</item>
+        <item>6</item>
+        <item>5</item>
+    </integer-array>
+    <integer-array name="clean_duplicate_pictures_column_count">
+        <item>4</item>
+    </integer-array>
+    <integer-array name="clean_pictures_column_count">
+        <item>4</item>
+        <item>3</item>
+    </integer-array>
+    <integer-array name="clustered_category_item_column_count">
+        <item>6</item>
+    </integer-array>
+    <integer-array name="hide_rule_scene_column_count">
+        <item>8</item>
+    </integer-array>
+    <integer-array name="highlight_pictures_column_count">
+        <item>5</item>
+    </integer-array>
+    <integer-array name="n_album_pictures_column_count">
+        <item>1</item>
+        <item>7</item>
+        <item>8</item>
+        <item>11</item>
+        <item>16</item>
+    </integer-array>
+    <integer-array name="n_album_pictures_split_column_count">
+        <item>1</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>13</item>
+    </integer-array>
+    <integer-array name="n_pictures_column_count">
+        <item>1</item>
+        <item>7</item>
+        <item>8</item>
+        <item>11</item>
+    </integer-array>
+    <integer-array name="n_pictures_split_column_count">
+        <item>1</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </integer-array>
+    <integer-array name="n_timeline_column_count">
+        <item>1</item>
+        <item>7</item>
+        <item>8</item>
+        <item>11</item>
+        <item>16</item>
+        <item>72</item>
+    </integer-array>
+    <integer-array name="n_timeline_split_column_count">
+        <item>1</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>13</item>
+        <item>72</item>
+    </integer-array>
+    <integer-array name="oneui30_suggestion_column_count">
+        <item>6</item>
+    </integer-array>
+    <integer-array name="pictures_default_column_count">
+        <item>11</item>
+        <item>8</item>
+        <item>7</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="pinch_remaster_pictures_column_count">
+        <item>4</item>
+        <item>3</item>
+    </integer-array>
+    <integer-array name="portrait_pictures_column_count">
+        <item>5</item>
+    </integer-array>
+    <integer-array name="search_cluster_column_count">
+        <item>6</item>
+    </integer-array>
+    <integer-array name="search_column_count">
+        <item>7</item>
+    </integer-array>
+    <integer-array name="sharing_column_count_v31">
+        <item>1</item>
+        <item>6</item>
+        <item>5</item>
+    </integer-array>
+    <integer-array name="sharing_pictures_column_count">
+        <item>11</item>
+        <item>8</item>
+        <item>6</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="stories_hide_scene_selection_column_count_v2">
+        <item>7</item>
+    </integer-array>
+    <integer-array name="stories_legacy_column_count">
+        <item>2</item>
+    </integer-array>
+    <integer-array name="stories_pinch_column_count_oneui_60">
+        <item>3</item>
+    </integer-array>
+    <integer-array name="stories_split_column_count_oneui_60">
+        <item>2</item>
+    </integer-array>
+    <integer-array name="story_highlight_list_v2_column_count">
+        <item>8</item>
+        <item>7</item>
+    </integer-array>
+    <integer-array name="story_pictures_legacy_column_count">
+        <item>5</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="timeline_column_count">
+        <item>11</item>
+        <item>8</item>
+        <item>7</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="timeline_split_column_count">
+        <item>8</item>
+        <item>6</item>
+        <item>5</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="timeline_year_column_count">
+        <item>72</item>
+        <item>11</item>
+        <item>8</item>
+        <item>7</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="timeline_year_column_count_extended">
+        <item>72</item>
+        <item>16</item>
+        <item>11</item>
+        <item>8</item>
+        <item>7</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="timeline_year_column_count_split">
+        <item>72</item>
+        <item>8</item>
+        <item>6</item>
+        <item>5</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="timeline_year_column_count_split_extended">
+        <item>72</item>
+        <item>13</item>
+        <item>8</item>
+        <item>6</item>
+        <item>5</item>
+        <item>1</item>
+    </integer-array>
+    <integer-array name="trash_column_count">
+        <item>8</item>
+        <item>7</item>
+        <item>1</item>
+    </integer-array>
+</resources>

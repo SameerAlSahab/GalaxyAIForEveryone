@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/search_item_card_people_thumbnail_spacing" android:layout_marginVertical="@dimen/search_category_people_item_vertical_margin_v71"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/deco_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.samsung.android.gallery.widget.SquareImageView android:id="@id/thumbnail" android:background="@color/thumbnail_icon_background" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:aspect_ratio="1.245" />
+        <ViewStub android:layout_gravity="center_vertical" android:id="@id/visualCueViewStub" android:layout="@layout/search_visual_cue_85" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="center|bottom" android:id="@id/title_area" android:paddingTop="25.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="6.0dip">
+            <com.samsung.android.gallery.widget.UtlTextView android:layout_gravity="center|bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:resizableTextSize="@dimen/search_category_item_grid_title_text_size" style="@style/CreatureItemTitleStyle" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

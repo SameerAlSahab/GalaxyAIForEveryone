@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isDexDrawerSize">true</bool>
+    <bool name="isDrawerDefaultOpened">true</bool>
+    <bool name="sesl_responsive_pane_navigation_drawer_default_open">true</bool>
+    <bool name="supportModalDrawer">false</bool>
+</resources>

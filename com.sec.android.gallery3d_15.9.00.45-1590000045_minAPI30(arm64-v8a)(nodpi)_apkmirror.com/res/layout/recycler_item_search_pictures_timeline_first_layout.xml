@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" android:clickable="false" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/date_location_header_divider_height" android:importantForAccessibility="no" android:paddingHorizontal="@dimen/pictures_divider_side_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/divider_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/recycler_item_search_pictures_merge_layout" />
+    </RelativeLayout>
+</RelativeLayout>

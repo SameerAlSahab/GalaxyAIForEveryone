@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/select_mode">
+        <item android:id="@id/action_all_album" android:visible="false" android:title="@string/all_albums" app:showAsAction="always" />
+    </group>
+    <group android:id="@id/picker_mode">
+        <item android:id="@id/action_create" android:visible="false" android:title="@string/move_mode_create" app:showAsAction="always" />
+        <item android:id="@id/action_view_as" android:visible="false" android:title="@string/view_as" android:showAsAction="never" />
+    </group>
+</menu>

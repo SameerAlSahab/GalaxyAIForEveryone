@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/appbar_container" layout="@layout/toolbar_normal" />
+    <RelativeLayout android:id="@id/empty_view" style="@style/EmptyViewDefaultStyle">
+        <com.samsung.android.gallery.widget.NoItemView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:description="@string/empty_set_description_album_no_item_vi" app:label="@string/empty_set_description_no_albums" />
+    </RelativeLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/gallery_list_view" />
+</LinearLayout>

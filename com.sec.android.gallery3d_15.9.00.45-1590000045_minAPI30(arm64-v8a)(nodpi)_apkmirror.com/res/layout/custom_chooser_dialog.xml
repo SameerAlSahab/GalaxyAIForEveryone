@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/custom_chooser_dialog_container_margin_top" android:paddingBottom="@dimen/custom_chooser_dialog_container_margin_bottom" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/custom_chooser_list" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

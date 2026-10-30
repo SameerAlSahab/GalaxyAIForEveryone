@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?android:colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/hierarchical_suggestion_button_outline_stroke" android:color="@color/hierarchical_suggestion_button_stroke_color" />
+            <corners android:radius="@dimen/hierarchical_suggestion_button_radius" />
+            <solid android:color="@color/hierarchical_suggestion_button_bg" />
+        </shape>
+    </item>
+</ripple>

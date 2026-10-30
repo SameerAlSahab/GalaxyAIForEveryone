@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/shared_album_create_button_recoil_ripple" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/create_shared_album_button_layout_width" android:minHeight="@dimen/create_shared_album_button_layout_height" android:paddingStart="@dimen/create_shared_album_button_layout_padding_start_end" android:paddingEnd="@dimen/create_shared_album_button_layout_padding_start_end" android:stateListAnimator="?seslSmallTouchAnimator"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/button_icon" android:layout_width="@dimen/create_shared_album_button_icon_size" android:layout_height="@dimen/create_shared_album_button_icon_size" android:src="@drawable/ic_add_create_new_plus" android:tint="@color/shared_create_button_tint_color" android:layout_marginEnd="@dimen/create_shared_album_button_icon_end_margin" />
+        <TextView android:textSize="@dimen/create_shared_album_button_text_size" android:textColor="@color/shared_create_button_text_color" android:ellipsize="end" android:id="@id/button_text" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_items" android:maxLines="2" android:textIsSelectable="false" android:textAlignment="center" style="@style/OneUiRobotoSemiBold" />
+    </LinearLayout>
+</LinearLayout>

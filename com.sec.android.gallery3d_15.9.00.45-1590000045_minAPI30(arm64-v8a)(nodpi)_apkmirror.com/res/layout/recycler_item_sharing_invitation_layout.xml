@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/recycler_view_item" android:paddingBottom="@dimen/shared_view_item_vertical_bottom_space" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sharing_invitation_layout" />
+</LinearLayout>

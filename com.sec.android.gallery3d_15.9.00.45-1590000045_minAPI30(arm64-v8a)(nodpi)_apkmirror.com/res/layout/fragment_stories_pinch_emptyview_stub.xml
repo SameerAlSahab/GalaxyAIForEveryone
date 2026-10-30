@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/no_item_view_container" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/stories_noitem_header_side_padding">
+            <com.samsung.android.gallery.widget.NoItemView android:gravity="center" android:id="@id/no_item_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" android:paddingHorizontal="@dimen/stories_noitem_side_padding" app:description="@string/empty_set_description_memories_no_item" app:label="@string/empty_set_description_no_events" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/recycler_view_item" android:focusable="true" android:clickable="true" android:layout_width="@dimen/stories_pin_recycler_view_size" android:layout_height="@dimen/stories_pin_recycler_view_size" android:layout_marginEnd="@dimen/stories_pin_recycler_item_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/thumbnail_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/thumbnail" android:background="@color/thumbnail_icon_background" android:contentDescription="@null" style="@style/ThumbnailStyle" />
+        <View android:id="@id/gradient_view" android:background="@drawable/stories_pin_bottom_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="start|bottom" android:id="@id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+        <com.samsung.android.gallery.widget.GalleryTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textIsSelectable="false" style="@style/OneUiRobotoSemiBold" />
+    </LinearLayout>
+</FrameLayout>

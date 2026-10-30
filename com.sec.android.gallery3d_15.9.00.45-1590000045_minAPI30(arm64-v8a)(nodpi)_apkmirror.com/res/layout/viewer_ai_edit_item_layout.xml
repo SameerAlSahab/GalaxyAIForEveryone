@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ai_edit_item_layout" android:layout_width="wrap_content" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ai_edit_item_bg" android:background="@drawable/ai_edit_item_layout_bg" android:layout_width="@dimen/ai_edit_circle_size" android:layout_height="fill_parent" android:importantForAccessibility="no" android:paddingStart="8.0dip">
+        <ImageView android:id="@id/ai_edit_item_image" android:layout_width="@dimen/ai_edit_icon_size" android:layout_height="@dimen/ai_edit_icon_size" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ai_edit_text_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="29.0dip">
+        <TextView android:textSize="11.0dip" android:textColor="#fffafafa" android:ellipsize="none" android:id="@id/ai_edit_item_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="14.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:textIsSelectable="false" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip" style="@style/OneUiRobotoSemiBold" />
+    </LinearLayout>
+    <ViewStub android:id="@id/effect_view" android:visibility="gone" android:layout="@layout/viewer_ai_edit_item_effect_background_view" android:inflatedId="@id/effect_view" android:layout_width="@dimen/ai_edit_circle_size" android:layout_height="fill_parent" android:clipToOutline="true" />
+</RelativeLayout>

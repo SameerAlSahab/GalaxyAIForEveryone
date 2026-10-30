@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+        <com.samsung.android.gallery.settings.widget.HelpImagePreference android:key="edit_suggestions_help" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <Preference android:title="@string/more_intelligent_features" android:key="more_intelligent_features" />
+    </PreferenceCategory>
+    <PreferenceCategory />
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.SeslMenuDivider android:id="@id/fast_option_menu_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="16.0dip" android:scaleType="center" android:layout_marginStart="@dimen/fast_more_menu_horizontal_offset" android:layout_marginEnd="@dimen/fast_more_menu_horizontal_offset" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/fast_more_menu_padding_top_bottom" android:paddingBottom="@dimen/fast_more_menu_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/fast_more_menu_min_width" android:minHeight="@dimen/fast_more_menu_min_height" android:paddingStart="@dimen/fast_more_menu_padding_start_end" android:paddingEnd="@dimen/fast_more_menu_padding_start_end">
+        <TextView android:textAppearance="?textAppearanceLargePopupMenu" android:gravity="center_vertical" android:id="@id/fast_option_menu_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" />
+        <TextView android:layout_gravity="end|top" android:id="@id/fast_option_menu_new_badge" android:visibility="gone" android:text="@string/new_badge_text" android:importantForAccessibility="no" android:layout_marginStart="10.0dip" style="@style/NotificationNewBadgeStyle" />
+        <ImageView android:layout_gravity="top" android:id="@id/fast_option_menu_dot_badge" android:visibility="gone" android:importantForAccessibility="no" android:layout_marginStart="1.0dip" style="@style/NewDotStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_grid_revitalized_card_button_layout_height">48.0dip</dimen>
+    <dimen name="large_grid_revitalized_card_item_side_offset">10.0dip</dimen>
+    <dimen name="large_grid_revitalized_card_side_gap">30.0dip</dimen>
+    <item type="dimen" name="remaster_list_item_width_ratio_nby">0.203</item>
+    <item type="dimen" name="remaster_viewer_content_height_ratio">0.764</item>
+    <dimen name="search_card_padding_horizontal_for_people">17.5dip</dimen>
+    <dimen name="search_category_people_item_margin_bottom">-7.5dip</dimen>
+    <dimen name="search_category_people_item_margin_top">34.0dip</dimen>
+    <dimen name="search_item_card_people_thumbnail_spacing">6.5dip</dimen>
+    <dimen name="search_item_card_people_thumbnail_spacing_expansion">6.5dip</dimen>
+    <dimen name="search_pictures_layout_out_horizontal_margin">14.0dip</dimen>
+    <dimen name="small_grid_revitalized_card_button_layout_margin_top">12.0dip</dimen>
+    <dimen name="small_grid_revitalized_card_item_side_offset">10.0dip</dimen>
+    <dimen name="small_grid_revitalized_card_side_gap">30.0dip</dimen>
+    <dimen name="stories_bgm_sheet_horizontal_margin">32.0dip</dimen>
+    <dimen name="stories_category_transitory_content_width">265.0dip</dimen>
+    <dimen name="stories_category_transitory_side_margin">98.5dip</dimen>
+    <dimen name="stories_category_transitory_side_queue_margin">101.0dip</dimen>
+    <item type="dimen" name="stories_item_width_ratio">0.7</item>
+    <item type="dimen" name="stories_item_width_ratio_drawer">0.5</item>
+    <dimen name="stories_theme_title_horizontal_padding_land">58.0dip</dimen>
+    <dimen name="stories_theme_title_horizontal_padding_port">44.0dip</dimen>
+    <dimen name="stories_top_color_effect_view_height">460.0dip</dimen>
+    <dimen name="stories_view_favorite_padding_1_depth">19.0dip</dimen>
+    <dimen name="stories_view_recycler_item_bottom_padding">66.0dip</dimen>
+    <dimen name="stories_view_recycler_item_bottom_padding_drawer">54.0dip</dimen>
+    <dimen name="stories_view_side_offset_1_depth">7.0dip</dimen>
+    <item type="dimen" name="stories_width_ratio_port">0.75</item>
+    <item type="dimen" name="story_collage_item_gap_ratio">0.00296</item>
+    <dimen name="story_collage_page_bottom_space">30.0dip</dimen>
+    <dimen name="story_collage_page_tool_top_margin">17.0dip</dimen>
+    <dimen name="story_last_page_bottom_space">46.0dip</dimen>
+    <dimen name="story_last_page_top_space">35.0dip</dimen>
+    <dimen name="story_ondemand_page_top_space">35.0dip</dimen>
+    <dimen name="story_pictures_chapter_start_padding">0.0dip</dimen>
+    <item type="dimen" name="story_pictures_cover_height_ratio_land">0.45</item>
+    <item type="dimen" name="story_pictures_cover_height_ratio_port">0.45</item>
+    <dimen name="story_pictures_image_time_view_text_size">16.0dip</dimen>
+    <dimen name="suggestion_clean_out_pictures_grid_item_large_grid_side_offset">10.0dip</dimen>
+    <dimen name="suggestion_clean_out_pictures_grid_item_small_grid_side_offset">10.0dip</dimen>
+    <dimen name="suggestion_clean_out_pictures_item_bottom_gap">46.0dip</dimen>
+    <item type="dimen" name="suggestion_clean_out_pictures_item_width_large_rate">0.4171</item>
+    <item type="dimen" name="suggestion_clean_out_pictures_item_width_small_rate">0.27</item>
+    <dimen name="suggestion_duplicate_pictures_grid_item_large_grid_side_offset">5.0dip</dimen>
+    <dimen name="suggestion_duplicate_pictures_grid_item_small_grid_side_offset">5.0dip</dimen>
+    <item type="dimen" name="suggestion_duplicate_pictures_item_width_large_rate">0.27</item>
+    <item type="dimen" name="suggestion_duplicate_pictures_item_width_small_rate">0.1543</item>
+</resources>

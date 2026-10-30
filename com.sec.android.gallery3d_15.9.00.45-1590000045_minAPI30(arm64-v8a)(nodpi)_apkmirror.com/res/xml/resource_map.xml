@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resource-map
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <color>
+        <match overlay="filter_panel_keyword_text_unselected_color">
+            <original>suggestions_card_header_title_text_color</original>
+            <original>search_count_header_text_color</original>
+            <original>search_category_item_title_color</original>
+            <original>search_category_shot_mode_icon_color</original>
+            <original>search_card_divider_color</original>
+            <original>search_card_header_title</original>
+            <original>search_category_arrow_color</original>
+        </match>
+        <match overlay="sharing_invitation_requester_text_color">
+            <original>suggestions_card_header_description_text_color</original>
+        </match>
+        <match overlay="update_app_card_view_bg_color">
+            <original>search_tip_card_background_color</original>
+        </match>
+        <match overlay="default_background">
+            <original>default_fw_background</original>
+        </match>
+        <match overlay="gallery_status_bar_background_color">
+            <original>gallery_status_bar_fw_background_color</original>
+            <original>gallery_navigation_bar_fw_background_color</original>
+        </match>
+        <match overlay="card_view_folder_name_secondary_text_color">
+            <original>search_category_item_count_color</original>
+            <original>search_card_header_count</original>
+        </match>
+        <match overlay="search_all_filter_chip_bg_color">
+            <original>drawer_background_color</original>
+        </match>
+        <match overlay="photo_cover_checkbox_default_tint_color">
+            <original>drawer_navigation_button_color</original>
+        </match>
+        <match overlay="count_badge_text_color">
+            <original>drawer_tab_icon_color</original>
+        </match>
+        <match overlay="suggestion_group_text_color">
+            <original>drawer_tab_title_text_color</original>
+        </match>
+        <match overlay="create_new_dialog_video_studio_arrow_color">
+            <original>drawer_settings_button_color</original>
+        </match>
+        <match overlay="search_category_item_count_color">
+            <original>drawer_tab_count_text_color</original>
+        </match>
+        <match overlay="sharingv2_invitation_icon_bg_color">
+            <original>drawer_tab_divider_color</original>
+        </match>
+        <match overlay="suggestion_group_text_color">
+            <original>drawer_tab_focused_item_foreground_color</original>
+        </match>
+        <match overlay="count_badge_text_color">
+            <original>drawer_tab_expand_button_color</original>
+        </match>
+        <match overlay="suggestion_group_text_color">
+            <original>drawer_tab_drag_focused_item_foreground_color</original>
+        </match>
+        <match overlay="move_bar_button_text_color">
+            <original>floating_move_bar_button_text_color</original>
+        </match>
+    </color>
+</resource-map>

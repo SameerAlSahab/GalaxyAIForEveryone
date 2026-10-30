@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bottom_menu_list_item_recoil_ripple_bg" android:focusable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/item_bg" android:background="@drawable/bottom_menu_list_circle_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bottom_menu_list_circle_item_text_margin_top">
+        <ImageView android:layout_gravity="center" android:id="@id/bottom_menu_list_image_view" android:layout_width="@dimen/bottom_menu_list_circle_item_icon_size" android:layout_height="@dimen/bottom_menu_list_circle_item_icon_size" android:layout_margin="@dimen/bottom_menu_list_circle_item_margin" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/bottom_menu_list_new_badge" android:visibility="gone" android:layout_marginTop="@dimen/bottom_menu_list_circle_item_new_dot_margin" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/bottom_menu_list_circle_item_new_dot_margin" style="@style/NewDotStyle" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/bottom_menu_list_view_holder_text_size" android:textColor="@color/dialog_content_text_color" android:layout_gravity="center" android:id="@id/bottom_menu_list_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bottom_menu_list_circle_item_text_margin_top" android:textAlignment="center" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

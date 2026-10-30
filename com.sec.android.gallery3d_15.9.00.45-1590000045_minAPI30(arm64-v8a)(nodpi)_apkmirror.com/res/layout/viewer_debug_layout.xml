@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/viewer_debug" android:paddingTop="106.0dip" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="noHideDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:id="@id/viewer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/yellow" android:gravity="bottom" android:id="@id/debug" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:maxLines="25" />
+</RelativeLayout>

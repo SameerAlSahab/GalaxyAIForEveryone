@@ -1,0 +1,47 @@
+.class abstract Lcom/samsung/android/gallery/support/library/SeApiCompat$SefFileCompatHolder;
+.super Ljava/lang/Object;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/gallery/support/library/SeApiCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "SefFileCompatHolder"
+.end annotation
+
+
+# static fields
+.field static final sInstance:Lcom/samsung/android/gallery/support/library/sef/SefFileCompat;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/samsung/android/gallery/support/library/SeApiCompat;->a()Lcom/samsung/android/gallery/support/library/abstraction/SeApiCompatible;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-interface {v0}, Lcom/samsung/android/gallery/support/library/abstraction/SeApiCompatible;->getSefFileCompat()Lcom/samsung/android/gallery/support/library/sef/SefFileCompat;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    sput-object v0, Lcom/samsung/android/gallery/support/library/SeApiCompat$SefFileCompatHolder;->sInstance:Lcom/samsung/android/gallery/support/library/sef/SefFileCompat;
+
+    .line 10
+    .line 11
+    return-void
+.end method

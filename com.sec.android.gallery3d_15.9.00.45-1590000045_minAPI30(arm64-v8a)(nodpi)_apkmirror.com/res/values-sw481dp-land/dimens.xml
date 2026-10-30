@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="delete_duplicate_button_layout_margin_bottom">44.5dip</dimen>
+    <item type="dimen" name="remaster_viewer_content_height_ratio">0.52</item>
+    <dimen name="stories_bgm_sheet_horizontal_margin">220.0dip</dimen>
+    <item type="dimen" name="stories_item_width_ratio_drawer">0.25</item>
+    <dimen name="stories_view_favorite_padding_1_depth">20.0dip</dimen>
+    <dimen name="stories_view_recycler_item_side_padding_drawer">9.0dip</dimen>
+    <dimen name="stories_view_side_offset_1_depth">16.0dip</dimen>
+    <dimen name="stories_view_side_offset_drawer">15.0dip</dimen>
+    <dimen name="story_highlight_toolbar_height">128.0dip</dimen>
+</resources>

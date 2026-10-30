@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/dialog_title" android:layout="@layout/alert_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/edit_dialog_padding_top" android:paddingBottom="@dimen/edit_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.samsung.android.gallery.widget.TextInputLayoutCompat android:id="@id/text_input_compat" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/select_storage_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="18.0dip" android:paddingEnd="24.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                    <TextView android:textSize="@dimen/list_item_header_text_size" android:textColor="@color/dialog_content_sub_text_color" android:gravity="start|center" android:id="@id/save_location_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/save_location" android:paddingStart="6.0dip" android:paddingEnd="0.0dip" style="@style/OneUiRobotoSemiBold" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatSpinner android:id="@id/select_storage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

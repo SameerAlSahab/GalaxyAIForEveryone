@@ -1,0 +1,32 @@
+.class public Lcom/samsung/scsp/media/api/constant/MediaApiContract;
+.super Ljava/lang/Object;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/samsung/scsp/media/api/constant/MediaApiContract$Parameter;,
+        Lcom/samsung/scsp/media/api/constant/MediaApiContract$Rcode;
+    }
+.end annotation
+
+
+# static fields
+.field public static final DAY_IN_MILLI:J = 0x5265c00L
+
+.field public static final ONEDRIVE_UPLOAD_URL_EXPIRATION_DATE_PERIOD:J = 0x19bfcc00L
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

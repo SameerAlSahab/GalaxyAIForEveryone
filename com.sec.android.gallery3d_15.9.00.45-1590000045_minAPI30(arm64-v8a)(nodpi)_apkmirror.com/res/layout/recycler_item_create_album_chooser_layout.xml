@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/recoil_ripple_rect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="?seslLargeTouchAnimator" android:paddingHorizontal="@dimen/create_album_chooser_dialog_item_padding_horizontal" android:paddingVertical="@dimen/create_album_chooser_dialog_item_padding_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/create_album_chooser_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/create_new_dialog_content_icon_tint_color" android:layout_marginStart="@dimen/create_album_chooser_dialog_item_icon_margin_start" android:layout_marginEnd="@dimen/create_album_chooser_dialog_item_icon_margin_end" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/create_album_chooser_dialog_item_title_text_Size" android:textColor="@color/create_new_dialog_content_title_text_color" android:id="@id/create_album_chooser_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" style="@style/OneUiRobotoRegular" />
+        <TextView android:textSize="@dimen/create_album_chooser_dialog_item_description_text_size" android:textColor="@color/create_new_dialog_content_description_text_color" android:id="@id/create_album_chooser_item_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" style="@style/OneUiRobotoRegular" />
+    </LinearLayout>
+</LinearLayout>

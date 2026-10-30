@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/recycler_item_view" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/search_cluster_results_stories_item_padding_horizontal">
+        <FrameLayout android:id="@id/thumbnail_container" android:layout_width="@dimen/search_cluster_results_stories_item_width" android:layout_height="@dimen/search_cluster_results_stories_item_height">
+            <ImageView android:id="@id/thumbnail" android:contentDescription="@null" style="@style/ThumbnailStyle" />
+            <View android:id="@id/thumbnail_preview_background" android:background="@android:color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/thumbnail_preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/deco_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_cluster_results_stories_title_layout_margin_bottom" android:paddingStart="@dimen/search_cluster_results_stories_title_padding_start" android:paddingEnd="@dimen/search_cluster_results_stories_title_padding_start">
+                <TextView android:textSize="@dimen/search_filter_results_stories_title_text_size" android:textColor="@color/stories_title_color" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_cluster_results_stories_title_margin_bottom" android:maxLines="3" android:fontFamily="roboto" android:textAlignment="center" android:textFontWeight="@integer/font_weight_700" style="@style/OneUiRobotoSemiBold" />
+                <TextView android:textSize="@dimen/search_cluster_results_stories_duration_text_size" android:textColor="@color/stories_title_color" android:ellipsize="end" android:id="@id/duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/title" android:textAlignment="center" android:textFontWeight="@integer/font_weight_400" style="@style/OneUiRobotoRegular" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

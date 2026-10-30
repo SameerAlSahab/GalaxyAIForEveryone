@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_layout" android:tag="new_search_toolbar_containable" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/search_toolbar_area" android:tag="legacy_search_toolbar_containable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="2.0dip" style="@style/ToolbarStyle" />
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_toolbar_area">
+        <FrameLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/empty_view" android:layout="@layout/fragment_search_emptyview_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/empty_view_by_hidden" android:layout="@layout/fragment_search_people_emptyview_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.samsung.android.gallery.widget.listview.GalleryListView android:id="@id/my_recycler_view" android:focusable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/search_card_padding_horizontal" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/stories_category_floating_recommend_item_radius" />
+    <solid android:color="@color/stories_category_floating_recommendation_item_background_color" />
+</shape>

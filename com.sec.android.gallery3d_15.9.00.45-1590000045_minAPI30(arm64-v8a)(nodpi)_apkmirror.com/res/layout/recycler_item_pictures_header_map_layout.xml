@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.gallery.widget.RoundedFrameLayout android:id="@id/map_view" android:background="@color/map_ready_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/moreinfo_location_item_height" android:layout_marginTop="@dimen/moreinfo_location_item_margin_top" android:layout_marginBottom="1.0dip" android:contentDescription="@null" android:layout_marginHorizontal="@dimen/moreinfo_location_item_margin_top" app:radius="@dimen/moreinfo_location_item_radius">
+        <include android:layout_gravity="center" android:id="@id/map_view_marker_holder" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" layout="@layout/map_view_popup_layout" />
+    </com.samsung.android.gallery.widget.RoundedFrameLayout>
+    <include layout="@layout/search_count_header_text" />
+</LinearLayout>

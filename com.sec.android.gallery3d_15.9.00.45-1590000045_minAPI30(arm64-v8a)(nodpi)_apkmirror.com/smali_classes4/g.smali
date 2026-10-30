@@ -1,0 +1,50 @@
+.class public final Lg;
+.super Ljava/util/concurrent/CancellationException;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# instance fields
+.field public final transient f:Lsv0;
+
+
+# direct methods
+.method public constructor <init>(Lsv0;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "Flow was aborted, no more elements needed"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iput-object p1, p0, Lg;->f:Lsv0;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final fillInStackTrace()Ljava/lang/Throwable;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    new-array v0, v0, [Ljava/lang/StackTraceElement;
+
+    .line 3
+    .line 4
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-object p0
+.end method

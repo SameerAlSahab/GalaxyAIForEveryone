@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/search_analysis_tip_header_layout" android:visibility="gone" layout="@layout/search_analysis_tip_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/suggestion_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/relation_suggestion_layout" android:visibility="gone" layout="@layout/tip_card_layout_pictures" />
+            <include android:id="@id/face_merge_suggestion_layout" android:visibility="gone" layout="@layout/tip_card_layout_face_merge" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/top5_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_category_creature_top5_description_bottom_margin">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="@color/search_card_header_title" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/edit_top5_guide_text" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top5_description" android:textIsSelectable="false" android:textDirection="locale" android:textAlignment="center" android:layout_marginHorizontal="10.0dip" style="@style/OneUiRobotoRegular" />
+            <TextView android:textSize="@dimen/search_category_creature_top5_edit_button_text_size" android:textColor="@color/daynight_search_clear_history_button_text_color" android:gravity="center_horizontal" android:layout_gravity="end|top" android:id="@id/edit_top5_button" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit" android:paddingHorizontal="26.0dip" style="@style/OneUiRobotoRegular" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

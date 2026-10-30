@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:id="@id/video_speed_controller_root_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/video_speed_controller_main" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:importantForAccessibility="no">
+        <FrameLayout android:background="@drawable/video_speed_controller_bg" android:layout_width="@dimen/video_speed_control_layout_width" android:layout_height="@dimen/video_speed_control_layout_height" android:layout_margin="2.0dip" android:elevation="1.0dip">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:id="@id/slow_layout" android:background="@drawable/gallery_detail_video_speed_seek_bar_thumb_wide" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentStart="true">
+                    <TextView android:id="@id/slow" android:text="0.5x" android:layout_marginHorizontal="5.0dip" style="@style/VideoSpeedControllerLabelStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/normal_layout" android:background="@drawable/gallery_detail_video_speed_seek_bar_thumb" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" android:layout_marginHorizontal="5.0dip">
+                    <TextView android:id="@id/normal" android:layout_width="@dimen/video_speed_label_text_view_normal_width" android:text="1x" style="@style/VideoSpeedControllerLabelStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/fast_layout" android:background="@drawable/gallery_detail_video_speed_seek_bar_thumb_wide" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+                    <TextView android:id="@id/fast" android:text="2x" style="@style/VideoSpeedControllerLabelStyle" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

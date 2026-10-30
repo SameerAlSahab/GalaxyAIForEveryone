@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/recycler_item_view" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_filter_results_stories_item_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/thumbnail_container" android:layout_width="@dimen/search_filter_results_stories_item_size" android:layout_height="@dimen/search_filter_results_stories_item_size">
+            <ImageView android:id="@id/thumbnail" android:contentDescription="@null" style="@style/ThumbnailStyle" />
+            <View android:id="@id/thumbnail_preview_background" android:background="@android:color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/thumbnail_preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/deco_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/search_filter_results_stories_title_padding_start">
+            <TextView android:textSize="@dimen/search_filter_results_stories_title_text_size" android:textColor="@color/search_card_header_title" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="roboto" android:textAlignment="viewStart" android:textFontWeight="@integer/font_weight_500" style="@style/OneUiRobotoSemiBold" />
+            <TextView android:textSize="@dimen/search_filter_results_stories_duration_text_size" android:textColor="@color/search_card_header_title" android:ellipsize="end" android:id="@id/duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart" android:textFontWeight="@integer/font_weight_400" style="@style/OneUiRobotoRegular" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

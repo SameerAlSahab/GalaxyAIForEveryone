@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/moreinfo_basic_info_simple" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.gallery.widget.UtlTextView android:id="@id/moreinfo_date" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/DetailsTextViewBoldStyle" />
+    <com.samsung.android.gallery.widget.UtlTextView android:id="@id/moreinfo_title" android:paddingTop="@dimen/moreinfo_oneui5x_item_bold_vertical_margin" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/moreinfo_date" style="@style/DetailsTextViewNormalStyle" />
+    <com.samsung.android.gallery.widget.UtlTextView android:id="@id/moreinfo_path" android:paddingTop="@dimen/moreinfo_oneui5x_item_vertical_margin" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/moreinfo_title" style="@style/DetailsTextViewNormalStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

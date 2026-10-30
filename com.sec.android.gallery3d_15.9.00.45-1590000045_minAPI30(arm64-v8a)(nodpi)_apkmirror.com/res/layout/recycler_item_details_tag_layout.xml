@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingBottom="@dimen/moreInfo_item_tag_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/moreinfo_empty_add_icon" android:background="@drawable/details_item_oneui_60_people_tag_bg" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/moreinfo_item_tag_view_padding_start" android:paddingEnd="@dimen/moreinfo_item_tag_view_padding_end" android:paddingVertical="4.5dip">
+        <ImageView android:layout_width="@dimen/moreinfo_item_tag_view_image_size" android:layout_height="@dimen/moreinfo_item_tag_view_image_size" android:src="@drawable/tag_ic_details_editor_hash" />
+        <TextView android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_tag" style="@style/MyTagMoreInfoTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/moreinfo_item_linearlayout" android:background="@drawable/details_item_oneui_60_people_tag_bg" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/moreinfo_item_tag_view_height" android:paddingStart="@dimen/moreinfo_item_tag_view_padding_start" android:paddingEnd="@dimen/moreinfo_item_tag_view_padding_end" android:layout_marginEnd="@dimen/moreinfo_item_tag_view_padding_start">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tag_ic_details_editor_hash" />
+        <TextView android:ellipsize="end" android:id="@id/moreinfo_item_title" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyTagMoreInfoTextStyle" />
+        <ImageButton android:id="@id/moreinfo_delete_icon" android:background="@drawable/details_item_oneui_60_people_tag_bg" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/tag_ic_details_delete" android:scaleType="center" android:contentDescription="@string/delete" android:layout_marginStart="8.0dip" android:layout_marginEnd="6.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/moreinfo_add_icon" android:background="@drawable/details_item_oneui_60_people_tag_bg" android:visibility="gone" android:layout_width="@dimen/moreinfo_item_tag_view_height" android:layout_height="@dimen/moreinfo_item_tag_view_height" android:contentDescription="@string/add_tag">
+        <ImageView android:id="@id/moreinfo_add_icon_image_view" android:layout_width="@dimen/moreinfo_item_tag_view_image_size" android:layout_height="@dimen/moreinfo_item_tag_view_image_size" android:src="@drawable/tag_ic_details_editor_edit" />
+    </LinearLayout>
+</LinearLayout>

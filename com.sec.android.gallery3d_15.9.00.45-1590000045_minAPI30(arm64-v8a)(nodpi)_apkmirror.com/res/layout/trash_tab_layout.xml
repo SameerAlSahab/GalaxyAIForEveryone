@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:paddingStart="@dimen/trash_description_margin_start" android:paddingEnd="@dimen/trash_description_margin_end" android:paddingVertical="@dimen/trash_description_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.gallery.widget.UtlTextView android:id="@id/trash_for_local" android:text="@string/my_albums" android:layout_weight="1.0" app:resizableTextSize="15.0sp" style="@style/trash_round_button" />
+    <com.samsung.android.gallery.widget.UtlTextView android:id="@id/trash_for_family_shared" android:text="@string/shared_family_album" android:layout_weight="1.0" app:resizableTextSize="15.0sp" style="@style/trash_round_button" />
+</LinearLayout>

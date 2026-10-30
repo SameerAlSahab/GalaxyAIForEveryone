@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/SuperSlowPreviewBoxStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.widget.videoview.mediaplayer.MediaTextureViewCompat android:id="@id/video" style="@style/SuperSlowPreviewStyle" />
+    <ImageView android:id="@id/thumbnail" android:contentDescription="@null" style="@style/SuperSlowPreviewImageStyle" />
+</FrameLayout>

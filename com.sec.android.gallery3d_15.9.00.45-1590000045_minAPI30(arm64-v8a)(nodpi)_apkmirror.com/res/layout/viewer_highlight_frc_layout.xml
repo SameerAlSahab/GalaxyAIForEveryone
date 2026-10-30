@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/highlight_frc_button" android:background="@drawable/quick_crop_icon_background" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/play_button_view_height" android:layout_height="@dimen/play_button_view_height" android:foreground="@drawable/viewer_recoil_button_ripple" android:src="@drawable/gallery_ic_4x_frc_slow" android:scaleType="center" android:layout_alignParentBottom="true" android:contentDescription="@string/quick_crop" android:stateListAnimator="?seslSmallTouchAnimator" />
+</RelativeLayout>

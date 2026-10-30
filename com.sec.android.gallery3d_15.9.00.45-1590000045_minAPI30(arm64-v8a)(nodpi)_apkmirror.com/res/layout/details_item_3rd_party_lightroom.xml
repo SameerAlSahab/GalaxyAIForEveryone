@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/moreinfo_lightroom" android:background="@drawable/details_3rd_party_button_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dip" android:paddingHorizontal="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="24.0dip" android:layout_height="23.0dip" android:src="@drawable/ic_lightroom" android:scaleType="fitCenter" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/moreinfo_3rd_party_title_text_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_in_lightroom" android:maxLines="1" android:layout_marginStart="3.0dip" />
+</LinearLayout>

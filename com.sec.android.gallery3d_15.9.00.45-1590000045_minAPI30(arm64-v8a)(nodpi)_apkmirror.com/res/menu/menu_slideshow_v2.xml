@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/gallery_ic_story_highlight_share" android:id="@id/action_share" android:title="@string/share_short" app:showAsAction="always" />
+    <item android:id="@id/action_order_asc" android:visible="true" android:title="@string/sort_by_ascending" app:showAsAction="never" />
+    <item android:id="@id/action_order_desc" android:visible="true" android:title="@string/sort_by_descending" app:showAsAction="never" />
+    <item android:id="@id/action_save_as_video" android:visible="true" android:title="@string/save_story" app:showAsAction="never" />
+</menu>

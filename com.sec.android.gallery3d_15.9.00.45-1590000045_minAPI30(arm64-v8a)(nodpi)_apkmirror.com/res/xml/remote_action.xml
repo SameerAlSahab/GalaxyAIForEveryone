@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<remote-actions version="1.2">
+    <action id="next_item" label="@string/next_item" priority="1" repeatable="true" repeatable_interval="750" trigger_key="CTRL_LEFT+SHIFT_LEFT+N">
+        <preference name="gesture" value="click|swipe_left" />
+        <disable-condition feature="SEC_FLOATING_FEATURE_COMMON_SUPPORT_BLE_SPEN" value="false" />
+    </action>
+    <action id="prev_item" label="@string/prev_item" priority="2" repeatable="true" repeatable_interval="750" trigger_key="CTRL_LEFT+SHIFT_LEFT+P">
+        <preference name="gesture" value="double_click|swipe_right" />
+        <disable-condition feature="SEC_FLOATING_FEATURE_COMMON_SUPPORT_BLE_SPEN" value="false" />
+    </action>
+    <action id="show_hide_related_content" label="@string/show_hide_related_content" priority="3" trigger_key="CTRL_LEFT+SHIFT_LEFT+M">
+        <preference name="gesture" value="swipe_up|swipe_down" />
+        <disable-condition feature="SEC_FLOATING_FEATURE_COMMON_SUPPORT_BLE_SPEN" value="false" />
+    </action>
+</remote-actions>

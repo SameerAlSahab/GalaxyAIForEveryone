@@ -1,0 +1,112 @@
+.class public final synthetic Lkq;
+.super Ljava/lang/Object;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+# interfaces
+.implements Ljava/util/function/BiConsumer;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:I
+
+.field public final synthetic c:Ljava/lang/Object;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/Object;II)V
+    .locals 0
+
+    .line 1
+    iput p3, p0, Lkq;->a:I
+
+    .line 2
+    .line 3
+    iput-object p1, p0, Lkq;->c:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    iput p2, p0, Lkq;->b:I
+
+    .line 6
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lkq;->a:I
+
+    .line 2
+    .line 3
+    iget v1, p0, Lkq;->b:I
+
+    .line 4
+    .line 5
+    iget-object p0, p0, Lkq;->c:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    packed-switch v0, :pswitch_data_0
+
+    .line 8
+    .line 9
+    .line 10
+    check-cast p0, Lcom/samsung/android/gallery/app/ui/list/pictures/adapter/YearQueryCluster;
+
+    .line 11
+    .line 12
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 13
+    .line 14
+    check-cast p2, Ljava/util/ArrayList;
+
+    .line 15
+    .line 16
+    invoke-static {p0, v1, p1, p2}, Lcom/samsung/android/gallery/app/ui/list/pictures/adapter/YearQueryCluster;->b(Lcom/samsung/android/gallery/app/ui/list/pictures/adapter/YearQueryCluster;ILjava/lang/Integer;Ljava/util/ArrayList;)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+
+    .line 20
+    :pswitch_0
+    check-cast p0, Lcom/samsung/android/gallery/app/activity/external/launcher/CameraQuickViewLauncher;
+
+    .line 21
+    .line 22
+    check-cast p1, Lcom/samsung/android/gallery/module/data/MediaItem;
+
+    .line 23
+    .line 24
+    check-cast p2, Landroid/graphics/Bitmap;
+
+    .line 25
+    .line 26
+    invoke-static {p0, v1, p1, p2}, Lcom/samsung/android/gallery/app/activity/external/launcher/CameraQuickViewLauncher;->b(Lcom/samsung/android/gallery/app/activity/external/launcher/CameraQuickViewLauncher;ILcom/samsung/android/gallery/module/data/MediaItem;Landroid/graphics/Bitmap;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-void
+
+    .line 30
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

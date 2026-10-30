@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_select" android:title="@string/select" app:showAsAction="never" />
+    <item android:id="@id/action_create" android:title="@string/create" app:showAsAction="never" />
+    <item android:id="@id/action_slideshow" android:title="@string/slideshow" app:showAsAction="never" />
+    <item android:id="@id/action_view_selected" android:title="@string/show_only_selected_location" app:showAsAction="never" />
+    <item android:id="@id/action_view_all" android:title="@string/show_all_location" app:showAsAction="never" />
+</menu>

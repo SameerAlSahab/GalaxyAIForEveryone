@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatCheckBox android:theme="@style/AlbumCoverWidgetCheckBoxStyle" android:id="@id/checkbox" android:background="@drawable/checkbox_ripple_dark" style="@style/ListCheckBox"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

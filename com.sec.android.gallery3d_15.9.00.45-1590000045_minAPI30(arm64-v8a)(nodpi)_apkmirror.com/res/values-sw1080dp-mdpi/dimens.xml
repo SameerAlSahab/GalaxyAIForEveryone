@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="video_instant_slow_mo_circle_size">162.0dip</dimen>
+    <dimen name="video_instant_slow_mo_inner_circle_size">120.0dip</dimen>
+    <dimen name="video_instant_slow_mo_inner_circle_stroke">10.5dip</dimen>
+</resources>

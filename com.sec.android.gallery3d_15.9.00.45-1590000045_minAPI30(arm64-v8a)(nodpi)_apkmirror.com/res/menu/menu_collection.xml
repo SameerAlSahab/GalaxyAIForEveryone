@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/normal_mode">
+        <item android:icon="@drawable/tw_ic_ab_search_mtrl" android:id="@id/action_search" android:visible="false" android:title="@string/search" app:showAsAction="always" />
+        <item android:id="@id/action_search_setting" android:title="@string/search_settings_menu" android:showAsAction="never" />
+    </group>
+</menu>

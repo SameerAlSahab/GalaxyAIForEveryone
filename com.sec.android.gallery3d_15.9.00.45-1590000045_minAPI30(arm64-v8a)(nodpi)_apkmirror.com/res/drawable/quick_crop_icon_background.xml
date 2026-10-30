@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="@dimen/quick_crop_icon_container_radius" />
+            <solid android:color="@color/play_button_view_background_color" />
+            <stroke android:width="@dimen/quick_crop_icon_container_stroke" android:color="@color/viewer_play_btn_stroke_color" />
+            <size android:height="@dimen/quick_crop_icon_container_size" android:width="@dimen/quick_crop_icon_container_size" />
+        </shape>
+    </item>
+</layer-list>

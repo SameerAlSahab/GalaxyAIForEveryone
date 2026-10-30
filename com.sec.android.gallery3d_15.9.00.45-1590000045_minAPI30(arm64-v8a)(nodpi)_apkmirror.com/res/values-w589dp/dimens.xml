@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="list_view_width_ratio">0.86</item>
+    <dimen name="search_creature_slideshow_radius">26.0dip</dimen>
+    <item type="dimen" name="search_creature_slideshow_screen_ratio">0.64</item>
+    <dimen name="search_creature_slideshow_top_margin">35.0dip</dimen>
+</resources>

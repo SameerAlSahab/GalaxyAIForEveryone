@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBarSubTitleTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+    <style name="ActionBarTitleTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+    <style name="AppTheme.FragmentPreferenceThemeOverlay" parent="@style/PreferenceThemeOverlay">
+        <item name="android:layout">@layout/fragment_custom_preference_layout</item>
+        <item name="android:navigationBarColor">@color/light_black_color</item>
+    </style>
+    <style name="BottomNavigationViewStyle.Text" parent="@style/Widget.Design.BottomNavigationView.Text">
+        <item name="android:theme">@style/Theme.AppCompat</item>
+    </style>
+    <style name="BottomNavigationViewViewerStyle" parent="@style/Widget.Design.BottomNavigationView.Text">
+        <item name="android:background">@color/viewer_bottom_bar_background_color</item>
+        <item name="itemTextColor">@color/viewer_bottom_bar_menu_text_color</item>
+    </style>
+    <style name="BottomTabLayoutStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="CollapsingToolBarStyle" parent="@style/Widget.Design.CollapsingToolbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minHeight">?actionBarSize</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed</item>
+    </style>
+    <style name="CollapsingToolbarSubTitleTextAppearance" parent="@style/TextAppearance.Design.CollapsingToolbar.Expanded" />
+    <style name="CollapsingToolbarTitleTextAppearance" parent="@style/TextAppearance.Design.CollapsingToolbar.Expanded" />
+    <style name="CustomAlertDialogTheme" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="colorControlActivated">@color/dialog_primary_dark_color</item>
+        <item name="colorPrimaryDark">@color/dialog_primary_dark_color</item>
+    </style>
+    <style name="DialogTitleTextAppearance" parent="@style/Base.TextAppearance.AppCompat.DialogWindowTitle" />
+    <style name="EditTextSamsungStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/dialog_primary_dark_color</item>
+    </style>
+    <style name="FloatingBottomBarStyle" parent="@style/Widget.Design.BottomNavigationView.Floating.IconText" />
+    <style name="FloatingTabLayoutStyle" parent="@style/Widget.Design.TabLayout.Main.IconText" />
+    <style name="GallerySpinnerDropDownItemStyle" parent="@style/Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">@color/spinner_item_text_color_selector</item>
+        <item name="android:checkMarkTint">@color/gallery_color_control_activated</item>
+        <item name="spinnerDropDownItemStyle">?spinnerDropDownItemStyle</item>
+    </style>
+    <style name="PopupMenuDropItemStyle" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">6.0dip</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.AppCompat.DayNight.PickerDialog.DatePicker" parent="@style/Theme.AppCompat.PickerDialog.DatePicker" />
+    <style name="Theme.GalleryPhoneWithTitle" parent="@style/Theme.Gallery">
+        <item name="android:windowBackground">@color/default_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">@bool/is_light_status_bar</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="preferenceTheme">@style/AppTheme.FragmentPreferenceThemeOverlay</item>
+    </style>
+    <style name="Theme.GalleryPhoneWithTitle360" parent="@style/Theme.GalleryPhoneWithTitle" />
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog" />
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Alert.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="@style/Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge" />
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="ToolbarFixedActionMenuColor" parent="@style/Theme.AppCompat">
+        <item name="actionMenuTextColor">@color/white_color</item>
+    </style>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomAppBar" />
+</resources>

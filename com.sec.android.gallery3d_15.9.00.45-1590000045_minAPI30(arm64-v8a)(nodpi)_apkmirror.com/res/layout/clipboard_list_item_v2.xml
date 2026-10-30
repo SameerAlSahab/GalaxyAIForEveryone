@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/item_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.samsung.android.gallery.widget.RoundedFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/clipboard_list_item_delete_icon_outside_area_of_thumb" app:radius="@dimen/clipboard_list_item_radius">
+            <ImageView android:id="@id/clipboard_list_item_thumbnail" android:focusable="false" android:layout_width="@dimen/clipboard_list_item_thumb_width_sp" android:layout_height="@dimen/clipboard_list_item_thumb_height_sp" android:foreground="@drawable/clipboard_thumbnail_stroke" android:cropToPadding="true" android:contentDescription="@null" />
+        </com.samsung.android.gallery.widget.RoundedFrameLayout>
+        <ImageView android:layout_gravity="end|top" android:id="@id/clipboard_list_remove_icon" android:focusable="false" android:layout_width="@dimen/clipboard_list_item_delete_icon_width" android:layout_height="@dimen/clipboard_list_item_delete_icon_height" android:src="@drawable/gallery_picker_ic_delete_with_bg" android:contentDescription="@string/remove" />
+        <LinearLayout android:layout_gravity="start|bottom" android:id="@id/content_type_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/clipboard_list_item_delete_icon_outside_area_of_thumb" android:importantForAccessibility="noHideDescendants">
+            <LinearLayout android:gravity="center_vertical" android:background="@drawable/thumbnail_content_type_container" android:layout_width="wrap_content" android:layout_height="@dimen/content_type_container_height" android:layout_margin="@dimen/content_type_container_margin">
+                <ImageView android:id="@id/content_type_icon" android:background="@drawable/gallery_ic_thumbnail_video" android:focusable="false" android:layout_width="@dimen/content_type_icon_height" android:layout_height="@dimen/content_type_icon_height" android:tint="@color/white_color" android:contentDescription="@null" android:layout_marginHorizontal="@dimen/content_type_icon_side_margin" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

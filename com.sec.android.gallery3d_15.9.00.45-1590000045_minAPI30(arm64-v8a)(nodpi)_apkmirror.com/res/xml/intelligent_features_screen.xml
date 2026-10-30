@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/edit_suggestions" android:key="edit_suggestions" />
+    <Preference android:title="@string/object_eraser" android:key="object_eraser" />
+    <Preference android:title="@string/opt_best_face" android:key="best_face" />
+    <PreferenceCategory />
+</PreferenceScreen>

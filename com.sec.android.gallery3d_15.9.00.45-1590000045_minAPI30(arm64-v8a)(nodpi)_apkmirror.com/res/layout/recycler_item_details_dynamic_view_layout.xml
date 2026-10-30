@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/moreinfo_item_dynamic_view_end_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/details_dynamic_view_preview_layout" />
+    <TextView android:id="@id/title" style="@style/MoreInfoDetailsValueTextSmall" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="19.0dip" android:paddingEnd="19.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <androidx.appcompat.widget.AppCompatCheckBox android:textSize="16.0sp" android:textColor="@color/dialog_content_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/operation_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/apply_to_all_items" android:maxLines="1" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" style="@style/BaseDialogCheckBoxStyle" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

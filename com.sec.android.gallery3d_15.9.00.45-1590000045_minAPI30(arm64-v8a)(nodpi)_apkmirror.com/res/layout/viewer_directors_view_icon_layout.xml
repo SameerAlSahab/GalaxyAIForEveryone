@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/directors_view_icon_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/directors_view_icon_height" android:paddingStart="5.0dip" android:paddingEnd="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0dip" android:textColor="@color/play_button_view_text_color" android:layout_gravity="center_vertical" android:id="@id/directors_view_main_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/directors_view" style="@style/OneUiRobotoRegular" />
+    <View android:layout_gravity="center_vertical" android:id="@id/directors_view_text_divider" android:background="#80fafafa" android:layout_width="1.0dip" android:layout_height="9.0dip" android:layout_marginStart="3.5dip" android:layout_marginEnd="3.5dip" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/play_button_view_duration_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/directors_view_sub_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/front" android:fontFamily="sec-roboto-regular" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

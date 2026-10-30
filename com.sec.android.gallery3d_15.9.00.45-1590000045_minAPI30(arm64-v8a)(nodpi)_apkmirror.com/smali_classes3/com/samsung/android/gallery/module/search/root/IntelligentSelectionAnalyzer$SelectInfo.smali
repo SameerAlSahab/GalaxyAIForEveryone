@@ -1,0 +1,115 @@
+.class Lcom/samsung/android/gallery/module/search/root/IntelligentSelectionAnalyzer$SelectInfo;
+.super Ljava/lang/Object;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/gallery/module/search/root/IntelligentSelectionAnalyzer;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "SelectInfo"
+.end annotation
+
+
+# instance fields
+.field private final mSelection:Ljava/lang/String;
+
+.field private final mSelectionArgs:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p2
+
+    .line 7
+    invoke-direct {v0, p2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-direct {p0, p1, v0}, Lcom/samsung/android/gallery/module/search/root/IntelligentSelectionAnalyzer$SelectInfo;-><init>(Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/util/ArrayList;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 15
+    iput-object p1, p0, Lcom/samsung/android/gallery/module/search/root/IntelligentSelectionAnalyzer$SelectInfo;->mSelection:Ljava/lang/String;
+
+    .line 16
+    iput-object p2, p0, Lcom/samsung/android/gallery/module/search/root/IntelligentSelectionAnalyzer$SelectInfo;->mSelectionArgs:Ljava/util/ArrayList;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getSelection()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/samsung/android/gallery/module/search/root/IntelligentSelectionAnalyzer$SelectInfo;->mSelection:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public getSelectionArgs()Ljava/util/ArrayList;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/samsung/android/gallery/module/search/root/IntelligentSelectionAnalyzer$SelectInfo;->mSelectionArgs:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method

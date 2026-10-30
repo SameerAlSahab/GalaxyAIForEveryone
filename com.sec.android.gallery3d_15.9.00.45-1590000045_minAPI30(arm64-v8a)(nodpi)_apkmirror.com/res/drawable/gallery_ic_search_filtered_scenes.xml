@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="18.0dip" android:width="18.0dip" android:viewportWidth="18.0" android:viewportHeight="18.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/search_filter_result_icon_color" android:pathData="M4.531,6.7273C3.6419,6.7273 2.9174,6.0028 2.9174,5.1136C2.9174,4.2245 3.6419,3.5 4.531,3.5C5.4202,3.5 6.1447,4.2245 6.1447,5.1136C6.1447,6.0028 5.4202,6.7273 4.531,6.7273Z" android:strokeColor="@color/search_filter_result_icon_color" android:strokeWidth="1.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="evenOdd" />
+    <path android:fillColor="@color/search_filter_result_icon_color" android:pathData="M11.1174,6.4968C10.9198,6.1757 10.5987,6.1757 10.4011,6.4968L7.3632,11.4859C7.1656,11.807 6.8445,11.807 6.6469,11.4859L5.5602,9.6994C5.3626,9.3783 5.0415,9.3783 4.8439,9.6994L2.2999,13.8734C2.1023,14.2028 2.2505,14.4662 2.6292,14.4662L15.2832,14.4662C15.6619,14.4662 15.8101,14.2028 15.6125,13.8734L11.1174,6.4968Z" android:strokeColor="@color/search_filter_result_icon_color" android:strokeWidth="1.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="evenOdd" />
+</vector>

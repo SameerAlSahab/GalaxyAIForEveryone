@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bottom_menu_list_item_rounded_recoil_ripple_bg" android:focusable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/bottom_menu_list_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/dialog_content_text_color" android:contentDescription="@null" android:paddingVertical="@dimen/bottom_menu_list_rounded_item_padding_vertical" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bottom_menu_list_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.samsung.android.gallery.widget.TightTextView android:textSize="@dimen/bottom_menu_list_view_holder_text_size" android:textColor="@color/dialog_content_text_color" android:layout_gravity="center" android:id="@id/bottom_menu_list_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:textAlignment="center" android:layout_marginStart="@dimen/bottom_menu_list_rounded_item_margin_start" app:layout_constraintEnd_toStartOf="@id/bottom_menu_list_new_badge" app:layout_constraintStart_toStartOf="parent" style="@style/OneUiRobotoRegular" />
+        <ImageView android:layout_gravity="end|top" android:id="@id/bottom_menu_list_new_badge" android:visibility="gone" android:importantForAccessibility="no" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/bottom_menu_list_text_view" style="@style/NewDotStyle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/TextInputLayoutTheme" android:id="@id/text_input_layout" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="18.0dip" android:paddingEnd="24.0dip" android:labelFor="@id/name_edit" app:hintTextAppearance="@style/CustomHintTextAppearance">
+        <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/dialog_content_text_color" android:id="@id/name_edit" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:maxLength="80" android:inputType="textCapSentences" android:privateImeOptions="inputType=filename" android:imeOptions="flagNoExtractUi" android:textCursorDrawable="@drawable/edittext_cursor_light" android:backgroundTint="@color/dialog_primary_dark_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+</FrameLayout>

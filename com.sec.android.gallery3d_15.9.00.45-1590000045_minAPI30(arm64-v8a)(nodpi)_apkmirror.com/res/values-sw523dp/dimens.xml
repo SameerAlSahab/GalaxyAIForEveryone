@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="remaster_viewer_content_height_ratio">0.764</item>
+    <dimen name="stories_category_creation_item_round_radius">16.0dip</dimen>
+    <dimen name="stories_category_creation_item_width">120.0dip</dimen>
+    <dimen name="stories_category_creation_item_width_v85">160.0dip</dimen>
+    <dimen name="stories_category_transitory_content_height_v80">198.0dip</dimen>
+    <dimen name="stories_category_transitory_content_height_v85">250.0dip</dimen>
+    <dimen name="stories_category_transitory_content_width_v80">270.0dip</dimen>
+    <dimen name="stories_category_transitory_content_width_v85">370.0dip</dimen>
+    <dimen name="stories_category_transitory_side_margin_v80">36.0dip</dimen>
+    <dimen name="stories_category_transitory_side_queue_margin_v80">46.0dip</dimen>
+    <dimen name="stories_top_color_effect_view_height">315.0dip</dimen>
+</resources>

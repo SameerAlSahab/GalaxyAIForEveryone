@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/first" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/third" app:layout_constraintEnd_toStartOf="@id/second" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/dynamic_folder_image_view" />
+    <include android:id="@id/second" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/fourth" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/first" app:layout_constraintTop_toTopOf="parent" layout="@layout/dynamic_folder_image_view" />
+    <include android:id="@id/third" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/second" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/first" layout="@layout/dynamic_folder_image_view" />
+    <include android:id="@id/fourth" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/third" app:layout_constraintTop_toBottomOf="@id/second" layout="@layout/dynamic_folder_image_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

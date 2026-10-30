@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/transparent" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/search_category_card_header_61" />
+        <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/search_category_stories_transitory_layout" />
+            <com.samsung.android.gallery.widget.listview.GalleryListView android:layout_gravity="center" android:id="@id/my_recycler_view" android:paddingTop="@dimen/search_card_padding_85" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:contentStartPadding="@dimen/search_card_padding_horizontal_61" app:enableGoToTop="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/no_item_container" android:paddingTop="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="28.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="@color/stories_category_on_demand_not_support_text_color" android:ellipsize="end" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_category_stories_volatile_no_item_description" android:textAlignment="center" android:textFontWeight="@integer/font_weight_400" style="@style/OneUiRobotoRegular" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

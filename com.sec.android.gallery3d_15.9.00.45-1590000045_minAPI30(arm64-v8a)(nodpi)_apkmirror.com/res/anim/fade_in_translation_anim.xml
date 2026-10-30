@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:interpolator="@anim/sine_out_33" android:duration="500" android:valueFrom="0.0" android:valueTo="1" android:propertyName="alpha" />
+    <objectAnimator android:interpolator="@anim/sine_out_33" android:duration="500" android:valueFrom="-10.0dip" android:valueTo="0.0dip" android:propertyName="translationX" />
+</set>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.widget.SquareImageView android:id="@id/folder_background" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <GridLayout android:id="@id/folderView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:rowCount="2" android:columnCount="2">
+        <ViewStub android:layout="@layout/folder_image_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_rowWeight="1.0" android:layout_columnWeight="1.0" />
+        <ViewStub android:layout="@layout/folder_image_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_rowWeight="1.0" android:layout_columnWeight="1.0" />
+        <ViewStub android:layout="@layout/folder_image_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_rowWeight="1.0" android:layout_columnWeight="1.0" />
+        <ViewStub android:layout="@layout/folder_image_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_rowWeight="1.0" android:layout_columnWeight="1.0" />
+    </GridLayout>
+</FrameLayout>

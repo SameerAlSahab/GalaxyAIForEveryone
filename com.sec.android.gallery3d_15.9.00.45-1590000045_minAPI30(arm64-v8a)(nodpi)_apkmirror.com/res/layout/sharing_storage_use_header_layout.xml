@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sharing_storage_use_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/shared_storage_use_view_margin_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/family_storage_use_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sharing_storage_use_description_margin_bottom">
+        <include android:id="@id/family_storage_use_description" layout="@layout/storage_use_description_view" />
+    </LinearLayout>
+    <include android:id="@id/sharing_storage_use_description" layout="@layout/storage_use_description_view" />
+</LinearLayout>

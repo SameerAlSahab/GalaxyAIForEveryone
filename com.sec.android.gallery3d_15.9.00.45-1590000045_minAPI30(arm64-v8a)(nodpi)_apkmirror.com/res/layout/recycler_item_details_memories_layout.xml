@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moreinfo_memory_item_top_margin" android:layout_marginBottom="@dimen/moreinfo_memory_item_bottom_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumbnail" android:focusable="true" android:layout_width="@dimen/moreinfo_memory_item_width" android:layout_height="@dimen/moreinfo_memory_item_height" android:scaleType="centerCrop" android:contentDescription="@string/tab_tag_events" />
+    <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <TextView android:textSize="16.0dip" android:ellipsize="end" android:id="@id/title" android:layout_marginBottom="4.0dip" android:singleLine="true" style="@style/MoreInfoDetailsValueTextStyleV4" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/more_info_basic_simple_sub_text_color" android:ellipsize="end" android:id="@id/duration" android:singleLine="true" style="@style/MoreInfoDetailsValueTextStyleV4" />
+    </LinearLayout>
+</LinearLayout>

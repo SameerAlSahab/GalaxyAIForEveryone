@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" />
+    <stroke android:width="@dimen/thumbnail_focused_border_thickness_on_dex" android:color="@color/thumbnail_bt_focused" />
+</shape>

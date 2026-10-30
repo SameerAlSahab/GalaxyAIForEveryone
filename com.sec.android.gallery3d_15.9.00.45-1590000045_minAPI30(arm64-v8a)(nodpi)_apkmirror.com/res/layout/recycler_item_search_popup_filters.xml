@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/container" android:background="@drawable/search_popup_filter_ripple" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/search_filter_result_height" android:paddingStart="@dimen/search_filter_result_item_start_padding" android:paddingEnd="@dimen/search_filter_result_item_end_padding" android:layout_marginEnd="@dimen/search_filter_result_item_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/circle_thumb" android:background="@drawable/circular_thumb_background" android:visibility="gone" android:layout_width="@dimen/search_filter_result_height" android:layout_height="@dimen/search_filter_result_height" />
+        <ImageView android:id="@id/round_thumb" android:background="@drawable/round_thumb_background" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="@dimen/search_filter_result_item_icon_size_for_person" />
+    </FrameLayout>
+    <ImageView android:id="@id/type_icon" android:visibility="gone" android:layout_width="@dimen/search_filter_result_item_icon_size" android:layout_height="@dimen/search_filter_result_item_icon_size" android:layout_marginEnd="@dimen/search_filter_result_item_icon_margin_end" />
+    <TextView android:textSize="@dimen/search_filter_result_item_text_size" android:textColor="@color/search_filter_result_text_color" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="360.0dip" android:maxLines="1" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

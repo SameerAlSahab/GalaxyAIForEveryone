@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:height="@dimen/moreinfo_buttons_height" android:width="@dimen/moreinfo_buttons_height">
+        <shape android:shape="oval">
+            <solid android:color="@color/tag_icon_bg_color" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/moreinfo_buttons_height" android:width="@dimen/moreinfo_buttons_height" android:drawable="@drawable/tw_list_icon_delete_white" />
+</layer-list>

@@ -1,0 +1,56 @@
+.class public interface abstract Landroidx/media3/common/VideoFrameProcessor;
+.super Ljava/lang/Object;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/media3/common/VideoFrameProcessor$Listener;,
+        Landroidx/media3/common/VideoFrameProcessor$Factory;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract getInputSurface()Landroid/view/Surface;
+.end method
+
+.method public abstract getPendingInputFrameCount()I
+.end method
+
+.method public abstract queueInputBitmap(Landroid/graphics/Bitmap;Landroidx/media3/common/util/TimestampIterator;)Z
+.end method
+
+.method public abstract queueInputTexture(IJ)Z
+.end method
+
+.method public abstract registerInputFrame()Z
+.end method
+
+.method public abstract registerInputStream(ILandroidx/media3/common/Format;Ljava/util/List;J)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Landroidx/media3/common/Format;",
+            "Ljava/util/List<",
+            "Landroidx/media3/common/Effect;",
+            ">;J)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract release()V
+.end method
+
+.method public abstract renderOutputFrame(J)V
+.end method
+
+.method public abstract setOnInputFrameProcessedListener(Landroidx/media3/common/OnInputFrameProcessedListener;)V
+.end method
+
+.method public abstract setOutputSurfaceInfo(Landroidx/media3/common/SurfaceInfo;)V
+.end method
+
+.method public abstract signalEndOfInput()V
+.end method

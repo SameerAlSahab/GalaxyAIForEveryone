@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/gdpr_dialog_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/gdpr_dialog_padding_top" android:paddingBottom="@dimen/gdpr_dialog_padding_end" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/description_1" android:text="@string/place_gdpr_dialog_link_description" style="@style/GdprDialogTextStyle" />
+            <TextView android:id="@id/link" android:background="@drawable/gdpr_ripple_background" android:focusable="true" android:clickable="true" style="@style/GdprDialogLinkTextStyle" />
+            <TextView android:id="@id/description_2" android:layout_marginTop="@dimen/place_gdpr_dialog_description_margin_top" android:text="@string/place_gdpr_dialog_description" style="@style/GdprDialogTextStyle" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/place_gdpr_dialog_check_box_layout_margin_top" android:paddingHorizontal="?android:dialogPreferredPadding">
+                <androidx.appcompat.widget.AppCompatCheckBox android:theme="@style/GdprDialogCheckboxStyle" android:textSize="@dimen/place_gdpr_dialog_check_box_description_text_size" android:textColor="@color/dialog_content_text_color" android:layout_gravity="center_vertical" android:id="@id/checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/place_gdpr_dialog_check_box_description" android:lineSpacingExtra="@dimen/gdpr_dialog_text_line_spacing" android:textDirection="locale" android:paddingStart="@dimen/place_gdpr_dialog_check_box_description_padding_start" style="@style/OneUiRobotoRegular" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

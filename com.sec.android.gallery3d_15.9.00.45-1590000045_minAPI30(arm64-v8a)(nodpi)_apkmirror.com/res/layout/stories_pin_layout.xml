@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/stories_pin_container" android:paddingTop="@dimen/stories_pin_container_padding_top" android:paddingBottom="@dimen/stories_pin_container_padding_bottom" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/pin_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/stories_pin_recycler_view_size" android:nestedScrollingEnabled="false" />
+</LinearLayout>

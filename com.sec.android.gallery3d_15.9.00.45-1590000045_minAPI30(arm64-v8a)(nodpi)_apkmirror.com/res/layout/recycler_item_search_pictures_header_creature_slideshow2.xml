@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/creature_slideshow2" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/creature_slideshow_contact_recommend_card_view" android:background="@color/search_tag_me_tip_card_background" android:paddingTop="18.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginHorizontal="@dimen/search_creature_pictures_tip_card_horizontal_margin" android:paddingHorizontal="18.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/creature_slideshow_contact_recommend_card_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/creature_slideshow_contact_recommend_card_thumbnail" android:background="@drawable/circular_thumb_background" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip" android:contentDescription="@null" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/face_merge_text_color" android:ellipsize="end" android:id="@id/creature_slideshow_contact_recommend_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" android:layout_marginStart="10.0dip" style="@style/OneUiRobotoBold" />
+        </LinearLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/creature_slideshow_contact_recommend_card_bottom_navigation" android:background="@color/search_tag_me_tip_card_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:itemTextColor="@color/gallery_search_header_view_title_color" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/creature_slideshow_contact_recommend_card_container" app:menu="@menu/menu_bottom_search_people" style="@style/BottomNavigationViewStyle.Text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:id="@id/item_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:paddingVertical="@dimen/search_filter_results_title_vertical_padding">
+        <View android:id="@id/item_count_line" android:background="@color/search_count_header_background_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/search_count_header_background_line" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/search_card_header_count" android:id="@id/item_count" android:text="2486 items" style="@style/SearchCountHeaderTextStyle" />
+    </RelativeLayout>
+</LinearLayout>

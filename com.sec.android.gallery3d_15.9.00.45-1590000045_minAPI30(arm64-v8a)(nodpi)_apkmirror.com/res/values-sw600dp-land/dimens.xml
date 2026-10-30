@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ai_edit_list_margin_start">16.0dip</dimen>
+    <dimen name="details_c2pa_detail_item_horizontal_padding">220.0dip</dimen>
+    <dimen name="details_c2pa_title_margin">234.0dip</dimen>
+    <dimen name="details_edit_button_end_margin">28.0dip</dimen>
+    <dimen name="details_item_tag_top_margin">24.0dip</dimen>
+    <dimen name="details_list_horizontal_margin">24.0dip</dimen>
+    <dimen name="group_panel_item_height">206.0dip</dimen>
+    <dimen name="group_panel_item_text_width">156.0dip</dimen>
+    <dimen name="group_panel_item_width">156.0dip</dimen>
+    <dimen name="group_panel_list_horizontal_padding">42.0dip</dimen>
+    <dimen name="large_grid_revitalized_card_button_layout_margin_top">12.0dip</dimen>
+    <dimen name="large_grid_revitalized_card_side_gap">85.0dip</dimen>
+    <dimen name="ondemand_story_vi_textview_margin_top">70.0dip</dimen>
+    <item type="dimen" name="remaster_viewer_content_height_ratio">0.57</item>
+    <dimen name="search_card_padding_horizontal">10.0dip</dimen>
+    <dimen name="search_card_padding_horizontal_for_people">12.0dip</dimen>
+    <dimen name="search_item_card_people_thumbnail_spacing">12.0dip</dimen>
+    <dimen name="search_item_card_people_thumbnail_spacing_expansion">12.0dip</dimen>
+    <dimen name="small_grid_revitalized_card_side_gap">60.0dip</dimen>
+    <dimen name="stories_bgm_sheet_horizontal_margin">220.0dip</dimen>
+    <dimen name="stories_category_creation_item_round_radius">16.0dip</dimen>
+    <dimen name="stories_category_creation_item_width">260.0dip</dimen>
+    <dimen name="stories_category_transitory_side_margin">364.0dip</dimen>
+    <item type="dimen" name="stories_item_width_ratio">0.38</item>
+    <item type="dimen" name="stories_item_width_ratio_drawer">0.33</item>
+    <dimen name="stories_view_recycler_item_bottom_padding">60.0dip</dimen>
+    <dimen name="stories_view_recycler_item_bottom_padding_drawer">34.0dip</dimen>
+    <dimen name="stories_view_recycler_item_side_padding">22.0dip</dimen>
+    <dimen name="stories_view_side_offset_1_depth">16.0dip</dimen>
+    <dimen name="stories_view_side_offset_drawer">15.0dip</dimen>
+    <dimen name="story_highlight_toolbar_height">128.0dip</dimen>
+    <dimen name="story_ondemand_page_bottom_space_tablet">67.0dip</dimen>
+    <dimen name="unlock_container_height">600.0dip</dimen>
+</resources>

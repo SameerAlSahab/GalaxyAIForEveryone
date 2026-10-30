@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:paddingTop="@dimen/bottom_menu_list_dialog_padding_top" android:paddingBottom="@dimen/bottom_menu_list_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/bottom_menu_list_dialog_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/bottom_menu_list_view" android:focusable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bottom_menu_list_dialog_padding_bottom" android:layout_marginHorizontal="@dimen/bottom_menu_list_view_margin_horizontal" />
+        <include android:id="@id/video_studio_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/video_studio_button_margin_top" layout="@layout/video_studio_button_layout" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

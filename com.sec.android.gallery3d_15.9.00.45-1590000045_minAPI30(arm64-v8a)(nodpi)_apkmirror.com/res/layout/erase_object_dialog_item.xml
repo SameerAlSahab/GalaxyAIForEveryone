@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="?listChoiceBackgroundIndicator" android:paddingTop="@dimen/erase_object_dialog_item_padding_top" android:paddingBottom="@dimen/erase_object_dialog_item_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/erase_object_dialog_item_padding_Horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/erase_object_dialog_item_text_size" android:textColor="@color/create_new_dialog_content_title_text_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" style="@style/OneUiRobotoSemiBold" />
+</LinearLayout>

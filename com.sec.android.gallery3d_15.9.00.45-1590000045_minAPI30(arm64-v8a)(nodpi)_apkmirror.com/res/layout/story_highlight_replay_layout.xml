@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_layout" android:background="@android:color/transparent" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/back_button" android:layout_width="0.0dip" android:layout_height="0.0dip" android:importantForAccessibility="no" app:layout_constraintHeight_percent="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintWidth_percent="0.2" />
+    <LinearLayout android:padding="8.0dip" android:layout_width="?actionBarSize" android:layout_height="?actionBarSize" android:layout_marginEnd="@dimen/story_highlight_related_close_button_margin_end" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center" android:id="@id/close_button" android:background="@drawable/recoil_ripple_oval_story_highlight" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/close" android:stateListAnimator="?seslSmallTouchAnimator">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_suggested_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/replay_button_layout" android:layout_marginTop="?actionBarSize" android:layout_marginBottom="@dimen/story_highlight_related_view_bottom_padding" android:paddingHorizontal="@dimen/story_highlight_related_sub_button_horizontal_padding" android:paddingVertical="@dimen/story_highlight_related_sub_button_vertical_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" style="@style/StoryLastPageReplyLayoutStyle">
+        <TextView android:textSize="@dimen/story_highlight_related_sub_button_text_size" android:textColor="#fffcfcff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_again" style="@style/OneUiRobotoSemiBold" />
+        <include android:visibility="gone" layout="@layout/story_highlight_related_progress_layout" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

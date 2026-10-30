@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@color/daynight_default_background" android:visibility="invisible" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/photo_3d_container" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.samsung.o3dp.lib3dphotography.O3DPPanoramaView android:id="@id/photo_3d_view" android:background="@color/daynight_default_background" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+        <com.samsung.android.gallery.widget.photoview.PhotoPreView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <include android:id="@id/viewer_toolbar" android:transitionName="toolbar" layout="@layout/floating_toolbar_layout" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/arrow_left" android:layout_width="80.0dip" android:layout_height="50.0dip" android:layout_alignLeft="@id/viewer_toolbar" android:layout_alignTop="@id/photo_3d_container" android:layout_alignBottom="@id/photo_3d_container" android:layout_centerVertical="true" app:lottie_fileName="lottie_arrow_left.json" app:lottie_repeatCount="3" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/arrow_right" android:layout_width="80.0dip" android:layout_height="50.0dip" android:layout_alignTop="@id/photo_3d_container" android:layout_alignRight="@id/viewer_toolbar" android:layout_alignBottom="@id/photo_3d_container" android:layout_centerVertical="true" app:lottie_fileName="lottie_arrow_right.json" app:lottie_repeatCount="3" />
+</RelativeLayout>

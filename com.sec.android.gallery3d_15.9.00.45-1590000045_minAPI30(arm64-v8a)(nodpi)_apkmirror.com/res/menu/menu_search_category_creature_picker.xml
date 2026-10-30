@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/normal_mode">
+        <item android:id="@id/action_select_done" android:visible="false" android:title="@string/done" app:showAsAction="always" />
+        <item android:id="@id/action_cancel" android:visible="false" android:title="@string/cancel" app:showAsAction="always" />
+        <item android:id="@id/action_later" android:visible="false" android:title="@string/not_now_20" app:showAsAction="always" />
+        <item android:id="@id/action_set_as_relation" android:visible="false" android:title="@string/done_20" app:showAsAction="always" />
+    </group>
+    <group android:id="@id/select_mode_bottom">
+        <item android:icon="@drawable/gallery_ic_menu_group" android:id="@id/action_set_as_me" android:visible="true" android:title="@string/set_as_me" app:showAsAction="always" />
+    </group>
+</menu>

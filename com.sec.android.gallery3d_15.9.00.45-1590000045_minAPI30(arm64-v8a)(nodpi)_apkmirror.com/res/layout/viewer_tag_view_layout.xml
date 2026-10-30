@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tag_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/tag_edit_button_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:paddingVertical="@dimen/my_tag_layout_padding_vertical">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/tag_edit_button" android:background="@drawable/my_tag_button_layout_bg" android:layout_width="@dimen/my_tag_button_size" android:layout_height="@dimen/my_tag_button_size" android:contentDescription="@string/add_tag" app:lottie_autoPlay="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="end|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tag_edit_button_wrapper" android:layout_centerVertical="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/tag_list_recycler_view" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="@dimen/my_tag_layout_padding_vertical" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="right" android:id="@id/tag_add_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:paddingVertical="@dimen/my_tag_layout_padding_vertical">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tag_add_button_bg" android:background="@drawable/tag_item_layout_bg" android:layout_width="@dimen/my_tag_button_size" android:layout_height="@dimen/my_tag_button_size" android:layout_alignEnd="@id/tag_add_text">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/my_tag_item_hash_size" android:layout_height="@dimen/my_tag_item_hash_size" android:layout_marginLeft="@dimen/my_tag_item_padding_start" android:src="@drawable/tag_ic_editor_sharp" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/tag_add_text" android:layout_width="wrap_content" android:layout_height="@dimen/my_tag_item_height" android:paddingStart="@dimen/my_tag_add_button_padding_start" android:paddingEnd="@dimen/my_tag_item_padding_end">
+            <TextView android:background="@drawable/details_ripple_background_blur" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/my_tag_item_height" android:text="@string/add_tag" android:maxLines="1" android:includeFontPadding="false" android:textIsSelectable="false" style="@style/MyTagItemTextStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

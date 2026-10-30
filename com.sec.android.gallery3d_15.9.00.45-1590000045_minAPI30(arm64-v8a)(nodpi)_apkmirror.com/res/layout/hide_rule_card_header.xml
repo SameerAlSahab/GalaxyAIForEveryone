@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/story_hide_rule_header_title_text_size" android:textColor="@color/story_hide_rule_header_title_text_color" android:ellipsize="end" android:gravity="start" android:id="@id/hide_rule_header_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:textIsSelectable="false" android:textDirection="locale" android:textAlignment="gravity" app:layout_constrainedWidth="true" style="@style/OneUiRobotoRegular" />
+        <LinearLayout android:gravity="center" android:id="@id/execute_picker" android:background="@drawable/recoil_ripple_oval" android:layout_width="35.0dip" android:layout_height="35.0dip" android:contentDescription="@string/hide_people_and_pets" android:stateListAnimator="?seslSmallTouchAnimator">
+            <ImageView android:layout_width="@dimen/story_hide_rule_date_item_remove_btn_size" android:layout_height="@dimen/story_hide_rule_date_item_remove_btn_size" android:src="@drawable/gallery_ic_search_more" android:tint="@color/story_hide_rule_execute_picker_icon_color" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/story_hide_rule_header_description_text_size" android:textColor="@color/story_hide_rule_header_description_text_color" android:id="@id/hide_rule_header_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" android:textDirection="locale" android:textAlignment="gravity" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

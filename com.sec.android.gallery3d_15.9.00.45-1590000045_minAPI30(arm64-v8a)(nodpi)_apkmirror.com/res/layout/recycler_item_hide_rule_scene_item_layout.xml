@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/suggestions_card_recycler_item_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.widget.SquareImageView android:id="@id/thumbnail" android:background="@color/suggestions_card_recycler_item_thumbnail_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/suggestions_thumbnail_border" android:scaleType="centerCrop" android:layout_marginHorizontal="@dimen/thumbnail_horizontal_gap" android:layout_marginVertical="@dimen/thumbnail_vertical_gap" />
+    <View android:id="@id/dim_view" android:background="@color/suggestions_card_recycler_item_dim_view_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/suggestions_card_recycler_item_count_text_size" android:layout_gravity="center" android:id="@id/hide_scene_item_count" android:visibility="gone" style="@style/SuggestionsCountStyle" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/recycler_view_item" android:clickable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/thumbnail_selector" android:contentDescription="@string/speak_button" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/thumbnail_preview_layout" style="@style/ThumbnailPreviewLayoutStyle">
+        <com.samsung.android.gallery.widget.PinchImageView android:id="@id/thumbnail" android:background="@color/thumbnail_icon_background" android:foreground="@drawable/thumbnail_border" app:aspect_ratio="-1.0" style="@style/ThumbnailStyle" />
+    </FrameLayout>
+</FrameLayout>

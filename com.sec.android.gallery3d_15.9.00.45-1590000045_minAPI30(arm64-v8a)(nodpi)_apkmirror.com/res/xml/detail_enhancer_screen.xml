@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.gallery.settings.widget.NoticePreference android:layout="@layout/detail_enhancer_description_layout" android:selectable="false" android:key="detail_enhancer_description" />
+    <PreferenceCategory android:key="detail_enhancer_category">
+        <com.samsung.android.gallery.settings.widget.RadioPreference android:title="@string/maximum" android:key="detail_enhancer_maximum" />
+        <com.samsung.android.gallery.settings.widget.RadioPreference android:title="@string/minimum" android:key="detail_enhancer_minimum" />
+        <com.samsung.android.gallery.settings.widget.RadioPreference android:title="@string/opt_off" android:key="detail_enhancer_off" />
+    </PreferenceCategory>
+    <PreferenceCategory />
+</PreferenceScreen>

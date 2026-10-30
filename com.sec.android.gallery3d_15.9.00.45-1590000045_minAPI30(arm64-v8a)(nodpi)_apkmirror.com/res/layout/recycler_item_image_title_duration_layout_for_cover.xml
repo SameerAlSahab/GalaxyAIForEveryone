@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cover_layout" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:soundEffectsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="@dimen/story_pictures_header_thumbnail_height" android:layout_marginBottom="1.0dip" android:contentDescription="@null" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" />
+        <View android:id="@id/gradient_view" android:background="@color/story_pictures_cover_thumbnail_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/story_pictures_header_thumbnail_height" />
+        <ImageButton android:layout_gravity="end|bottom" android:id="@id/highlight_play" android:background="@drawable/gallery_ic_detail_video" android:visibility="gone" android:layout_width="@dimen/story_pictures_view_play_icon_size" android:layout_height="@dimen/story_pictures_view_play_icon_size" android:layout_marginBottom="@dimen/story_pictures_view_play_icon_bottom_margin" android:contentDescription="@string/play_video" android:layout_marginEnd="@dimen/story_pictures_view_play_icon_end_margin" />
+    </FrameLayout>
+</LinearLayout>

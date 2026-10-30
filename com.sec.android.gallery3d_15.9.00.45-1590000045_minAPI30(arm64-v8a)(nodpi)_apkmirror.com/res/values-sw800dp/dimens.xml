@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="private_album_unlock_bottom_margin">160.0dip</dimen>
+    <dimen name="private_album_unlock_container_top_margin">158.0dip</dimen>
+    <dimen name="stories_category_transitory_content_height_v80">343.0dip</dimen>
+    <dimen name="stories_category_transitory_content_width_v80">466.0dip</dimen>
+    <dimen name="stories_category_transitory_side_margin_v80">84.0dip</dimen>
+</resources>

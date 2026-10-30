@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/actionbar_bg_color" android:paddingBottom="@dimen/toolbar_height" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/CollapsingToolbarTitleTextAppearance" android:textSize="25.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/toolbar_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/items_layout" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/smart_album_layout_start_end_margin" android:layout_marginEnd="@dimen/smart_album_layout_start_end_margin" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/floating_recommendation_main_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/floating_recommendation_background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <FrameLayout android:id="@id/floating_recommendation_background_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/search_toolbar_container" android:tag="new_search_toolbar_containable" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

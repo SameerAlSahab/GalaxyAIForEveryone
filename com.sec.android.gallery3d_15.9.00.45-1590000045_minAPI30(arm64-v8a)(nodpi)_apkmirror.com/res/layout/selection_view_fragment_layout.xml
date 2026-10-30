@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/daynight_default_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar_viewer" />
+    <androidx.viewpager2.widget.ViewPager2 android:layout_gravity="center_vertical" android:id="@id/pager" android:background="@android:color/transparent" android:focusable="false" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ViewStub android:id="@id/film_strip_view_stub" android:layout="@layout/selection_film_strip_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.samsung.android.gallery.widget.fastoption2.FastOptionView android:id="@id/fast_option_view" android:layout_width="fill_parent" android:layout_height="@dimen/fast_menu_imageview_height" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/gdpr_dialog_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/gdpr_dialog_padding_top" android:paddingBottom="@dimen/gdpr_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/description" android:text="@string/china_gdpr_description_with_options" style="@style/GdprDialogTextStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/checkbox_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:paddingHorizontal="@dimen/gdpr_dialog_check_box_layout_padding_horizontal" android:paddingVertical="@dimen/china_gdpr_dialog_check_box_layout_padding_vertical">
+                    <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/checkbox_location" android:text="@string/third_party_access_notice" style="@style/ChinaGdprDialogCheckBoxStyle" />
+                    <TextView android:id="@id/checkbox_link" android:layout_marginStart="@dimen/gdpr_dialog_check_box_link_margin_start" style="@style/ChinaGdprDialogLinkTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:paddingHorizontal="@dimen/gdpr_dialog_check_box_layout_padding_horizontal" android:paddingVertical="@dimen/china_gdpr_dialog_check_box_layout_padding_vertical">
+                    <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/checkbox_network" style="@style/ChinaGdprDialogCheckBoxStyle" />
+                    <TextView android:id="@id/checkbox_network_subtitle" android:layout_marginStart="@dimen/gdpr_dialog_checkbox_subtitle_padding_start" style="@style/ChinaGdprDialogCheckBoxStyle" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gdpr_dialog_check_box_all_margin_top" android:paddingHorizontal="@dimen/gdpr_dialog_check_box_layout_padding_horizontal">
+                    <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/checkbox_all" android:text="@string/option_all" style="@style/ChinaGdprDialogCheckBoxStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

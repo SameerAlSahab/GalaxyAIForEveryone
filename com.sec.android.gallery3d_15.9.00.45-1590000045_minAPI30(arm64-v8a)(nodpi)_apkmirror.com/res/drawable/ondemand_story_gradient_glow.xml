@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="500.0dip" android:width="400.0dip" android:viewportWidth="400.0" android:viewportHeight="500.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ondemand_story_gradient_glow__0" android:pathData="M147,115L253,115A70,70 0,0 1,323 185L323,315A70,70 0,0 1,253 385L147,385A70,70 0,0 1,77 315L77,185A70,70 0,0 1,147 115z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.4" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffffff" android:pathData="M147,115L253,115A70,70 0,0 1,323 185L323,315A70,70 0,0 1,253 385L147,385A70,70 0,0 1,77 315L77,185A70,70 0,0 1,147 115z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.2" android:fillType="evenOdd" />
+</vector>

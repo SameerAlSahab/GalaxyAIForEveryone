@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.view.insets.ProtectionLayout android:id="@id/content_layout" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/map_hidden_frame" android:layout="@layout/map_hidden_frame_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.material.oneui.responsivepane.ResponsivePaneLayout android:id="@id/responsive_pane" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/responsive_pane_content" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <FrameLayout android:id="@id/content" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ViewStub android:layout_gravity="bottom" android:id="@id/bottom_bar_view_stub" android:layout="@layout/bottom_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:layout_gravity="bottom" android:id="@id/bottom_move_bar_view_stub" android:layout="@layout/bottom_move_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <ViewStub android:id="@id/drawer_tab_layout_view_stub" android:layout="@layout/drawer_tab_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/drawer_margin_start" app:layout_constraintStart_toStartOf="parent" app:layout_constraintWidth_max="@dimen/drawer_max_width" app:layout_constraintWidth_min="@dimen/drawer_min_width" />
+    </com.google.android.material.oneui.responsivepane.ResponsivePaneLayout>
+</androidx.core.view.insets.ProtectionLayout>

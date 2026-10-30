@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation android:interpolator="@android:anim/accelerate_interpolator" android:delay="10.000002%" android:animation="@anim/recycler_item_anim_scale_alpha" android:animationOrder="normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

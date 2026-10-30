@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/search_people_header_bottom">
+        <item android:icon="@drawable/gallery_ic_search_edit_no" android:id="@id/menu_search_creature_no" android:title="@string/no" android:contentDescription="@string/no" android:showAsAction="always" app:showAsAction="always" />
+        <item android:icon="@drawable/gallery_ic_search_edit_yes" android:id="@id/menu_search_creature_yes" android:title="@string/yes" android:contentDescription="@string/yes" android:showAsAction="always" app:showAsAction="always" />
+    </group>
+</menu>

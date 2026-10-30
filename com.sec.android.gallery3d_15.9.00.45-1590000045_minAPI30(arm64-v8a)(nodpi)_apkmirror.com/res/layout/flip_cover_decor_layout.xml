@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/flip_cover_decor_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/flip_cover_video_controller" android:layout="@layout/video_controller2_flipcover_layout" android:layout_width="wrap_content" android:layout_height="@dimen/play_button_view_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ViewStub android:id="@id/flip_cover_shot_mode_button" android:layout="@layout/special_contents_play_button_view" android:layout_width="wrap_content" android:layout_height="@dimen/play_button_view_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+.class public Lcom/samsung/android/gallery/app/controller/externals/OpenSamsungFamilyGroupCmd;
+.super Lcom/samsung/android/gallery/app/controller/BaseCommand;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/samsung/android/gallery/app/controller/BaseCommand;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public varargs onExecute(Lcom/samsung/android/gallery/app/controller/EventContext;[Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    :try_start_0
+    new-instance p1, Landroid/content/Intent;
+
+    .line 2
+    .line 3
+    const-string p2, "com.samsung.android.samsungaccount.action.OPEN_FAMILY_GROUP_MAIN"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, p2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Lcom/samsung/android/gallery/app/controller/BaseCommand;->getActivity()Landroid/app/Activity;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p2
+
+    .line 12
+    const/16 v0, 0x12e
+
+    .line 13
+    .line 14
+    invoke-virtual {p2, p1, v0}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+
+    .line 18
+    :catch_0
+    move-exception p1
+
+    .line 19
+    iget-object p0, p0, Lcom/samsung/android/gallery/app/controller/BaseCommand;->TAG:Ljava/lang/String;
+
+    .line 20
+    .line 21
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    .line 22
+    .line 23
+    const-string v0, "samsung account setting activity not found"
+
+    .line 24
+    .line 25
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-static {p1, p2, p0}, Lyc;->u(Landroid/content/ActivityNotFoundException;Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-void
+.end method

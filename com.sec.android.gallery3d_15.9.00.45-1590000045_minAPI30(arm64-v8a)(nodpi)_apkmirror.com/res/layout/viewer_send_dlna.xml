@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/dlna_button_border" android:layout_width="wrap_content" android:layout_height="@dimen/send_dlna_button_height" android:paddingStart="@dimen/send_dlna_button_padding_start" android:paddingEnd="@dimen/send_dlna_button_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center" android:id="@id/dlan_icon" android:background="@drawable/gallery_ic_detail_smart_view" android:layout_width="@dimen/send_dlna_icon_size" android:layout_height="@dimen/send_dlna_icon_size" android:backgroundTint="#fffafaff" />
+    <TextView android:textSize="@dimen/send_dlna_text_size" android:textColor="#fffafafa" android:gravity="left|center" android:layout_gravity="center" android:id="@id/dlna_button_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/send_original_contents_dlna" android:fontFamily="sec-roboto-regular" android:layout_marginStart="@dimen/send_dlna_text_margin_start" android:layout_marginEnd="@dimen/send_dlna_text_margin_end" />
+</LinearLayout>

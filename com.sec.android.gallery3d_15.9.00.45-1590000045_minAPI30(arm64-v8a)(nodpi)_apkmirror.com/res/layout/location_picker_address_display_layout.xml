@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/address_display" android:background="@drawable/location_address_display_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.9" android:elevation="8.0dip" android:paddingHorizontal="@dimen/edit_location_address_display_horizontal_padding" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textColor="@color/current_location_text_color" android:id="@id/address_title_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textFontWeight="400" style="@style/OneUiRobotoRegular" />
+        </HorizontalScrollView>
+        <TextView android:textSize="12.0sp" android:textColor="@color/current_location_sub_text_color" android:id="@id/address_title_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textFontWeight="400" style="@style/OneUiRobotoRegular" />
+    </LinearLayout>
+    <Space android:layout_width="10.0dip" android:layout_height="0.0dip" />
+    <ImageView android:id="@id/current_location" android:background="@drawable/ic_location_oneui9x" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

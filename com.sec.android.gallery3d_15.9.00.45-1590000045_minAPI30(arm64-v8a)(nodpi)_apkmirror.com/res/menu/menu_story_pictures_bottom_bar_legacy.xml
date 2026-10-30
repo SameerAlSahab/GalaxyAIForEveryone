@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/select_mode_bottom">
+        <item android:icon="@drawable/gallery_ic_share" android:id="@id/action_share" android:title="@string/share_short" app:showAsAction="ifRoom" />
+        <item android:icon="@drawable/gallery_ic_bottombar_remove" android:id="@id/action_remove_from_story" android:title="@string/remove_from_event" app:showAsAction="ifRoom" />
+    </group>
+    <group android:id="@id/select_mode_with_done">
+        <item android:id="@id/action_done" android:title="@string/done" app:showAsAction="always" />
+    </group>
+</menu>

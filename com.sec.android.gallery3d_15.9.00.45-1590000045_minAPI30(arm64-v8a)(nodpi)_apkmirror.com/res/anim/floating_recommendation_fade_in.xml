@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:interpolator="@anim/path_interpolator_022_025_0_1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:duration="400" android:fromYDelta="@dimen/search_floating_recommend_animation_y_delta" android:toYDelta="0.0" />
+    <alpha android:duration="400" android:fromAlpha="0.0" android:toAlpha="1.0" />
+</set>

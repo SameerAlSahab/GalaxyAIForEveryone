@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/gallery_status_bar_fw_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/trash_description_text_size" android:textColor="@color/settings_description_text_color" android:id="@id/search_customize_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/choose_useful_info_to_show_on_the_search_main_screen" android:textAlignment="viewStart" android:layout_marginHorizontal="@dimen/search_customize_description_horizontal_margin" android:layout_marginVertical="@dimen/search_customize_description_vertical_margin" style="@style/OneUiRobotoRegular" />
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/header_recycler_view" android:background="@drawable/search_customize_setting_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_customize_bottom_margin" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="@drawable/search_customize_setting_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_customize_bottom_margin" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/sesl_dialog_title_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.DialogTitle android:textAppearance="@style/DialogTitleTextAppearance" android:ellipsize="end" android:id="@id/dialog_title" android:paddingBottom="@dimen/sesl_dialog_title_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart" android:paddingHorizontal="@dimen/sesl_dialog_padding_horizontal" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/switchable_confirm_layout" android:visibility="gone" layout="@layout/switchable_confirm_layout" />
+        <include android:id="@id/switchable_progress_layout" android:visibility="gone" layout="@layout/switchable_progress_layout" />
+    </FrameLayout>
+    <include layout="@layout/sesl_alert_dialog_button_bar" />
+</LinearLayout>

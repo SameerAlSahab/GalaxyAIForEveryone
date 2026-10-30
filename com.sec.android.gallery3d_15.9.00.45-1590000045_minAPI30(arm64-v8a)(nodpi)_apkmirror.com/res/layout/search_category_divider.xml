@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:id="@id/category_divider" android:background="@color/search_card_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/search_card_divider_thick" android:layout_marginTop="@dimen/search_card_divider_margin_top" android:layout_marginBottom="@dimen/search_card_divider_margin_bottom" android:layout_marginHorizontal="@dimen/search_card_default_margin_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

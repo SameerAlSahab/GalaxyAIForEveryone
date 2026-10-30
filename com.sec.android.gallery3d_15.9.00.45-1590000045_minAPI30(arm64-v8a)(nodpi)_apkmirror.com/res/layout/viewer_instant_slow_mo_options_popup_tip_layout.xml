@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:id="@id/tip_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/instant_slow_mo_popup_tip_main" android:background="@drawable/gallery_detail_instant_slow_mo_options_guide_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/video_instant_slow_mo_guide_text_body_size" android:textColor="@color/instant_slow_mo_guide_text_color" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/instant_slow_mo_edit_and_share_options_popup_tip" android:textAlignment="viewStart" android:layout_marginHorizontal="@dimen/video_instant_slow_mo_options_guide_text_margin_horizontal" android:layout_marginVertical="@dimen/video_instant_slow_mo_options_guide_text_margin_vertical" style="@style/OneUiRobotoRegular" />
+    </FrameLayout>
+</RelativeLayout>

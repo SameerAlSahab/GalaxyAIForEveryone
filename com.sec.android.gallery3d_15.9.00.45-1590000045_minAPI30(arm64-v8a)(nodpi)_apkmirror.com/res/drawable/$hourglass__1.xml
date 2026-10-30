@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="800" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@drawable/$hourglass__2" android:duration="600" android:valueFrom="0" android:valueTo="180" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@drawable/$hourglass__3" android:duration="150" android:valueFrom="180" android:valueTo="190" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@drawable/$hourglass__4" android:duration="300" android:valueFrom="190" android:valueTo="180" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@drawable/$hourglass__5" android:duration="1" android:startOffset="15" android:valueFrom="180" android:valueTo="0" android:propertyName="rotation" />
+    </set>
+</set>

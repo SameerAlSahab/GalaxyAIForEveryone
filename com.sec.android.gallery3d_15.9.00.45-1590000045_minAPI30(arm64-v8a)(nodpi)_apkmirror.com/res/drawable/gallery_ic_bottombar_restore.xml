@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/daynight_gallery_color_primary" android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000" android:pathData="M15.5872,3.1552C18.81,4.5916 21.0556,7.8172 21.0556,11.5664C21.0556,16.6512 16.9228,20.7728 11.824,20.7728C6.7252,20.7728 2.5924,16.6512 2.5924,11.5664C2.5924,7.26 5.5548,3.6452 9.5616,2.6372" android:strokeColor="#ff000000" android:strokeWidth="1.7" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M20.7196,2.57l-5.1968,0l0,5.1856" android:strokeColor="#ff000000" android:strokeWidth="1.7" android:fillType="evenOdd" />
+</vector>

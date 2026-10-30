@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/normal_mode">
+        <item android:icon="@drawable/gallery_ic_actionbar_favorite" android:id="@id/action_favorite_view" android:visible="false" android:title="@string/favorites" app:showAsAction="always" />
+        <item android:icon="@drawable/tw_ic_ab_search_mtrl" android:id="@id/action_search" android:title="@string/search" app:showAsAction="always" />
+        <item android:id="@id/action_select" android:title="@string/select" android:showAsAction="never" />
+        <item android:id="@id/action_create_story_album" android:title="@string/create_story_manually" android:showAsAction="never" />
+        <item android:id="@id/action_hide_content" android:title="@string/hide_content" android:showAsAction="never" />
+        <item android:id="@id/action_trash" android:visible="false" android:title="@string/trash" android:showAsAction="never" />
+        <item android:id="@id/action_settings" android:visible="false" android:title="@string/go_to_settings" android:showAsAction="never" />
+        <item android:icon="@drawable/gallery_ic_actionbar_create" android:enabled="false" android:id="@id/action_on_demand" android:visible="false" android:title="@string/create_a_story" app:showAsAction="always" />
+    </group>
+    <group android:id="@id/select_mode">
+        <item android:id="@id/action_cancel" android:visible="false" android:title="@string/cancel" app:showAsAction="always" />
+    </group>
+    <group android:id="@id/select_mode_bottom">
+        <item android:icon="@drawable/gallery_selection_ic_rename" android:id="@id/action_rename_story_album_in_list" android:title="@string/change_story_title" app:showAsAction="ifRoom" />
+        <item android:icon="@drawable/gallery_ic_share" android:id="@id/action_share_story_in_list" android:title="@string/share_story" app:showAsAction="ifRoom" />
+        <item android:icon="@drawable/gallery_ic_menu_delete" android:id="@id/action_delete_story_album_in_list" android:title="@string/delete" app:showAsAction="ifRoom" />
+    </group>
+    <group android:id="@id/select_mode_with_done">
+        <item android:id="@id/action_done" android:title="@string/done" app:showAsAction="always" />
+    </group>
+    <group android:id="@id/no_item">
+        <item android:icon="@drawable/tw_ic_ab_search_mtrl" android:id="@id/action_search" android:title="@string/search" app:showAsAction="always" />
+        <item android:id="@id/action_create_story_album" android:title="@string/create_story_manually" android:showAsAction="never" />
+        <item android:id="@id/action_hide_content" android:title="@string/hide_content" android:showAsAction="never" />
+        <item android:id="@id/action_trash" android:visible="false" android:title="@string/trash" android:showAsAction="never" />
+        <item android:id="@id/action_settings" android:visible="false" android:title="@string/go_to_settings" android:showAsAction="never" />
+    </group>
+    <group android:id="@id/popup_mode">
+        <item android:id="@id/action_rename" android:visible="true" android:title="@string/opt_rename" />
+        <item android:id="@id/action_delete_story" android:visible="true" android:title="@string/delete" />
+    </group>
+</menu>

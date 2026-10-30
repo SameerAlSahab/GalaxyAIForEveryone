@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/story_pictures_category_people" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/story_pictures_header_item_bottom_gap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/story_pictures_category_people_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="0.0dip" android:nestedScrollingEnabled="false" />
+</LinearLayout>

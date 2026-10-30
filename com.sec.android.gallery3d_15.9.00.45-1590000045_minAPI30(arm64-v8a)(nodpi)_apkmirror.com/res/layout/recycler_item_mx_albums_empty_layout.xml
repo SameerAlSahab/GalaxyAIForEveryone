@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/mx_albums_empty_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/mx_albums_empty_button_text_size" android:textColor="@color/about_page_update_button_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/empty_button" android:background="@drawable/mx_albums_empty_button_recoil_ripple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/mx_albums_empty_button_min_height" android:text="@string/select_essential_albums" android:maxLines="1" android:layout_centerInParent="true" android:stateListAnimator="?seslSmallTouchAnimator" android:paddingHorizontal="@dimen/mx_albums_empty_button_padding_horizontal" style="@style/OneUiRobotoSemiBold" />
+    </RelativeLayout>
+</FrameLayout>

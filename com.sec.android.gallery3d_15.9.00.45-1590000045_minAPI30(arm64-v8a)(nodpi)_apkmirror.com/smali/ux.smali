@@ -1,0 +1,46 @@
+.class public final Lux;
+.super Lls0;
+.source "r8-map-id-e2e1e95ccd1a7245a3a780e553653b7370d0415fbbc9b3535cba118e3d128005"
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final e()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    const-string p0, "code-address"
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final i(Lky2;)Lt60;
+    .locals 0
+
+    .line 1
+    new-instance p1, Lux;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, Lt60;->c:Ltk3;
+
+    .line 4
+    .line 5
+    invoke-direct {p1, p0}, Lls0;-><init>(Ltk3;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-object p1
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/sync_view_padding_top" android:paddingBottom="@dimen/sync_view_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/sync_view_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sync_icon" android:focusable="false" android:clickable="false" android:layout_width="@dimen/sync_view_icon_size" android:layout_height="@dimen/sync_view_icon_size" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/sync_view_text_size" android:textColor="@color/syncview_text_color" android:layout_gravity="center_vertical" android:id="@id/sync_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/sync_view_text_start_margin" style="@style/OneUiRobotoRegular" />
+</LinearLayout>

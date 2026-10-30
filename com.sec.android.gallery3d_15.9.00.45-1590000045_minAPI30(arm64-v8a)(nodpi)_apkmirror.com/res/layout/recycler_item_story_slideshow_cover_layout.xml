@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:soundEffectsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/thumbnail_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/cover_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+            <ViewStub android:id="@id/slide_parent_stub" android:layout="@layout/story_slide_transition_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/thumbnail_preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/cover_viewpager_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/simple_slideshow_viewpager_layout" />
+        </FrameLayout>
+        <ViewStub android:layout_gravity="right|bottom" android:id="@id/play_icon_view_stub" android:layout="@layout/stub_story_cover_play_icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/story_pictures_cover_affordance_icon_margin" android:layout_marginBottom="@dimen/story_pictures_cover_affordance_icon_margin" />
+    </FrameLayout>
+</LinearLayout>
