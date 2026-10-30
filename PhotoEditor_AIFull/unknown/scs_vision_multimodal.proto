@@ -1,0 +1,161 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.samsung.scs.vision.multimodal";
+
+
+package scs.vision.multimodal;
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Meta Data of scs-access-server
+* 'request-id'
+* 'country-code'
+* 'network-country-code'
+* 'mcc'
+* 'device-locale'
+* 'device-type'
+* 'device-model'
+* 'device-os-type'
+* 'device-os-ver'
+* 'device-one-ui-ver'
+* 'app-ver'
+* 'device-for'
+* 'api-key'
+* 'package-name'
+* 'package-signing-key'
+* 'ssp-app-id'
+* 'ssp-access-token'
+* 'ssp-server-url'
+* (please refer to README.md)
+*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Mandatory fields:
+* 'request-id'
+* 'country-code'
+* 'device-locale'
+* 'device-type'
+* 'device-model'
+* 'device-os-type'
+* 'device-os-ver'
+* 'api-key'
+* 'package-name'
+* 'package-signing-key'
+*/
+
+
+message ScsVisionMmStreamRequest {
+  oneof type {
+    DesignImage design_image = 10;
+    DesignSticker design_sticker = 11;
+    // New task for TextGuidedEditing(vision). Unlike TextGuidedEditing, it does not use the imagen model but the Multimodal gemini (nano banana) model.
+    TextImageEditing text_image_editing = 12;
+  }
+
+  // text or media data should be in content_data.
+  // one or more data is available.
+  repeated ContentData content_data = 1;
+
+  optional PromptParam prompt_param = 2;
+
+}
+
+
+message DesignImage {
+  // example: WALLPAPER, PROFILE_CARD
+  string category = 1;
+
+  // example: [SKETCH, TEXT]
+  repeated string input_types = 2;
+
+  // example: watercolor, illustration, webtoon
+  optional string style = 3;
+
+  ImageParam image_param = 10;
+}
+
+message DesignSticker {
+  // example: STICKER, STICKER_PACK
+  string category = 1;
+
+  // example: [SKETCH, STICKER_TEXT]
+  repeated string input_types = 2;
+
+  // example: doodle, illustration, cute
+  optional string style = 3;
+
+  ImageParam image_param = 10;
+}
+
+message TextImageEditing {
+  string input_type = 1;
+}
+
+
+// request data
+message ContentData {
+  oneof type {
+    string text = 1;
+    Image image = 2;
+  }
+
+  string mime_type = 10;   // example: image/png, image/jpeg, text/plain
+  optional string content_name = 11; // example: sketch_image, sticker_text, user_input, ...
+}
+
+
+message PromptParam {
+  map<string, string> param = 1;
+}
+
+// response
+message ScsVisionMmStreamResponse {
+  DataResponse data_response = 1;
+}
+
+message DataResponse {
+  // supports one or more data_response
+  repeated ResultData result_data = 1;
+
+  optional string model_alias = 10;
+  optional string safety_attributes = 11;
+  optional string debug_log = 12;
+}
+
+message ResultData {
+  oneof type {
+    string text = 1;
+    Image image = 2;
+  }
+}
+
+message Image {
+  /**
+    data: image data
+    index: chunking index
+    total_index: chunking count (last chunking index)
+  */
+  oneof type{
+    string data = 1;
+    bytes byte_data = 2;
+  }
+  optional int32 index = 10;
+  optional int32 total_index = 11;
+
+  /*
+   * (TBD fields)
+   *
+   *  optional int32 image_number // number to identify which image it is
+   *
+   */
+}
+
+message ImageParam {
+  // (TBD) example: aspect_ratio
+}
+
+
+// service
+service ScsVisionMm {
+  rpc ScsVisionMmStream(stream ScsVisionMmStreamRequest) returns (stream ScsVisionMmStreamResponse);
+}

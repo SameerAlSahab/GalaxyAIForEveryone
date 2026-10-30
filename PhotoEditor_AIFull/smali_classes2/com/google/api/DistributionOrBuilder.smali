@@ -1,0 +1,84 @@
+.class public interface abstract Lcom/google/api/DistributionOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageOrBuilder;
+
+
+# virtual methods
+.method public abstract getBucketCounts(I)J
+.end method
+
+.method public abstract getBucketCountsCount()I
+.end method
+
+.method public abstract getBucketCountsList()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getBucketOptions()Lcom/google/api/Distribution$BucketOptions;
+.end method
+
+.method public abstract getBucketOptionsOrBuilder()Lcom/google/api/Distribution$BucketOptionsOrBuilder;
+.end method
+
+.method public abstract getCount()J
+.end method
+
+.method public abstract getExemplars(I)Lcom/google/api/Distribution$Exemplar;
+.end method
+
+.method public abstract getExemplarsCount()I
+.end method
+
+.method public abstract getExemplarsList()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/google/api/Distribution$Exemplar;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getExemplarsOrBuilder(I)Lcom/google/api/Distribution$ExemplarOrBuilder;
+.end method
+
+.method public abstract getExemplarsOrBuilderList()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/google/api/Distribution$ExemplarOrBuilder;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getMean()D
+.end method
+
+.method public abstract getRange()Lcom/google/api/Distribution$Range;
+.end method
+
+.method public abstract getRangeOrBuilder()Lcom/google/api/Distribution$RangeOrBuilder;
+.end method
+
+.method public abstract getSumOfSquaredDeviation()D
+.end method
+
+.method public abstract hasBucketOptions()Z
+.end method
+
+.method public abstract hasRange()Z
+.end method

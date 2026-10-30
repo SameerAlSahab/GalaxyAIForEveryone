@@ -1,0 +1,93 @@
+.class public interface abstract Landroidx/core/widget/SeslGoToTopController$Host;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/widget/SeslGoToTopController;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Host"
+.end annotation
+
+
+# virtual methods
+.method public abstract canScrollDown()Z
+.end method
+
+.method public abstract canScrollUp()Z
+.end method
+
+.method public abstract getContext()Landroid/content/Context;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end method
+
+.method public abstract getHeight()I
+.end method
+
+.method public abstract getLocationInWindow([I)V
+    .param p1    # [I
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract getOverlay()Landroid/view/ViewGroupOverlay;
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+.end method
+
+.method public abstract getPaddingBottom()I
+.end method
+
+.method public abstract getPaddingLeft()I
+.end method
+
+.method public abstract getPaddingRight()I
+.end method
+
+.method public abstract getScrollY()I
+.end method
+
+.method public abstract getWidth()I
+.end method
+
+.method public abstract invalidateHost()V
+.end method
+
+.method public abstract isFastScrollerEnabled()Z
+.end method
+
+.method public abstract playSoundEffect(I)V
+.end method
+
+.method public abstract post(Ljava/lang/Runnable;)V
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract postDelayed(Ljava/lang/Runnable;J)V
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract removeCallbacks(Ljava/lang/Runnable;)V
+    .param p1    # Ljava/lang/Runnable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract showTopEdgeEffect()V
+.end method
+
+.method public abstract smoothScrollToTop()V
+.end method

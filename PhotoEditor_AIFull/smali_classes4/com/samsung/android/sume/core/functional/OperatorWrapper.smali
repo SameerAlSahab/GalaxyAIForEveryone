@@ -1,0 +1,339 @@
+.class public Lcom/samsung/android/sume/core/functional/OperatorWrapper;
+.super Lcom/samsung/android/sume/core/functional/OpPriorityComputable;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/samsung/android/sume/core/functional/Operator;
+
+
+# static fields
+.field private static final TAG:Ljava/lang/String;
+
+.field private static final formatUpdaterMap:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Lcom/samsung/android/sume/core/types/ImgpType;",
+            "Lcom/samsung/android/sume/core/functional/MediaFormatUpdater;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field protected formatUpdater:Lcom/samsung/android/sume/core/functional/MediaFormatUpdater;
+
+.field protected processor:Lcom/samsung/android/sume/core/functional/Operator;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const-class v0, Lcom/samsung/android/sume/core/functional/OperatorWrapper;
+
+    invoke-static {v0}, Lcom/samsung/android/sume/core/Def;->tagOf(Ljava/lang/Class;)Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->TAG:Ljava/lang/String;
+
+    new-instance v0, Lcom/samsung/android/sume/core/functional/OperatorWrapper$1;
+
+    invoke-direct {v0}, Lcom/samsung/android/sume/core/functional/OperatorWrapper$1;-><init>()V
+
+    sput-object v0, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->formatUpdaterMap:Ljava/util/Map;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Enum;Lcom/samsung/android/sume/core/functional/Operator;)V
+    .locals 1
+    .param p1    # Ljava/lang/Enum;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/samsung/android/sume/core/functional/Operator;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Enum<",
+            "*>;",
+            "Lcom/samsung/android/sume/core/functional/Operator;",
+            ")V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1}, Lcom/samsung/android/sume/core/functional/OpPriorityComputable;-><init>(Ljava/lang/Enum;)V
+
+    iput-object p2, p0, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->processor:Lcom/samsung/android/sume/core/functional/Operator;
+
+    sget-object p2, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->formatUpdaterMap:Ljava/util/Map;
+
+    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/samsung/android/sume/core/functional/MediaFormatUpdater;
+
+    invoke-static {p1}, Ljava/util/Optional;->ofNullable(Ljava/lang/Object;)Ljava/util/Optional;
+
+    move-result-object p1
+
+    new-instance p2, Lcom/samsung/android/sume/core/functional/a;
+
+    const/4 v0, 0x1
+
+    invoke-direct {p2, v0}, Lcom/samsung/android/sume/core/functional/a;-><init>(I)V
+
+    invoke-virtual {p1, p2}, Ljava/util/Optional;->orElseGet(Ljava/util/function/Supplier;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/samsung/android/sume/core/functional/MediaFormatUpdater;
+
+    iput-object p1, p0, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->formatUpdater:Lcom/samsung/android/sume/core/functional/MediaFormatUpdater;
+
+    return-void
+.end method
+
+.method public static synthetic c(Ljava/lang/Enum;Lcom/samsung/android/sume/core/functional/Operator;)Lcom/samsung/android/sume/core/functional/OperatorWrapper;
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->lambda$of$2(Ljava/lang/Enum;Lcom/samsung/android/sume/core/functional/Operator;)Lcom/samsung/android/sume/core/functional/OperatorWrapper;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic d(Ljava/util/Map$Entry;)Lcom/samsung/android/sume/core/functional/Operator;
+    .locals 0
+
+    invoke-static {p0}, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->lambda$of$3(Ljava/util/Map$Entry;)Lcom/samsung/android/sume/core/functional/Operator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic e()Lcom/samsung/android/sume/core/functional/MediaFormatUpdater;
+    .locals 1
+
+    invoke-static {}, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->lambda$new$1()Lcom/samsung/android/sume/core/functional/MediaFormatUpdater;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static synthetic f(Lcom/samsung/android/sume/core/format/MediaFormat;Lcom/samsung/android/sume/core/format/MutableMediaFormat;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->lambda$new$0(Lcom/samsung/android/sume/core/format/MediaFormat;Lcom/samsung/android/sume/core/format/MutableMediaFormat;)V
+
+    return-void
+.end method
+
+.method private static synthetic lambda$new$0(Lcom/samsung/android/sume/core/format/MediaFormat;Lcom/samsung/android/sume/core/format/MutableMediaFormat;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method private static synthetic lambda$new$1()Lcom/samsung/android/sume/core/functional/MediaFormatUpdater;
+    .locals 2
+
+    new-instance v0, Lcom/samsung/android/sume/core/functional/g;
+
+    const/4 v1, 0x7
+
+    invoke-direct {v0, v1}, Lcom/samsung/android/sume/core/functional/g;-><init>(I)V
+
+    return-object v0
+.end method
+
+.method private static synthetic lambda$of$2(Ljava/lang/Enum;Lcom/samsung/android/sume/core/functional/Operator;)Lcom/samsung/android/sume/core/functional/OperatorWrapper;
+    .locals 1
+
+    new-instance v0, Lcom/samsung/android/sume/core/functional/OperatorWrapper;
+
+    invoke-direct {v0, p0, p1}, Lcom/samsung/android/sume/core/functional/OperatorWrapper;-><init>(Ljava/lang/Enum;Lcom/samsung/android/sume/core/functional/Operator;)V
+
+    return-object v0
+.end method
+
+.method private static synthetic lambda$of$3(Ljava/util/Map$Entry;)Lcom/samsung/android/sume/core/functional/Operator;
+    .locals 1
+
+    invoke-interface {p0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Enum;
+
+    invoke-interface {p0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/samsung/android/sume/core/functional/Operator;
+
+    invoke-static {v0, p0}, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->of(Ljava/lang/Enum;Lcom/samsung/android/sume/core/functional/Operator;)Lcom/samsung/android/sume/core/functional/Operator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static of(Ljava/lang/Enum;Lcom/samsung/android/sume/core/functional/Operator;)Lcom/samsung/android/sume/core/functional/Operator;
+    .locals 3
+    .param p0    # Ljava/lang/Enum;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p1    # Lcom/samsung/android/sume/core/functional/Operator;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Enum<",
+            "*>;",
+            "Lcom/samsung/android/sume/core/functional/Operator;",
+            ")",
+            "Lcom/samsung/android/sume/core/functional/Operator;"
+        }
+    .end annotation
+
+    .line 1
+    instance-of v0, p1, Lcom/samsung/android/sume/core/functional/OperatorChain;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    new-instance v0, Lcom/samsung/android/sume/core/functional/OperatorChain;
+
+    check-cast p1, Lcom/samsung/android/sume/core/functional/OperatorChain;
+
+    invoke-virtual {p1}, Lcom/samsung/android/sume/core/functional/OperatorChain;->stream()Ljava/util/stream/Stream;
+
+    move-result-object p1
+
+    new-instance v1, Lcom/samsung/android/sume/core/functional/f;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, p0, v2}, Lcom/samsung/android/sume/core/functional/f;-><init>(Ljava/io/Serializable;I)V
+
+    .line 3
+    invoke-interface {p1, v1}, Ljava/util/stream/Stream;->map(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+
+    move-result-object p1
+
+    .line 4
+    invoke-static {}, Ljava/util/stream/Collectors;->toList()Ljava/util/stream/Collector;
+
+    move-result-object v1
+
+    invoke-interface {p1, v1}, Ljava/util/stream/Stream;->collect(Ljava/util/stream/Collector;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/List;
+
+    invoke-direct {v0, p0, p1}, Lcom/samsung/android/sume/core/functional/OperatorChain;-><init>(Ljava/lang/Enum;Ljava/util/List;)V
+
+    return-object v0
+
+    .line 5
+    :cond_0
+    new-instance v0, Lcom/samsung/android/sume/core/functional/OperatorWrapper;
+
+    invoke-direct {v0, p0, p1}, Lcom/samsung/android/sume/core/functional/OperatorWrapper;-><init>(Ljava/lang/Enum;Lcom/samsung/android/sume/core/functional/Operator;)V
+
+    return-object v0
+.end method
+
+.method public static of(Ljava/util/Map;)Lcom/samsung/android/sume/core/functional/Operator;
+    .locals 4
+    .param p0    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/Enum<",
+            "*>;",
+            "Lcom/samsung/android/sume/core/functional/Operator;",
+            ">;)",
+            "Lcom/samsung/android/sume/core/functional/Operator;"
+        }
+    .end annotation
+
+    .line 6
+    new-instance v0, Lcom/samsung/android/sume/core/functional/OperatorMap;
+
+    invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/util/Collection;->stream()Ljava/util/stream/Stream;
+
+    move-result-object p0
+
+    new-instance v1, Lcom/samsung/android/sum/core/functional/f;
+
+    const/4 v2, 0x5
+
+    invoke-direct {v1, v2}, Lcom/samsung/android/sum/core/functional/f;-><init>(I)V
+
+    new-instance v2, Lcom/samsung/android/sume/core/functional/c;
+
+    const/4 v3, 0x5
+
+    invoke-direct {v2, v3}, Lcom/samsung/android/sume/core/functional/c;-><init>(I)V
+
+    .line 7
+    invoke-static {v1, v2}, Ljava/util/stream/Collectors;->toMap(Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/stream/Collector;
+
+    move-result-object v1
+
+    invoke-interface {p0, v1}, Ljava/util/stream/Stream;->collect(Ljava/util/stream/Collector;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/util/Map;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/sume/core/functional/OperatorMap;-><init>(Ljava/util/Map;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public run(Lcom/samsung/android/sume/core/buffer/MediaBuffer;Lcom/samsung/android/sume/core/buffer/MutableMediaBuffer;)Lcom/samsung/android/sume/core/buffer/MutableMediaBuffer;
+    .locals 0
+    .param p1    # Lcom/samsung/android/sume/core/buffer/MediaBuffer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Lcom/samsung/android/sume/core/buffer/MutableMediaBuffer;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    iget-object p0, p0, Lcom/samsung/android/sume/core/functional/OperatorWrapper;->processor:Lcom/samsung/android/sume/core/functional/Operator;
+
+    invoke-interface {p0, p1, p2}, Lcom/samsung/android/sume/core/functional/Operator;->run(Lcom/samsung/android/sume/core/buffer/MediaBuffer;Lcom/samsung/android/sume/core/buffer/MutableMediaBuffer;)Lcom/samsung/android/sume/core/buffer/MutableMediaBuffer;
+
+    move-result-object p0
+
+    return-object p0
+.end method

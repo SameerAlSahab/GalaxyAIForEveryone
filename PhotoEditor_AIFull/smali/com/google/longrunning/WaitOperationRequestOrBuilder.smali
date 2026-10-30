@@ -1,0 +1,23 @@
+.class public interface abstract Lcom/google/longrunning/WaitOperationRequestOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageOrBuilder;
+
+
+# virtual methods
+.method public abstract getName()Ljava/lang/String;
+.end method
+
+.method public abstract getNameBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getTimeout()Lcom/google/protobuf/Duration;
+.end method
+
+.method public abstract getTimeoutOrBuilder()Lcom/google/protobuf/DurationOrBuilder;
+.end method
+
+.method public abstract hasTimeout()Z
+.end method

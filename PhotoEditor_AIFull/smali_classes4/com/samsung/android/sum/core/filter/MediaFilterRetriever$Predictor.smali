@@ -1,0 +1,26 @@
+.class public interface abstract Lcom/samsung/android/sum/core/filter/MediaFilterRetriever$Predictor;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/sum/core/filter/MediaFilterRetriever;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Predictor"
+.end annotation
+
+.annotation runtime Ljava/lang/FunctionalInterface;
+.end annotation
+
+
+# virtual methods
+.method public abstract predicate(Lcom/samsung/android/sum/core/filter/MediaFilter;)Z
+    .param p1    # Lcom/samsung/android/sum/core/filter/MediaFilter;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+.end method

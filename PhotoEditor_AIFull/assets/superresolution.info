@@ -1,0 +1,10 @@
+{
+  "version": "4.0",
+  "framework": "tflite",
+  "precision": "float32",
+  "runtime": "gpu",
+  "org_model_name": "base7_C32N4_512_fp16.tflite",
+  "model_path": [
+    "/system/etc/objectremoval/db/superresolution.tflite"
+  ]
+}

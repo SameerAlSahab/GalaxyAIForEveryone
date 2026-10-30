@@ -1,0 +1,645 @@
+.class public final LF4/O;
+.super LL4/r;
+.source "SourceFile"
+
+
+# static fields
+.field public static final i:LF4/O;
+
+.field public static final j:LF4/a;
+
+
+# instance fields
+.field public final a:LL4/e;
+
+.field public b:I
+
+.field public c:LF4/N;
+
+.field public d:LF4/Q;
+
+.field public e:I
+
+.field public f:B
+
+.field public g:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, LF4/a;
+
+    const/16 v1, 0x11
+
+    invoke-direct {v0, v1}, LF4/a;-><init>(I)V
+
+    sput-object v0, LF4/O;->j:LF4/a;
+
+    new-instance v0, LF4/O;
+
+    invoke-direct {v0}, LF4/O;-><init>()V
+
+    sput-object v0, LF4/O;->i:LF4/O;
+
+    sget-object v1, LF4/N;->INV:LF4/N;
+
+    iput-object v1, v0, LF4/O;->c:LF4/N;
+
+    sget-object v1, LF4/Q;->w:LF4/Q;
+
+    iput-object v1, v0, LF4/O;->d:LF4/Q;
+
+    const/4 v1, 0x0
+
+    iput v1, v0, LF4/O;->e:I
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, LL4/b;-><init>()V
+
+    const/4 v0, -0x1
+
+    .line 2
+    iput-byte v0, p0, LF4/O;->f:B
+
+    .line 3
+    iput v0, p0, LF4/O;->g:I
+
+    .line 4
+    sget-object v0, LL4/e;->a:LL4/z;
+
+    iput-object v0, p0, LF4/O;->a:LL4/e;
+
+    return-void
+.end method
+
+.method public constructor <init>(LF4/M;)V
+    .locals 1
+
+    .line 48
+    invoke-direct {p0}, LL4/b;-><init>()V
+
+    const/4 v0, -0x1
+
+    .line 49
+    iput-byte v0, p0, LF4/O;->f:B
+
+    .line 50
+    iput v0, p0, LF4/O;->g:I
+
+    .line 51
+    iget-object p1, p1, LL4/m;->a:LL4/e;
+
+    .line 52
+    iput-object p1, p0, LF4/O;->a:LL4/e;
+
+    return-void
+.end method
+
+.method public constructor <init>(LL4/f;LL4/i;)V
+    .locals 8
+
+    .line 5
+    invoke-direct {p0}, LL4/b;-><init>()V
+
+    const/4 v0, -0x1
+
+    .line 6
+    iput-byte v0, p0, LF4/O;->f:B
+
+    .line 7
+    iput v0, p0, LF4/O;->g:I
+
+    .line 8
+    sget-object v0, LF4/N;->INV:LF4/N;
+
+    iput-object v0, p0, LF4/O;->c:LF4/N;
+
+    .line 9
+    sget-object v0, LF4/Q;->w:LF4/Q;
+
+    .line 10
+    iput-object v0, p0, LF4/O;->d:LF4/Q;
+
+    const/4 v0, 0x0
+
+    .line 11
+    iput v0, p0, LF4/O;->e:I
+
+    .line 12
+    new-instance v1, LL4/d;
+
+    invoke-direct {v1}, LL4/d;-><init>()V
+
+    const/4 v2, 0x1
+
+    .line 13
+    invoke-static {v1, v2}, LL4/g;->j(Ljava/io/OutputStream;I)LL4/g;
+
+    move-result-object v3
+
+    :cond_0
+    :goto_0
+    if-nez v0, :cond_c
+
+    .line 14
+    :try_start_0
+    invoke-virtual {p1}, LL4/f;->n()I
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    const/16 v5, 0x8
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x2
+
+    if-eq v4, v5, :cond_6
+
+    const/16 v5, 0x12
+
+    if-eq v4, v5, :cond_3
+
+    const/16 v5, 0x18
+
+    if-eq v4, v5, :cond_2
+
+    .line 15
+    invoke-virtual {p1, v4, v3}, LL4/f;->q(ILL4/g;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    :cond_1
+    move v0, v2
+
+    goto :goto_0
+
+    .line 16
+    :cond_2
+    iget v4, p0, LF4/O;->b:I
+
+    or-int/lit8 v4, v4, 0x4
+
+    iput v4, p0, LF4/O;->b:I
+
+    .line 17
+    invoke-virtual {p1}, LL4/f;->k()I
+
+    move-result v4
+
+    .line 18
+    iput v4, p0, LF4/O;->e:I
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto/16 :goto_4
+
+    :catch_0
+    move-exception p1
+
+    goto :goto_2
+
+    :catch_1
+    move-exception p1
+
+    goto :goto_3
+
+    .line 19
+    :cond_3
+    iget v4, p0, LF4/O;->b:I
+
+    and-int/2addr v4, v7
+
+    if-ne v4, v7, :cond_4
+
+    .line 20
+    iget-object v4, p0, LF4/O;->d:LF4/Q;
+
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 21
+    invoke-static {v4}, LF4/Q;->s(LF4/Q;)LF4/P;
+
+    move-result-object v6
+
+    .line 22
+    :cond_4
+    sget-object v4, LF4/Q;->x:LF4/a;
+
+    invoke-virtual {p1, v4, p2}, LL4/f;->g(LL4/B;LL4/i;)LL4/b;
+
+    move-result-object v4
+
+    check-cast v4, LF4/Q;
+
+    iput-object v4, p0, LF4/O;->d:LF4/Q;
+
+    if-eqz v6, :cond_5
+
+    .line 23
+    invoke-virtual {v6, v4}, LF4/P;->h(LF4/Q;)LF4/P;
+
+    .line 24
+    invoke-virtual {v6}, LF4/P;->f()LF4/Q;
+
+    move-result-object v4
+
+    iput-object v4, p0, LF4/O;->d:LF4/Q;
+
+    .line 25
+    :cond_5
+    iget v4, p0, LF4/O;->b:I
+
+    or-int/2addr v4, v7
+
+    iput v4, p0, LF4/O;->b:I
+
+    goto :goto_0
+
+    .line 26
+    :cond_6
+    invoke-virtual {p1}, LL4/f;->k()I
+
+    move-result v5
+
+    if-eqz v5, :cond_a
+
+    if-eq v5, v2, :cond_9
+
+    if-eq v5, v7, :cond_8
+
+    const/4 v7, 0x3
+
+    if-eq v5, v7, :cond_7
+
+    goto :goto_1
+
+    .line 27
+    :cond_7
+    sget-object v6, LF4/N;->STAR:LF4/N;
+
+    goto :goto_1
+
+    .line 28
+    :cond_8
+    sget-object v6, LF4/N;->INV:LF4/N;
+
+    goto :goto_1
+
+    .line 29
+    :cond_9
+    sget-object v6, LF4/N;->OUT:LF4/N;
+
+    goto :goto_1
+
+    .line 30
+    :cond_a
+    sget-object v6, LF4/N;->IN:LF4/N;
+
+    :goto_1
+    if-nez v6, :cond_b
+
+    .line 31
+    invoke-virtual {v3, v4}, LL4/g;->v(I)V
+
+    .line 32
+    invoke-virtual {v3, v5}, LL4/g;->v(I)V
+
+    goto :goto_0
+
+    .line 33
+    :cond_b
+    iget v4, p0, LF4/O;->b:I
+
+    or-int/2addr v4, v2
+
+    iput v4, p0, LF4/O;->b:I
+
+    .line 34
+    iput-object v6, p0, LF4/O;->c:LF4/N;
+    :try_end_0
+    .catch LL4/v; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto/16 :goto_0
+
+    .line 35
+    :goto_2
+    :try_start_1
+    new-instance p2, LL4/v;
+
+    .line 36
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, LL4/v;-><init>(Ljava/lang/String;)V
+
+    .line 37
+    iput-object p0, p2, LL4/v;->a:LL4/b;
+
+    .line 38
+    throw p2
+
+    .line 39
+    :goto_3
+    iput-object p0, p1, LL4/v;->a:LL4/b;
+
+    .line 40
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 41
+    :goto_4
+    :try_start_2
+    invoke-virtual {v3}, LL4/g;->i()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 42
+    :catch_2
+    invoke-virtual {v1}, LL4/d;->e()LL4/e;
+
+    move-result-object p2
+
+    iput-object p2, p0, LF4/O;->a:LL4/e;
+
+    goto :goto_5
+
+    :catchall_1
+    move-exception p1
+
+    invoke-virtual {v1}, LL4/d;->e()LL4/e;
+
+    move-result-object p2
+
+    iput-object p2, p0, LF4/O;->a:LL4/e;
+
+    .line 43
+    throw p1
+
+    .line 44
+    :goto_5
+    throw p1
+
+    .line 45
+    :cond_c
+    :try_start_3
+    invoke-virtual {v3}, LL4/g;->i()V
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    .line 46
+    :catch_3
+    invoke-virtual {v1}, LL4/d;->e()LL4/e;
+
+    move-result-object p1
+
+    iput-object p1, p0, LF4/O;->a:LL4/e;
+
+    goto :goto_6
+
+    :catchall_2
+    move-exception p1
+
+    invoke-virtual {v1}, LL4/d;->e()LL4/e;
+
+    move-result-object p2
+
+    iput-object p2, p0, LF4/O;->a:LL4/e;
+
+    .line 47
+    throw p1
+
+    :goto_6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()I
+    .locals 3
+
+    iget v0, p0, LF4/O;->g:I
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
+
+    return v0
+
+    :cond_0
+    iget v0, p0, LF4/O;->b:I
+
+    const/4 v1, 0x1
+
+    and-int/2addr v0, v1
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v0, p0, LF4/O;->c:LF4/N;
+
+    invoke-virtual {v0}, LF4/N;->getNumber()I
+
+    move-result v0
+
+    invoke-static {v1, v0}, LL4/g;->a(II)I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    iget v1, p0, LF4/O;->b:I
+
+    const/4 v2, 0x2
+
+    and-int/2addr v1, v2
+
+    if-ne v1, v2, :cond_2
+
+    iget-object v1, p0, LF4/O;->d:LF4/Q;
+
+    invoke-static {v2, v1}, LL4/g;->d(ILL4/b;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    :cond_2
+    iget v1, p0, LF4/O;->b:I
+
+    const/4 v2, 0x4
+
+    and-int/2addr v1, v2
+
+    if-ne v1, v2, :cond_3
+
+    const/4 v1, 0x3
+
+    iget v2, p0, LF4/O;->e:I
+
+    invoke-static {v1, v2}, LL4/g;->b(II)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    :cond_3
+    iget-object v1, p0, LF4/O;->a:LL4/e;
+
+    invoke-virtual {v1}, LL4/e;->size()I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    iput v1, p0, LF4/O;->g:I
+
+    return v1
+.end method
+
+.method public final b()LL4/m;
+    .locals 0
+
+    invoke-static {}, LF4/M;->f()LF4/M;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final c()LL4/m;
+    .locals 1
+
+    invoke-static {}, LF4/M;->f()LF4/M;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, LF4/M;->g(LF4/O;)V
+
+    return-object v0
+.end method
+
+.method public final d(LL4/g;)V
+    .locals 2
+
+    invoke-virtual {p0}, LF4/O;->a()I
+
+    iget v0, p0, LF4/O;->b:I
+
+    const/4 v1, 0x1
+
+    and-int/2addr v0, v1
+
+    if-ne v0, v1, :cond_0
+
+    iget-object v0, p0, LF4/O;->c:LF4/N;
+
+    invoke-virtual {v0}, LF4/N;->getNumber()I
+
+    move-result v0
+
+    invoke-virtual {p1, v1, v0}, LL4/g;->l(II)V
+
+    :cond_0
+    iget v0, p0, LF4/O;->b:I
+
+    const/4 v1, 0x2
+
+    and-int/2addr v0, v1
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v0, p0, LF4/O;->d:LF4/Q;
+
+    invoke-virtual {p1, v1, v0}, LL4/g;->o(ILL4/b;)V
+
+    :cond_1
+    iget v0, p0, LF4/O;->b:I
+
+    const/4 v1, 0x4
+
+    and-int/2addr v0, v1
+
+    if-ne v0, v1, :cond_2
+
+    const/4 v0, 0x3
+
+    iget v1, p0, LF4/O;->e:I
+
+    invoke-virtual {p1, v0, v1}, LL4/g;->m(II)V
+
+    :cond_2
+    iget-object p0, p0, LF4/O;->a:LL4/e;
+
+    invoke-virtual {p1, p0}, LL4/g;->r(LL4/e;)V
+
+    return-void
+.end method
+
+.method public final isInitialized()Z
+    .locals 4
+
+    iget-byte v0, p0, LF4/O;->f:B
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    return v1
+
+    :cond_0
+    const/4 v2, 0x0
+
+    if-nez v0, :cond_1
+
+    return v2
+
+    :cond_1
+    iget v0, p0, LF4/O;->b:I
+
+    const/4 v3, 0x2
+
+    and-int/2addr v0, v3
+
+    if-ne v0, v3, :cond_2
+
+    iget-object v0, p0, LF4/O;->d:LF4/Q;
+
+    invoke-virtual {v0}, LF4/Q;->isInitialized()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    iput-byte v2, p0, LF4/O;->f:B
+
+    return v2
+
+    :cond_2
+    iput-byte v1, p0, LF4/O;->f:B
+
+    return v1
+.end method

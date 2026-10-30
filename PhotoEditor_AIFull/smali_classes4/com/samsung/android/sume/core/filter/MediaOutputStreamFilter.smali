@@ -1,0 +1,38 @@
+.class public interface abstract Lcom/samsung/android/sume/core/filter/MediaOutputStreamFilter;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract getSendChannelCount()I
+.end method
+
+.method public abstract getSendChannelQuery()Ljava/util/function/Function;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/function/Function<",
+            "Ljava/lang/Enum<",
+            "*>;",
+            "Lcom/samsung/android/sume/core/channel/BufferChannel;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract setSendChannelQuery(Ljava/util/function/Function;I)V
+    .param p1    # Ljava/util/function/Function;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/function/Function<",
+            "Ljava/lang/Enum<",
+            "*>;",
+            "Lcom/samsung/android/sume/core/channel/BufferChannel;",
+            ">;I)V"
+        }
+    .end annotation
+.end method

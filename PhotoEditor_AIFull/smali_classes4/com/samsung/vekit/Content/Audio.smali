@@ -1,0 +1,182 @@
+.class public Lcom/samsung/vekit/Content/Audio;
+.super Lcom/samsung/vekit/Content/Content;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/samsung/vekit/Interface/AudioSegmentInterface;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/samsung/vekit/Content/Content;",
+        "Lcom/samsung/vekit/Interface/AudioSegmentInterface<",
+        "Lcom/samsung/vekit/Content/Audio;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private audioSegmentMap:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Lcom/samsung/vekit/Common/Object/AudioSegment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private filePath:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Lcom/samsung/vekit/Common/VEContext;ILjava/lang/String;)V
+    .locals 1
+
+    sget-object v0, Lcom/samsung/vekit/Common/Type/ContentType;->AUDIO:Lcom/samsung/vekit/Common/Type/ContentType;
+
+    invoke-direct {p0, p1, v0, p2, p3}, Lcom/samsung/vekit/Content/Content;-><init>(Lcom/samsung/vekit/Common/VEContext;Lcom/samsung/vekit/Common/Type/ContentType;ILjava/lang/String;)V
+
+    new-instance p1, Ljava/util/HashMap;
+
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p1, p0, Lcom/samsung/vekit/Content/Audio;->audioSegmentMap:Ljava/util/HashMap;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public addAudioSegment(Ljava/lang/String;Lcom/samsung/vekit/Common/Object/AudioSegment;)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/vekit/Content/Audio;->audioSegmentMap:Ljava/util/HashMap;
+
+    invoke-virtual {p0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public clearAudioSegment()V
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/vekit/Content/Audio;->audioSegmentMap:Ljava/util/HashMap;
+
+    invoke-virtual {p0}, Ljava/util/HashMap;->clear()V
+
+    return-void
+.end method
+
+.method public getAudioSegment(Ljava/lang/String;)Lcom/samsung/vekit/Common/Object/AudioSegment;
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/vekit/Content/Audio;->audioSegmentMap:Ljava/util/HashMap;
+
+    invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/samsung/vekit/Common/Object/AudioSegment;
+
+    return-object p0
+.end method
+
+.method public getAudioSegmentMap()Ljava/util/HashMap;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Lcom/samsung/vekit/Common/Object/AudioSegment;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/samsung/vekit/Content/Audio;->audioSegmentMap:Ljava/util/HashMap;
+
+    return-object p0
+.end method
+
+.method public getAudioSegmentMapSize()I
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/vekit/Content/Audio;->audioSegmentMap:Ljava/util/HashMap;
+
+    invoke-virtual {p0}, Ljava/util/HashMap;->size()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public getFilePath()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/vekit/Content/Audio;->filePath:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public removeAudioSegment(Ljava/lang/String;)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/vekit/Content/Audio;->audioSegmentMap:Ljava/util/HashMap;
+
+    invoke-virtual {p0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public setAudioSegmentMap(Ljava/util/HashMap;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Lcom/samsung/vekit/Common/Object/AudioSegment;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/samsung/vekit/Content/Audio;->audioSegmentMap:Ljava/util/HashMap;
+
+    return-void
+.end method
+
+.method public setDuration(J)Lcom/samsung/vekit/Content/Audio;
+    .locals 0
+
+    .line 2
+    invoke-super {p0, p1, p2}, Lcom/samsung/vekit/Content/Content;->setDuration(J)Lcom/samsung/vekit/Content/Content;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/samsung/vekit/Content/Audio;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic setDuration(J)Lcom/samsung/vekit/Content/Content;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lcom/samsung/vekit/Content/Audio;->setDuration(J)Lcom/samsung/vekit/Content/Audio;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public setFilePath(Ljava/lang/String;)Lcom/samsung/vekit/Content/Audio;
+    .locals 0
+
+    iput-object p1, p0, Lcom/samsung/vekit/Content/Audio;->filePath:Ljava/lang/String;
+
+    return-object p0
+.end method

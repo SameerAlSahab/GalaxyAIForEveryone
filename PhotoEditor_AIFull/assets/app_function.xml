@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<appfunctions>
+    <version>1</version>
+    <appfunction>
+        <function_id>com.sec.android.mimage.photoretouching.crossapp.function#ShowMediaItemFilterEditorImpl_showMediaItemFilterEditor</function_id>
+        <schema_category>photos</schema_category>
+        <schema_name>showMediaItemFilterEditor</schema_name>
+        <schema_version>1</schema_version>
+        <enabled_by_default>true</enabled_by_default>
+        <restrict_callers_with_execute_app_functions>false</restrict_callers_with_execute_app_functions>
+        <display_name_string_res>0</display_name_string_res>
+    </appfunction>
+    <appfunction>
+        <function_id>com.sec.android.mimage.photoretouching.crossapp.function#ShowMediaItemStraightenEditorImpl_showMediaItemStraightenEditor</function_id>
+        <schema_category>photos</schema_category>
+        <schema_name>showMediaItemStraightenEditor</schema_name>
+        <schema_version>1</schema_version>
+        <enabled_by_default>true</enabled_by_default>
+        <restrict_callers_with_execute_app_functions>false</restrict_callers_with_execute_app_functions>
+        <display_name_string_res>0</display_name_string_res>
+    </appfunction>
+    <appfunction>
+        <function_id>com.sec.android.mimage.photoretouching.crossapp.function#SetMediaItemFilterImpl_setMediaItemFilter</function_id>
+        <schema_category>photos</schema_category>
+        <schema_name>setMediaItemFilter</schema_name>
+        <schema_version>1</schema_version>
+        <enabled_by_default>true</enabled_by_default>
+        <restrict_callers_with_execute_app_functions>false</restrict_callers_with_execute_app_functions>
+        <display_name_string_res>0</display_name_string_res>
+    </appfunction>
+    <appfunction>
+        <function_id>com.sec.android.mimage.photoretouching.crossapp.function#StraightenMediaItemImpl_straightenMediaItem</function_id>
+        <schema_category>photos</schema_category>
+        <schema_name>straightenMediaItem</schema_name>
+        <schema_version>1</schema_version>
+        <enabled_by_default>true</enabled_by_default>
+        <restrict_callers_with_execute_app_functions>false</restrict_callers_with_execute_app_functions>
+        <display_name_string_res>0</display_name_string_res>
+    </appfunction>
+</appfunctions>

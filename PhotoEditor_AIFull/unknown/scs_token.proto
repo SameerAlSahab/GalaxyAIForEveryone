@@ -1,0 +1,188 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.samsung.scs.token";
+
+
+package scs.token;
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Meta Data of scs-access-server
+* 'request-id'
+* 'country-code'
+* 'device-locale'
+* 'device-type'
+* 'device-model'
+* 'device-os-type'
+* 'device-os-ver'
+* 'device-one-ui-ver'
+* 'app-ver'
+* 'device-for'
+* 'api-key'
+* 'package-name'
+* 'package-signing-key'
+* 'ssp-app-id'
+* 'ssp-access-token'
+* 'ssp-server-url'
+*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * name : request-id
+ * description : (required) Client-generated request-id.
+ *               Format is Unix Epoch Timestamp in Milliseconds
+ *
+ *               Note: requestId is a uint64 because 3rd party services like ASR / TTS
+ *                     require that the request id be a millisecond timestamp
+ *
+ *               This is used for troubleshooting ASR issues
+ * mandatory : O
+ * example : 1596593604109
+ * type : string
+ *
+ * name : country-code
+ * description : CountryISO value, 2-character string.
+ * mandatory : O
+ * example : KR
+ * type : string
+ *
+ * name : device-locale
+ * description : Device locale
+ * mandatory : O
+ * example : ko-KR
+ * type : string
+ *
+ * name : device-type
+ * description : Device Type
+ * mandatory : O
+ * example : mobile
+ * type : string
+ * (mobile / tv / watch / speaker)
+ *
+ * name : device-model
+ * description : Device Model
+ * mandatory : O
+ * example : SM-S918
+ * type : string
+ *
+ * name : device-os-type
+ * description : Device OS Type
+ * mandatory : O
+ * example : Android
+ * type : string
+ *
+ * name : device-os-ver
+ * description : Device OS Ver
+ * mandatory : O
+ * example : 15
+ * type : string
+ *
+ * name : device-one-ui-ver
+ * description : Device One UI Ver, Value that affects model selection
+ * mandatory : X (for Android, this is mandatory)
+ * example : 6.0
+ * type : string
+ *
+ * name : app-ver
+ * description : Application Version
+ * mandatory : X
+ * example : 1.0
+ * type : string
+ *
+ * name : device-for
+ * description : ut or commercial
+ * mandatory : X
+ * example : ut
+ * type : string
+ *
+ * [Authentication]
+ *
+ * name : api-key
+ * description : scs api-key
+ * mandatory : O
+ * example : qosmhKHctvxg
+ * type : string
+ *
+ * name : package-name
+ * description : caller package-name
+ * mandatory : O
+ * example : com.samsung.android.snote
+ * type : string
+ *
+ * name : package-signing-key
+ * description : caller package-signing-key
+ * mandatory : O
+ * example : ITjfFFQvmOyp43s67d4LVfURFA7jReduY42YeqOzBhjiM4QGG4Is...
+ * type : string
+ *
+ * name : ssp-app-id
+ * description : Registered SA app id
+ * mandatory : X
+ * example : 1yk4gwd442
+ * type : string
+ *
+ * name : ssp-access-token
+ * description : SA access token
+ * mandatory : X
+ * example : hOfuWXmdsH7pNtW7FAWLdurYP
+ * type : string
+ *
+ * name : ssp-server-url
+ * description : Logged in url of SA
+ * mandatory : X
+ * example : https://us-auth2.samsungosp.com/v2/license/security/authorizeToken?authToken=
+ * type : string
+ *
+ */
+
+
+/*
+# How to use scs-access-server
+
+## Send gRPC's Metadata
+
+* 'request-id'
+* 'country-code'
+* 'device-locale'
+* 'device-type'
+* 'device-model'
+* 'device-os-type'
+* 'device-os-ver'
+* 'device-one-ui-ver'
+* 'app-ver'
+* 'device-for'
+* 'api-key'
+* 'package-name'
+* 'package-signing-key'
+* 'ssp-app-id'
+* 'ssp-access-token'
+* 'ssp-server-url'
+
+*/
+
+
+
+message ScsTokenCreateRequest {
+  string ldu_duid = 1;      // M_DUID:84758UDFH783889DFH093DHJF893
+}
+
+message ScsTokenCreateResponse {
+  string access_token = 1;  // created JWT Token
+  string created_time = 2;  // 1700448873
+  string expired_time = 3;  // 86400
+  string server_url = 4;    // LDU
+}
+
+
+message ScsTokenValidateRequest {
+}
+
+message ScsTokenValidateResponse {
+  bool isSuccess = 1;    // true or false
+  string message = 2;    // valid token or invalid token
+}
+
+
+service ScsToken {
+  rpc ScsTokenCreate (ScsTokenCreateRequest) returns (ScsTokenCreateResponse);
+  rpc ScsTokenValidate (ScsTokenValidateRequest) returns (ScsTokenValidateResponse);
+}

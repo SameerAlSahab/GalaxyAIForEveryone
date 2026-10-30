@@ -1,0 +1,40 @@
+.class public interface abstract Lcom/google/rpc/QuotaFailureOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageOrBuilder;
+
+
+# virtual methods
+.method public abstract getViolations(I)Lcom/google/rpc/QuotaFailure$Violation;
+.end method
+
+.method public abstract getViolationsCount()I
+.end method
+
+.method public abstract getViolationsList()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/google/rpc/QuotaFailure$Violation;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getViolationsOrBuilder(I)Lcom/google/rpc/QuotaFailure$ViolationOrBuilder;
+.end method
+
+.method public abstract getViolationsOrBuilderList()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/google/rpc/QuotaFailure$ViolationOrBuilder;",
+            ">;"
+        }
+    .end annotation
+.end method

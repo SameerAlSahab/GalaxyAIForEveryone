@@ -1,0 +1,360 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.samsung.scs.vision";
+
+
+package scs.vision;
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Meta Data of scs-access-server
+* 'request-id'
+* 'country-code'
+* 'device-locale'
+* 'device-type'
+* 'device-model'
+* 'device-os-type'
+* 'device-os-ver'
+* 'device-one-ui-ver'
+* 'app-ver'
+* 'device-for'
+* 'api-key'
+* 'package-name'
+* 'package-signing-key'
+* 'ssp-app-id'
+* 'ssp-access-token'
+* 'ssp-server-url'
+*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * name : request-id
+ * description : (required) Client-generated request-id.
+ *               Format is Unix Epoch Timestamp in Milliseconds
+ *
+ *               Note: requestId is a uint64 because 3rd party services like ASR / TTS
+ *                     require that the request id be a millisecond timestamp
+ *
+ *               This is used for troubleshooting ASR issues
+ * mandatory : O
+ * example : 1596593604109
+ * type : string
+ *
+ * name : country-code
+ * description : CountryISO value, 2-character string.
+ * mandatory : O
+ * example : KR
+ * type : string
+ *
+ * name : device-locale
+ * description : Device locale
+ * mandatory : O
+ * example : ko-KR
+ * type : string
+ *
+ * name : device-type
+ * description : Device Type
+ * mandatory : O
+ * example : mobile
+ * type : string
+ * (mobile / tv / watch / speaker)
+ *
+ * name : device-model
+ * description : Device Model
+ * mandatory : O
+ * example : SM-S918
+ * type : string
+ *
+ * name : device-os-type
+ * description : Device OS Type
+ * mandatory : O
+ * example : Android
+ * type : string
+ *
+ * name : device-os-ver
+ * description : Device OS Ver
+ * mandatory : O
+ * example : 15
+ * type : string
+ *
+ * name : device-one-ui-ver
+ * description : Device One UI Ver, Value that affects model selection
+ * mandatory : X (for Android, this is mandatory)
+ * example : 6.0
+ * type : string
+ *
+ * name : app-ver
+ * description : Application Version
+ * mandatory : X
+ * example : 1.0
+ * type : string
+ *
+ * name : device-for
+ * description : ut or commercial
+ * mandatory : X
+ * example : ut
+ * type : string
+ *
+ * [Authentication]
+ *
+ * name : api-key
+ * description : scs api-key
+ * mandatory : O
+ * example : qosmhKHctvxg
+ * type : string
+ *
+ * name : package-name
+ * description : caller package-name
+ * mandatory : O
+ * example : com.samsung.android.snote
+ * type : string
+ *
+ * name : package-signing-key
+ * description : caller package-signing-key
+ * mandatory : O
+ * example : ITjfFFQvmOyp43s67d4LVfURFA7jReduY42YeqOzBhjiM4QGG4Is...
+ * type : string
+ *
+ * name : ssp-app-id
+ * description : Registered SA app id
+ * mandatory : X
+ * example : 1yk4gwd442
+ * type : string
+ *
+ * name : ssp-access-token
+ * description : SA access token
+ * mandatory : X
+ * example : hOfuWXmdsH7pNtW7FAWLdurYP
+ * type : string
+ *
+ * name : ssp-server-url
+ * description : Logged in url of SA
+ * mandatory : X
+ * example : https://us-auth2.samsungosp.com/v2/license/security/authorizeToken?authToken=
+ * type : string
+ *
+ */
+
+
+/*
+# How to use intelligence-proxy-server
+
+## Send gRPC's Metadata
+'request-id'
+'country-code'
+'device-locale'
+'device-type'
+'device-model'
+'device-os-type'
+'device-os-ver'
+'device-one-ui-ver'
+'api-key'
+'package-name'
+'package-singing-key'
+
+## Response gRPC's Metadata
+'request-id'
+
+## After connection established:
+- Send 'ScsVisionRequest'
+- Receive 'ScsVisionResponse'
+*/
+
+
+//Request of ScsEdit;
+
+message ScsVisionRequest{
+  oneof type{
+    EditDataRequest editing = 1;
+    UpScaleDataRequest upscaling = 2;
+    ScribblingRequest scribbling = 4;
+    GenPortraitRequest portrait = 5;
+    DrawDataRequest drawing = 6;
+    SketchGuidedEditingRequest sketch_guided_editing = 10;
+    SketchToImageRequest sketch_to_image = 11;
+    GenStickerRequest sticker = 12;
+    ImageConversionRequest image_conversion = 13;
+    TextGuidedEditingRequest text_guided_editing = 14;
+    GenPetPortraitRequest pet_portrait = 17;
+    RestylingRequest restyling = 18;
+    bool cancel = 3;
+  }
+
+  optional VisionPromptParam vision_prompt_param = 40;
+  optional MultimodalPromptParam multimodal_prompt_param = 41;
+}
+
+message ImageConversionRequest {
+  optional Image image = 1;
+  optional string input_text = 2;
+  // e.g. "pencil_drawing", "watercolor", "illustration", "pop_art", "3d_cartoon", "ink_and_wash"
+  string style = 3;
+  string conversion_input_type = 7;
+  // e.g. "dont_allow", "allow_adult", "allow_all"
+  optional string person_generation = 8;
+}
+
+message SketchToImageRequest {
+  Image sketch_image = 1;
+  Image prompt_sketch_image = 3;
+  SketchStrength follow_sketch_strength = 7;
+  // e.g. "pencil_drawing", "watercolor", "illustration", "pop_art", "3d_cartoon", "ink_and_wash"
+  string style = 2;
+  optional int32 sample_count = 5;
+  optional string service_version = 8;
+}
+
+enum SketchStrength {
+  STRONG = 0;
+  WEAK = 1;
+  EXTREME = 2;
+  MILD = 3;
+}
+
+message SketchGuidedEditingRequest {
+  Image sketch_image = 1;
+  Image base_image = 2;
+  Image mask_image = 3;
+  optional Image assistance_sketch_image = 4;
+  optional Image safety_full_image = 7;
+
+  optional int32 sample_count = 5;
+  optional string service_version = 8;
+}
+
+message TextGuidedEditingRequest {
+  string input_type = 1; // image_text, text_only
+  string user_input = 2;
+  Image base_image = 3;
+  Image mask_image = 4;
+  optional Image input_image = 5;
+}
+
+message ScsVisionResponse{
+  DataResponse data_response = 1;
+}
+
+message EditDataRequest{
+  Image base_image = 1;
+  Image mask_image = 2;
+  optional int32 sample_count = 3;
+  repeated EditDebug edit_debug = 4;
+  optional string service_version = 8;
+}
+
+enum DebugMode {
+  ADD = 0;
+  APPEND = 1;
+  REMOVE = 2;
+}
+
+message EditDebug {
+  DebugMode mode = 1;
+  string parameters = 2;
+}
+
+message UpScaleDataRequest{
+  Image image = 1;
+  string mode = 2;
+  optional int32 sample_count = 3;
+}
+
+message ScribblingRequest {
+  Image image = 1;
+  // e.g. "watercolor", "illustration", "pencil_drawing", "pop_art", "3D_cartoon", "ink_and_wash"
+  string style = 2;
+  optional string image_type = 6;
+  SketchStrength follow_sketch_strength = 5;
+  optional string prompt = 3;
+  optional int32 sample_count = 4;
+}
+
+message GenPortraitRequest {
+  Image image = 1;
+  // e.g. "comic", "3d_cartoon", "watercolor", "sketch"
+  string style = 2;
+  optional string user_input = 3;
+  optional string aspect_ratio = 4;
+  optional string service_version = 8;
+  optional string portrait_input_type = 9;
+}
+
+message RestylingRequest {
+  Image image = 1;
+  string style = 2;
+  optional string user_input = 5;
+  optional string aspect_ratio = 6;
+  optional string input_type = 9;
+}
+
+message GenPetPortraitRequest {
+  Image image = 1;
+  string style = 2;
+  optional string aspect_ratio = 4;
+  optional string user_input = 5;
+  optional string input_type = 9;
+}
+
+message VisionPromptParam {
+  map<string, string> param = 1;
+}
+
+message MultimodalPromptParam {
+  map<string, string> param = 1;
+}
+
+message DrawDataRequest {
+  Image base_image = 1;
+  Image mask_image = 2;
+  optional string prompt = 3;
+  optional int32 sample_count = 4;
+  repeated EditDebug edit_debug = 5;
+}
+
+message GenStickerRequest {
+  // e.g. "Doodle", "Vintage_illustration", "Glitter_toon", "Illustration", "3D_emoji", "Retro_logo"
+  string style = 1;
+  string input_text = 2;
+  optional int32 sample_count = 9;
+}
+
+message DataResponse{
+  /**
+    result: image result data
+    patching_mask_image: mask image with shadow
+    image_number: sample image count
+    debug_log: debug log
+   */
+  Image result = 1;
+  optional Image patching_mask_image = 3;
+  optional int32 image_number = 2;
+  repeated string model_alias = 9;
+  optional string debug_log = 10;
+}
+
+message Image{
+  /**
+    data: image data
+    index: chunking index
+    total_index: chunking count (last chunking index)
+  */
+  oneof type{
+    string data = 1;
+    bytes byte_data = 4;
+  }
+  optional int32 index = 2;
+  optional int32 total_index = 3;
+}
+
+service ScsVision{
+  rpc ScsVisionStream (stream ScsVisionRequest) returns (stream ScsVisionResponse);
+  rpc ScsVisionUnary (ScsVisionRequest) returns (ScsVisionResponse);
+}
+
+
+
+
+
+
+
+
+

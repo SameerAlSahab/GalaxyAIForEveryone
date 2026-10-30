@@ -1,0 +1,9 @@
+{
+  "com.sec.android.mimage.photoretouching.settings.SearchProvider": [
+    {
+      "com.samsung.android.settings.intelligence.TAG_ADVANCED_INTELLIGENCE": [
+        "magic_transform"
+      ]
+    }
+  ]
+}

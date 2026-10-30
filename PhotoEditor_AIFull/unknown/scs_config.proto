@@ -1,0 +1,384 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.samsung.scs.config";
+
+
+package scs.config;
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Meta Data of scs-access-server
+* 'request-id'
+* 'country-code'
+* 'device-locale'
+* 'device-type'
+* 'device-model'
+* 'device-os-type'
+* 'device-os-ver'
+* 'device-one-ui-ver'
+* 'app-ver'
+* 'device-for'
+* 'api-key'
+* 'package-name'
+* 'package-signing-key'
+* 'ssp-app-id'
+* 'ssp-access-token'
+* 'ssp-server-url'
+*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * name : request-id
+ * description : (required) Client-generated request-id.
+ *               Format is Unix Epoch Timestamp in Milliseconds
+ *
+ *               Note: requestId is a uint64 because 3rd party services like ASR / TTS
+ *                     require that the request id be a millisecond timestamp
+ *
+ *               This is used for troubleshooting ASR issues
+ * mandatory : O
+ * example : 1596593604109
+ * type : string
+ *
+ * name : country-code
+ * description : CountryISO value, 2-character string.
+ * mandatory : O
+ * example : KR
+ * type : string
+ *
+ * name : device-locale
+ * description : Device locale
+ * mandatory : O
+ * example : ko-KR
+ * type : string
+ *
+ * name : device-type
+ * description : Device Type
+ * mandatory : O
+ * example : mobile
+ * type : string
+ * (mobile / tv / watch / speaker)
+ *
+ * name : device-model
+ * description : Device Model
+ * mandatory : O
+ * example : SM-S918
+ * type : string
+ *
+ * name : device-os-type
+ * description : Device OS Type
+ * mandatory : O
+ * example : Android
+ * type : string
+ *
+ * name : device-os-ver
+ * description : Device OS Ver
+ * mandatory : O
+ * example : 15
+ * type : string
+ *
+ * name : device-one-ui-ver
+ * description : Device One UI Ver, Value that affects model selection
+ * mandatory : X (for Android, this is mandatory)
+ * example : 6.0
+ * type : string
+ *
+ * name : app-ver
+ * description : Application Version
+ * mandatory : X
+ * example : 1.0
+ * type : string
+ *
+ * name : device-for
+ * description : ut or commercial
+ * mandatory : X
+ * example : ut
+ * type : string
+ *
+ * [Authentication]
+ *
+ * name : api-key
+ * description : scs api-key
+ * mandatory : O
+ * example : qosmhKHctvxg
+ * type : string
+ *
+ * name : package-name
+ * description : caller package-name
+ * mandatory : O
+ * example : com.samsung.android.snote
+ * type : string
+ *
+ * name : package-signing-key
+ * description : caller package-signing-key
+ * mandatory : O
+ * example : ITjfFFQvmOyp43s67d4LVfURFA7jReduY42YeqOzBhjiM4QGG4Is...
+ * type : string
+ *
+ * name : ssp-app-id
+ * description : Registered SA app id
+ * mandatory : X
+ * example : 1yk4gwd442
+ * type : string
+ *
+ * name : ssp-access-token
+ * description : SA access token
+ * mandatory : X
+ * example : hOfuWXmdsH7pNtW7FAWLdurYP
+ * type : string
+ *
+ * name : ssp-server-url
+ * description : Logged in url of SA
+ * mandatory : X
+ * example : https://us-auth2.samsungosp.com/v2/license/security/authorizeToken?authToken=
+ * type : string
+ *
+ */
+
+
+/*
+# How to use scs-access-server
+
+## Send gRPC's Metadata
+
+'request-id'
+'country-code'
+'device-locale'
+'device-type'
+'device-model'
+'device-os-type'
+'device-os-ver'
+'device-one-ui-ver'
+'api-key'
+'package-name'
+'package-singing-key'
+
+*/
+
+
+// Get Configuration API
+message ConfigRequest {
+  /*
+   * filtering condition for config result.
+   * config that matches model type 'model_type' is included in the result.
+   * default value = 0 (Language Model)
+   * value = 0: Language Model
+   *         1: Vision Model
+   *         2: OpenAPI
+   */
+  int32 model_type = 1;
+  /*
+   * filtering condition for config result.
+   * config that matches package name 'package_name' is included in the result.
+   *
+   * e.g. "com.samsung.android.keyboard"
+   */
+  string package_name = 2;
+  /*
+   * filtering condition for config result.
+   * config that matches language code 'device_locale' is included in the result.
+   *
+   * e.g. "ko-KR"
+   */
+  string device_locale = 3;
+  /*
+   * filtering condition for config result.
+   * config that matches country code 'device_country_code' is included in the result.
+   * 'device_country_code' is CountryISO value, 2-character string.
+   *
+   * e.g. "KR"
+   */
+  string device_country_code = 4;
+}
+
+/*
+## domain value:
+ - refer to ScsRequest.type variable name.
+ - candidates:
+  summarization, translation, tone_conversion, correction, emoji_augmentation,
+  smart_cover, smart_reply, notes_organization, generic, classification,
+  extraction
+ - example: domain="emoji_augmentation"
+*/
+
+message ConfigResponse {
+  /*
+   * 'config' is list of config for packageName
+   * (json string format)
+   * packageName is key value, There can be multiple configs for each packageName
+   *
+   * e.g. "{\"com.test.scs\":[{\"domain\":\"correction\",
+   *       \"supportedLanguages\":[{\"displayLangCode\":\"ar\",\"ondeviceLangCode\":\"ar\",\"serverLangCode\":\"ar\",\"packageName\":\"com.samsung.sr.nmt.apps.t2t.languagepack.enar\"}]}]}"
+   *
+   * e.g. "{\"com.test\":[{\"domain\":\"correction\",\"supportedLanguages\":[]}]}"
+   */
+  string config = 1;
+
+  // e.g. 86400 seconds.
+  int32 next_callable_time = 9;
+
+  /*
+   * SCS Server result code
+   * e.g. "0000"
+   */
+  string result_code = 10;
+  /*
+   * SCS Server result message
+   * e.g. "Success"
+   */
+  string result_message = 11;
+}
+
+
+// Get Endpoint API
+message EndpointRequest {
+  /*
+   * Endpoint that matches model type 'model_type' is included in the result.
+   * default value = 0 (Language Model)
+   * value = 0: Language Model
+   *         1: Vision Model
+   */
+  int32 model_type = 1;
+}
+
+message DebugEndpointRequest {
+
+}
+
+
+message EndpointResponse {
+
+  Endpoint result = 1;
+
+  // e.g. 86400 seconds.
+  int32 next_callable_time = 9;
+
+  /*
+   * SCS Server result code
+   * e.g. "0000"
+   */
+  string result_code = 10;
+  /*
+   * SCS Server result message
+   * e.g. "Success"
+   */
+  string result_message = 11;
+}
+
+message DebugEndpointResponse {
+  repeated Endpoint endpoints = 1;
+}
+
+
+message Endpoint {
+  string endpoint = 1;
+  string env = 2;
+}
+
+
+// Get translateSupportLanguageInfo
+message TranslateSupportLangRequest {
+}
+message TranslateSupportLangResponse {
+  /*
+   * info value: refer to /docs/translateSupportLanguageInfo_revised_231016.json
+   * (json string format)
+   */
+  string info = 1;
+  string result_code = 10;
+  string result_message = 11;
+}
+
+
+// Create Feedback API
+message FeedbackRequest {
+  FeedBackData feedback = 1;
+}
+
+message FeedBackData {
+  /*
+   * Endpoint that matches model type 'model_type' is included in the result.
+   * default value = 0 (Language Model)
+   * value = 0: Language Model
+   *         1: Vision Model
+   */
+  int32 model_type = 1;
+  /*
+   * e.g. "com.samsung.android.keyboard"
+   */
+  string package_name = 2;
+  /*
+   * domain_name value: reference to ScsRequest.type variable name.
+   * candidates:
+   *  summarization, translation, tone_conversion, correction, emoji_augmentation,
+   *  smart_cover, smart_reply, notes_organization, generic, classification, extraction
+   *
+   * e.g. "emoji_augmentation"
+   */
+  string domain_name = 3;
+  /*
+   * thumb up: 1,  thumb down: -1
+   */
+  int32 feedback_score = 4;
+}
+
+message FeedbackResponse {
+  /*
+   * SCS Server result code
+   * e.g. "0000"
+   */
+  string result_code = 10;
+  /*
+   * SCS Server result message
+   * e.g. "Success"
+   */
+  string result_message = 11;
+}
+
+
+message LLMSupportedLangRequest{
+}
+
+message LLMSupportedLangResponse{
+  /*
+   * e.g. "{\"supportedLanguages\":[{\"locale\":\"en-US\",\"status\":\"Commercial\"}, ..., {\"locale\":\"bg-BG\",\"status\":\"Experimental\"}]}"
+   * (json string format)
+   */
+  string result = 1;
+
+  // e.g. "0000"
+  string result_code = 10;
+  // e.g. "Success"
+  string result_message = 11;
+}
+
+
+service ScsConfig {
+  /*
+   * GetLanguageConfig
+   * return config list for packageName include supportedLanguages
+   */
+  rpc GetConfig(ConfigRequest) returns (ConfigResponse);
+  /*
+   * GetEndpoint
+   * return endpoint url for country code
+   */
+  rpc GetEndpoint(EndpointRequest) returns (EndpointResponse);
+  /*
+   * GetDebugEndpoint
+   * return debug endpoint url for env
+   */
+  rpc GetDebugEndpoint(DebugEndpointRequest) returns (DebugEndpointResponse);
+  /*
+   * GetTranslateSupportLanguage
+   * return translateSupportLanguageInfo
+   * refer to /docs/translateSupportLanguageInfo_revised_231016.json
+   */
+  rpc GetTranslateSupportLanguage(TranslateSupportLangRequest) returns (TranslateSupportLangResponse);
+  /*
+   * CreateFeedback
+   * add user feedback data
+   */
+  rpc CreateFeedback(FeedbackRequest) returns (FeedbackResponse);
+
+  rpc GetLLMSupportLanguageList (LLMSupportedLangRequest) returns (LLMSupportedLangResponse);
+}
